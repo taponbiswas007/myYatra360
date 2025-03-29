@@ -2,3 +2,95 @@
 font-family: "Poppins", sans-serif;
 font-family: "Montez", cursive;
 font-family: "Manrope", sans-serif; */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ffffff;
+}
+
+/* -------------------top header start--------------------- */
+.topheader {
+    border-bottom: 1px solid #E1E4E5;
+}
+
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.marquee-content {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 20s linear infinite;
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #755602;
+    cursor: pointer;
+}
+
+.marquee-content:hover {
+    animation-play-state: paused;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.language-and-currency-changer select {}
+
+.custom-select-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.custom-select {
+    appearance: none;
+    /* Hide default arrow */
+    -webkit-appearance: none;
+    /* For Safari */
+    -moz-appearance: none;
+    /* For Firefox */
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #0D0D0C;
+    border: 1px solid #E1E4E5;
+    border-radius: 30px;
+    padding: 9px 34px 9px 13px;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+.custom-select-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    /* Don't interfere with select click */
+    font-size: 20px;
+    color: #000000;
+}
+
+/* -------------------top header end--------------------- */
