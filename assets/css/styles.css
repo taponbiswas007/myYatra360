@@ -236,3 +236,86 @@ ul {
 }
 
 /* -------------------navigation area end--------------------- */
+
+
+
+/* ---------------hero start---------------- */
+.hero-area {
+    height: calc(100vh - 250px);
+}
+
+.hero-image-area {
+    height: calc(100vh - 250px);
+    overflow: hidden;
+    position: relative;
+}
+
+.hero-image-area .banner-slider-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    object-position: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.banner-slider-item.active {
+    opacity: 1;
+}
+
+.banner-content-area {
+    padding: 52px 0;
+}
+
+.banner-content-area h1 {
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: 62px;
+    line-height: 76.6px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #113D48;
+}
+
+.banner-content-area h1 span {
+    color: #1CA8CB;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 62px;
+    line-height: 76.6px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+
+}
+
+.banner-content-area .search-box {
+    border: 1px solid #1CA8CB;
+    border-radius: 7px;
+    max-width: 470px;
+    width: 100%;
+
+}
+
+.banner-content-area .search-box input {
+    padding: 10px 10px 10px 50px;
+    border: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+}
+
+.banner-content-area .search-box .searchIcon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #1CA8CB;
+    font-size: 20px;
+}
+
+/* ---------------hero end---------------- */
