@@ -32,4 +32,19 @@ $(document).ready(function () {
         .on('mouseleave', function () {
             slideTimer = setInterval(showNextSlide, slideInterval);
         });
+
+
+
+    // banner slider package card card 
+    $('.bannerpackage-card').slick({
+        dots: false,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+
+    });
 });
