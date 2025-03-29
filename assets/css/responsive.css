@@ -1,0 +1,35 @@
+@media (max-width: 992px) {
+    .navigationbar nav {
+
+        flex-direction: column;
+        row-gap: 20px;
+
+    }
+
+    .navigationbar .navlink {
+        /* border-bottom: 1px solid #E1E4E5;
+        width: 100%; */
+    }
+
+    .menu-content {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: rgba(0, 0, 0, 0.25);
+        width: 100%;
+        padding: 40px 20px;
+        display: none;
+    }
+
+    .logo {
+        width: 64px;
+        height: 63px;
+    }
+}
+
+@media (max-width: 420px) {
+    .login-area a {
+        font-size: 12px;
+        padding: 10px 15px;
+    }
+}
