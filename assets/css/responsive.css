@@ -42,6 +42,16 @@
     .banner-content-area {
         padding: 40px 20px;
     }
+
+    .pilgrims-slider-area .pilgrims-slider-item .pilgrims-slider-inner h1 {
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 481px) {
+    .pilgrims-area h1 {
+        font-size: 30px;
+    }
 }
 
 @media (max-width: 420px) {

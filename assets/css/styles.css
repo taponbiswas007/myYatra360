@@ -391,9 +391,9 @@ ul {
 .pilgrims-area {
     background-image: url(../images/section_bg.png);
     background-repeat: no-repeat;
-    background-position: left 0, top 0 right 0;
-    background-size: cover;
-    padding: 50px 0;
+    background-position: left top;
+    background-size: 100% 600px;
+    padding: 50px 0 100px 0;
     background-color: #ffffff;
 }
 
@@ -452,14 +452,12 @@ ul {
 .pilgrims-slider-area .pilgrims-slider-item .pilgrims-slider-inner h1 {
     font-family: Poppins;
     font-weight: 600;
-    font-size: 48px;
+    font-size: 40px;
     line-height: 27.96px;
     letter-spacing: 0%;
     text-align: center;
     vertical-align: middle;
     text-transform: uppercase;
-    color: #ffffff;
-    box-shadow: 0px 4px 29px 0px #0000007A;
     color: #ffffff;
     margin-bottom: 0;
     text-transform: uppercase;
@@ -472,6 +470,40 @@ ul {
 
 .slick-list {
     margin: 0 -10px;
+}
+
+.custom-arrows {
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+    /* Space between arrows */
+}
+
+.custom-prev,
+.custom-next {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #1CA8CB;
+    border: 3px solid #1CA8CB;
+    height: 43px;
+    width: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: all 0.4s ease;
+    /* Change color as needed */
+}
+
+.custom-prev:hover,
+.custom-next:hover {
+    background: #1CA8CB;
+    color: #ffffff;
 }
 
 /* -------------------Our Top Pilgrims end--------------------- */

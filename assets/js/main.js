@@ -50,28 +50,32 @@ $(document).ready(function () {
 
     // pilgrims slider area
     $('.pilgrims-slider').slick({
-        dots: true,
-        infinite: false,
+        prevArrow: $('.custom-prev'),
+        nextArrow: $('.custom-next'),
+        dots: false,
+        infinite: true,
         speed: 300,
         slidesToShow: 4,
-        slidesToScroll: 4,
+        slidesToScroll: 1,
         arrows: true,
         centerPadding: '20px',
+        centerMode: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
         responsive: [
             {
-                breakpoint: 1024,
+                breakpoint: 1400,
                 settings: {
                     slidesToShow: 3,
-                    slidesToScroll: 3,
+                    slidesToScroll: 1,
                     infinite: true,
-                    dots: true
                 }
             },
             {
                 breakpoint: 600,
                 settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 2
+                    slidesToScroll: 1
                 }
             },
             {
