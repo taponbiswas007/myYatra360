@@ -1088,4 +1088,81 @@ ul {
     color: #ffffff;
 }
 
+.quick-link-header {
+    font-family: Manrope;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.quick-link-list {
+    padding-left: 0;
+}
+
+.quick-link-list li {
+    margin-bottom: 15px;
+}
+
+.quick-link-list li a {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15.75px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.quick-link-list li a:hover {
+    color: #BCCED2;
+}
+
+.quick-link-list li .icons-box {
+    background: #ffffff;
+    color: #1CA8CB;
+    font-size: 14px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.addressbox {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 21px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #ffffff;
+}
+
+.addressbox span {
+    color: #1CA8CB;
+    font-weight: 700;
+}
+
+.footerlable {
+    background: #1CA8CB;
+}
+
+.footerlable p {
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18.38px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #ffffff;
+    margin-bottom: 0;
+}
+
 /* ----------------footer-area end---------------------- */
