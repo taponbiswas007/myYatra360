@@ -435,7 +435,7 @@ ul {
 }
 
 .pilgrims-slider-area .pilgrims-slider-item .pilgrims-slider-inner {
-    aspect-ratio: 1 / 0.8;
+    aspect-ratio: 1 / 0.7;
     width: 100%;
     position: relative;
     border-radius: 8px;
@@ -664,3 +664,91 @@ ul {
 }
 
 /* ---------------------best-recommended-place-area end------------------------ */
+
+
+/* -------------------------Why book with MyYatra360 start-------------------------- */
+.whychoseus-area p {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 15.12px;
+    line-height: 21.83px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #6E7070;
+}
+
+.why-choose-items {
+    padding-left: 0;
+}
+
+.why-choose-items li {
+    margin-bottom: 23px;
+}
+
+.why-choose-items li:last-child {
+    margin-bottom: 0;
+}
+
+.why-choose-items li a {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 13.44px;
+    line-height: 21.83px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: capitalize;
+    color: #ffffff;
+    background: #113D48;
+    border-radius: 30px;
+    padding: 15px 29px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    width: fit-content;
+    margin-top: 36px;
+}
+
+.why-choose-items li a img {
+    width: 20px;
+}
+
+.why-choose-items li span {
+    height: 60px;
+    width: 60px;
+    background: #1CA8CB;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.why-choose-items li span img {
+    width: 27px;
+}
+
+.why-choose-items li h3 {
+    font-family: Manrope;
+    font-weight: 600;
+    font-size: 20.16px;
+    line-height: 28.55px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #113D48;
+    margin-bottom: 0;
+}
+
+.why-choose-items li p {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #6E7070;
+    margin-bottom: 0;
+}
+
+/* -------------------------Why book with MyYatra360 end-------------------------- */
