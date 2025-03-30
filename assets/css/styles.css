@@ -242,15 +242,17 @@ ul {
 /* ---------------hero start---------------- */
 .hero-area {
     /* height: calc(100vh - 250px); */
-    padding-right: 40px;
+
 
 }
 
 .hero-image-area {
     /* height: calc(100vh - 250px); */
-    height: 597px;
+    height: 100%;
     overflow: hidden;
     position: relative;
+    box-shadow: 0px 0px 11px 0px #00000014;
+
 }
 
 .hero-image-area .banner-slider-item {
@@ -265,6 +267,7 @@ ul {
     object-position: center;
     opacity: 0;
     transition: opacity 0.5s ease;
+    border-radius: 0 0 10px 10px;
 }
 
 .banner-slider-item.active {
@@ -278,8 +281,8 @@ ul {
 .banner-content-area h1 {
     font-family: Poppins;
     font-weight: 300;
-    /* font-size: 62px;
-    line-height: 76.6px; */
+    font-size: 62px;
+    line-height: 76.6px;
     letter-spacing: 0%;
     vertical-align: middle;
     color: #113D48;
@@ -289,8 +292,6 @@ ul {
     color: #1CA8CB;
     font-family: Poppins;
     font-weight: 600;
-    /* font-size: 62px;
-    line-height: 76.6px; */
     letter-spacing: 0%;
     vertical-align: middle;
 
@@ -325,7 +326,19 @@ ul {
 
     box-shadow: 0px 0px 11px 0px #00000014;
     border-radius: 8px;
-    height: 222px;
+    width: 100%;
+
+    /* width / height */
+}
+
+
+
+
+
+
+
+.slider-package-card .card-image-area {
+    height: 100%;
 }
 
 .slider-package-card .card-content h2 {
@@ -353,11 +366,12 @@ ul {
 }
 
 .slider-package-card .card-image-area .package-card-image-item {
-    height: 160px;
+    aspect-ratio: 1 / 1.05;
     width: 100%;
     position: relative;
     border-radius: 8px;
     overflow: hidden;
+    z-index: 1;
 }
 
 .slider-package-card .card-image-area .package-card-image-item img {

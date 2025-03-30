@@ -1,3 +1,11 @@
+@media (max-width: 1201px) {
+    .banner-content-area h1 {
+        font-size: 45px;
+        line-height: 55px;
+        margin-bottom: 30px;
+    }
+}
+
 @media (max-width: 992px) {
     .navigationbar nav {
 
@@ -40,5 +48,12 @@
     .login-area a {
         font-size: 12px;
         padding: 10px 15px;
+    }
+}
+
+@media screen and (min-width: 420px) and (max-width: 576px) {
+    .col-ssl-6 {
+        flex: 0 0 auto;
+        width: 50%;
     }
 }
