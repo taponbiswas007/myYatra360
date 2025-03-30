@@ -371,7 +371,6 @@ ul {
     position: relative;
     border-radius: 8px;
     overflow: hidden;
-    z-index: 1;
 }
 
 .slider-package-card .card-image-area .package-card-image-item img {
@@ -386,3 +385,93 @@ ul {
 }
 
 /* ---------------hero end---------------- */
+
+
+/* -------------------Our Top Pilgrims start--------------------- */
+.pilgrims-area {
+    background-image: url(../images/section_bg.png);
+    background-repeat: no-repeat;
+    background-position: left 0, top 0 right 0;
+    background-size: cover;
+    padding: 50px 0;
+    background-color: #ffffff;
+}
+
+.pilgrims-area h2 {
+    font-family: Montez;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    color: #113D48;
+    margin-bottom: 0;
+}
+
+.pilgrims-area h1 {
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 63.7px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    color: #113D48;
+}
+
+.pilgrims-slider-area {
+    margin-top: 30px;
+}
+
+.pilgrims-slider-area .pilgrims-slider-item {
+    width: 100%;
+    height: 100%;
+}
+
+.pilgrims-slider-area .pilgrims-slider-item .pilgrims-slider-inner {
+    aspect-ratio: 1 / 0.8;
+    width: 100%;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+
+}
+
+.pilgrims-slider-area .pilgrims-slider-item .pilgrims-slider-inner img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    object-fit: fill;
+    object-position: center;
+
+}
+
+.pilgrims-slider-area .pilgrims-slider-item .pilgrims-slider-inner h1 {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 27.96px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #ffffff;
+    box-shadow: 0px 4px 29px 0px #0000007A;
+    color: #ffffff;
+    margin-bottom: 0;
+    text-transform: uppercase;
+
+}
+
+.slick-slide {
+    margin: 0 10px;
+}
+
+.slick-list {
+    margin: 0 -10px;
+}
+
+/* -------------------Our Top Pilgrims end--------------------- */
