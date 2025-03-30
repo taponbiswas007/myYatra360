@@ -48,6 +48,32 @@
     }
 }
 
+@media (max-width: 579px) {
+
+    .gallery-section {
+        width: 100%;
+        aspect-ratio: 1 / 1.01;
+    }
+
+    .double-image .top-image,
+    .double-image .bottom-image,
+    .single-image {
+        height: 100%;
+        width: 100%;
+    }
+
+    .double-image .top-image,
+    .double-image .bottom-image {
+        aspect-ratio: 1 / 1.01;
+    }
+
+    .single-image img {
+        height: 100% !important;
+        width: 100% !important;
+    }
+
+}
+
 @media (max-width: 481px) {
     .sectionitems h1 {
         font-size: 30px;
