@@ -828,6 +828,10 @@ ul {
 
 
 /* -------------------------have-questions-area start------------------------- */
+.have-questions-area {
+    background: #ffffff;
+}
+
 .have-questions-area h5 {
     font-family: Inter;
     font-weight: 600;
@@ -963,3 +967,119 @@ ul {
 }
 
 /* -------------------------have-questions-area end------------------------- */
+
+
+/* ----------------footer-area start---------------------- */
+.footer-area {
+    padding-top: 30px;
+    background: url(../images/footer-bg.png) no-repeat 0 0 / 100% 100%;
+
+}
+
+.footer-area h1 {
+    font-family: Manrope;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 39.75px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    text-transform: capitalize;
+    color: #ffffff;
+}
+
+.subscriptions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.subscriptions {
+    width: 50%;
+}
+
+.subscriptions input {
+    border: none;
+    padding: 15px 10px;
+    border-radius: 30px;
+    background: #ffffff;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 10.5px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #6E7070;
+    width: 300px;
+}
+
+.subscriptions button {
+    border: none;
+    padding: 13px 20px;
+    border-radius: 30px;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 10px;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 19.5px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: capitalize;
+    color: #1CA8CB;
+    flex-shrink: 0;
+}
+
+.subscriptions button img {
+    width: 18px;
+}
+
+.footerlogo {
+    height: 87px;
+    width: 87px;
+    border-radius: 8px;
+    padding: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+}
+
+.footer-description {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 21px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #FFFFFF;
+    margin: 15px 0;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    column-gap: 8px;
+    padding-left: 0;
+}
+
+.social-icons li {}
+
+.social-icons li a {
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    color: #0172CD;
+}
+
+/* ----------------footer-area end---------------------- */
