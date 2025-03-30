@@ -99,6 +99,10 @@
 }
 
 @media (max-width: 576px) {
+    .best-recomended-card .card-content .cardheader h1 {
+        text-align: left !important;
+    }
+
     .banner-content-area h1 {
         font-size: 34px;
         line-height: 39px;
