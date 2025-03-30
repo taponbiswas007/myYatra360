@@ -46,6 +46,18 @@
     .pilgrims-slider-area .pilgrims-slider-item .pilgrims-slider-inner h1 {
         font-size: 23px;
     }
+
+    .subscriptions {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        row-gap: 15px;
+    }
+
+    .subscriptions input {
+        width: 70%;
+    }
 }
 
 @media (max-width: 579px) {
@@ -77,6 +89,17 @@
 @media (max-width: 481px) {
     .sectionitems h1 {
         font-size: 30px;
+    }
+
+    .subscriptions {
+        flex-direction: column;
+        row-gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .subscriptions input {
+        width: 100%;
     }
 }
 

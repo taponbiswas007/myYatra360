@@ -1080,6 +1080,12 @@ ul {
     align-items: center;
     font-size: 13px;
     color: #0172CD;
+    transition: all 0.3s ease;
+}
+
+.social-icons li a:hover {
+    background: #0172CD;
+    color: #ffffff;
 }
 
 /* ----------------footer-area end---------------------- */
