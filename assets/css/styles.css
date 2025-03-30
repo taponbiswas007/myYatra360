@@ -388,16 +388,11 @@ ul {
 
 
 /* -------------------Our Top Pilgrims start--------------------- */
-.pilgrims-area {
-    background-image: url(../images/section_bg.png);
-    background-repeat: no-repeat;
-    background-position: left top;
-    background-size: 100% 600px;
+.sectionitmes {
     padding: 50px 0 100px 0;
-    background-color: #ffffff;
 }
 
-.pilgrims-area h2 {
+.sectionitmes h2 {
     font-family: Montez;
     font-weight: 400;
     font-size: 40px;
@@ -409,7 +404,7 @@ ul {
     margin-bottom: 0;
 }
 
-.pilgrims-area h1 {
+.sectionitmes h1 {
     font-family: Inter;
     font-weight: 700;
     font-size: 48px;
@@ -419,6 +414,16 @@ ul {
     vertical-align: middle;
     color: #113D48;
 }
+
+.pilgrims-area {
+    background-image: url(../images/section_bg.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 100% 600px;
+    background-color: #ffffff;
+}
+
+
 
 .pilgrims-slider-area {
     margin-top: 30px;
@@ -507,3 +512,155 @@ ul {
 }
 
 /* -------------------Our Top Pilgrims end--------------------- */
+
+
+/* ---------------------best-recommended-place-area start------------------------ */
+.best-recommended-place-area {
+    background: #E7F6FA;
+}
+
+.best-recommended-place-area p {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 13.5px;
+    line-height: 23.63px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    color: #113D48;
+}
+
+.best-recomended-card {
+    border-width: 0px, 0.87px, 0.87px, 0.87px;
+    border-style: solid;
+    border-color: #BCCED2;
+    border-radius: 14px;
+    display: block;
+    background: #ffffff;
+
+
+
+}
+
+.best-recomended-card .card-img {
+    width: 100%;
+    aspect-ratio: 1 / 1.02;
+    border-radius: 14px 14px 0 0;
+    position: relative;
+    overflow: hidden;
+
+
+}
+
+.best-recomended-card .card-img img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    object-fit: fill;
+    object-position: center;
+    transition: all 0.4s ease;
+}
+
+.best-recomended-card:hover .card-img img {
+    transform: scale(1.05);
+}
+
+.best-recomended-card .card-content {
+    padding: 14px 20px;
+}
+
+.best-recomended-card .card-content .cardheader {
+    height: 40px;
+}
+
+.best-recomended-card .card-content .cardheader h1 {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 17px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #0D0D0C;
+    text-align: left;
+}
+
+.best-recomended-card .card-content .pricing {
+    margin-top: 10px;
+}
+
+.best-recomended-card .card-content .pricing h4 {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 31.29px;
+    letter-spacing: 0.42px;
+    vertical-align: middle;
+    color: #0D0D0C;
+    margin-bottom: 0;
+
+}
+
+.best-recomended-card .card-content .pricing h4 span {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 15.64px;
+    line-height: 20.85px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #6E7070;
+}
+
+.best-recomended-card .card-content .pricing small {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 13.9px;
+    line-height: 22.6px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #6E7070;
+    display: block;
+}
+
+.best-recomended-card .card-content .card-footer-area {
+    margin-top: 10px;
+}
+
+.best-recomended-card .card-content .card-footer-area h5 {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22.6px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #113D48;
+
+}
+
+.best-recomended-card .card-content .card-footer-area button {
+    background: none;
+    border: 0.87px solid #E1E4E5;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 10px;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 13.9px;
+    line-height: 22.6px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: capitalize;
+    color: #113D48;
+    padding: 10px 17px;
+}
+
+.best-recomended-card .card-content .card-footer-area button img {
+    width: 15px;
+    height: 10px;
+}
+
+/* ---------------------best-recommended-place-area end------------------------ */
