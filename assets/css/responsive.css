@@ -7,6 +7,10 @@
 }
 
 @media (max-width: 992px) {
+    .banner-content-area h1 {
+        text-align: center;
+    }
+
     .navigationbar nav {
 
         flex-direction: column;
@@ -95,6 +99,24 @@
 }
 
 @media (max-width: 576px) {
+    .banner-content-area h1 {
+        font-size: 34px;
+        line-height: 39px;
+        text-align: center;
+    }
+
+    .sectionitems h2 {
+        text-align: center !important;
+        font-size: 25px;
+    }
+
+    .sectionitems h1 {
+        text-align: center !important;
+        font-size: 25px;
+    }
+
+
+
     .footer-area h1 {
         font-size: 21px;
         line-height: 29px;
@@ -126,12 +148,11 @@
     .addressbox {
         text-align: center;
     }
+
 }
 
 @media (max-width: 481px) {
-    .sectionitems h1 {
-        font-size: 30px;
-    }
+
 
     .subscriptions {
         flex-direction: column;

@@ -763,6 +763,10 @@ ul {
 .recent-gallery-area {
     padding: 60px 40px;
     background: #E7F6FA;
+    background-image: url(../images/background-icon.png);
+    background-repeat: no-repeat;
+    background-position: left 40px top 135px;
+    background-size: 63px;
 }
 
 .gallery-container {
