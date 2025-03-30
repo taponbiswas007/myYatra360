@@ -135,4 +135,10 @@ $(document).ready(function () {
             // instead of a settings object
         ]
     });
+
+    // have questions
+    $('.questions-list li').click(function () {
+        $('.questions-list li').removeClass('active');
+        $(this).addClass('active');
+    });
 });
