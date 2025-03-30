@@ -49,8 +49,15 @@
 }
 
 @media (max-width: 481px) {
-    .sectionitmes h1 {
+    .sectionitems h1 {
         font-size: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sectionitems h1 {
+        font-size: 32px;
+        margin-bottom: 10px;
     }
 }
 

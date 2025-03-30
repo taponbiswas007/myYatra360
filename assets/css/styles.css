@@ -388,11 +388,11 @@ ul {
 
 
 /* -------------------Our Top Pilgrims start--------------------- */
-.sectionitmes {
+.sectionitems {
     padding: 50px 0 100px 0;
 }
 
-.sectionitmes h2 {
+.sectionitems h2 {
     font-family: Montez;
     font-weight: 400;
     font-size: 40px;
@@ -404,11 +404,11 @@ ul {
     margin-bottom: 0;
 }
 
-.sectionitmes h1 {
+.sectionitems h1 {
     font-family: Inter;
     font-weight: 700;
     font-size: 48px;
-    line-height: 63.7px;
+    /* line-height: 63.7px; */
     letter-spacing: 0%;
     text-align: center;
     vertical-align: middle;
@@ -667,6 +667,11 @@ ul {
 
 
 /* -------------------------Why book with MyYatra360 start-------------------------- */
+.whychoseus-area {
+    background: #ffffff;
+    padding: 94px 0 40px 0 !important;
+}
+
 .whychoseus-area p {
     font-family: Inter;
     font-weight: 400;
@@ -682,7 +687,7 @@ ul {
 }
 
 .why-choose-items li {
-    margin-bottom: 23px;
+    margin-bottom: 30px;
 }
 
 .why-choose-items li:last-child {
@@ -752,3 +757,12 @@ ul {
 }
 
 /* -------------------------Why book with MyYatra360 end-------------------------- */
+
+
+/* ---------------------------recent-gallery-area start------------------------------- */
+.recent-gallery-area {
+    padding: 60px 40px;
+    background: #E7F6FA;
+}
+
+/* ---------------------------recent-gallery-area end------------------------------- */
