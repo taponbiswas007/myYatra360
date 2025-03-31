@@ -145,7 +145,10 @@ ul {
 }
 
 .submenu {
+    background: #1ca8cb2b !important;
+    backdrop-filter: blur(10px) !important;
     display: none;
+
 }
 
 .aboutuslink:hover .submenu {
@@ -162,6 +165,11 @@ ul {
     text-transform: capitalize;
     transition: all 0.3s ease;
     color: #010B13;
+}
+
+.submenu ul li a:hover {
+    background: #113d4895 !important;
+    color: #ffffff;
 }
 
 .navlink:hover span {
@@ -257,8 +265,62 @@ ul {
     transform: translateY(-10px) rotate(-45deg);
 }
 
+
 /* -------------------navigation area end--------------------- */
 
+
+/* our specialization area start */
+#ourSpecialization .modal-header {
+    background: #113d48b1;
+}
+
+#ourSpecialization .modal-header h5 {
+    color: #ffffff;
+    font-family: Manrope;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 25px;
+}
+
+#ourSpecialization .modal-header button {
+    color: #ffffff;
+    background: none;
+    border: none;
+    font-size: 25px;
+}
+
+.specialization-area {}
+
+.specialization-area h1 {
+    font-family: Manrope;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #113D48;
+    margin-bottom: 10px;
+}
+
+.specialization-area ul {
+    border: 0.8px solid #D9D9D9;
+    border-radius: 8px;
+    list-style-type: disc;
+    padding: 10px !important;
+    padding-left: 30px !important;
+}
+
+.specialization-area ul li {
+    font-family: Manrope;
+    font-weight: 500;
+    font-size: 13.16px;
+    line-height: 28.55px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #6E7070;
+}
+
+/* our specialization area end */
 
 
 /* ---------------hero start---------------- */
