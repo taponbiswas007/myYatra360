@@ -1525,6 +1525,7 @@ ul {
     justify-content: center;
     align-items: center;
     margin-bottom: 17px;
+    cursor: pointer;
 }
 
 .teamsmembar-area .teams-card .team-membar-image img {
@@ -1636,8 +1637,8 @@ ul {
 .moreinfomodal .modal-body article {
     font-family: Inter;
     font-weight: 400;
-    font-size: 22px;
-    line-height: 28px;
+    font-size: 15px;
+    line-height: 24px;
     letter-spacing: 0%;
     color: #000000;
 }
