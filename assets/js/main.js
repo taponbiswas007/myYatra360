@@ -59,7 +59,7 @@ $(document).ready(function () {
         slidesToScroll: 1,
         arrows: true,
         centerPadding: '20px',
-        centerMode: true,
+        // centerMode: true,
         autoplay: true,
         autoplaySpeed: 2000,
         responsive: [
@@ -104,7 +104,7 @@ $(document).ready(function () {
         slidesToScroll: 1,
         arrows: true,
         centerPadding: '20px',
-        centerMode: true,
+        // centerMode: true,
         autoplay: true,
         autoplaySpeed: 2000,
         responsive: [
