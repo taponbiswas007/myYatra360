@@ -1267,7 +1267,279 @@ ul {
 
 /* ----------------footer-area end---------------------- */
 
+/* ---------------customize search area start--------------- */
 
+.customizeSearch-area .modal-header {
+    background: #1CA8CB;
+}
+
+.customizeSearch-area .modal-header h5 {
+    color: #ffffff;
+    font-family: Manrope;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 25px;
+}
+
+.customizeSearch-area .modal-header button {
+    color: #ffffff;
+    background: none;
+    border: none;
+    font-size: 25px;
+
+}
+
+.customizeSearch-area .modal-body {
+    padding: 20px 40px 40px 40px !important;
+}
+
+.customizeSearch-area .modal-body h1 {
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 27.54px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+.customizeSearch-area .inputfeildArea {
+    border: 1.74px solid #C2C2C2;
+    border-radius: 9px;
+    position: relative;
+    padding: 0 17px;
+}
+
+.customizeSearch-area .inputfeildArea label {
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22.95px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    position: absolute;
+    top: -13px;
+    left: 10px;
+    background: #ffffff;
+    padding: 0 7px;
+    color: #09101D;
+
+}
+
+.customizeSearch-area .inputfeildArea input,
+.customizeSearch-area .inputfeildArea textarea,
+.customizeSearch-area .inputfeildArea select {
+    border: none;
+    height: 100%;
+    width: 100%;
+    border-radius: 9px;
+    background: none;
+    padding: 10px 0;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 18.36px;
+    line-height: 27.54px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #09101D;
+
+}
+
+.customizeSearch-area .inputfeildArea textarea {
+    height: 127px;
+    resize: none;
+    text-align: left;
+}
+
+.customizeSearch-area .inputfeildArea select {
+    appearance: none;
+    /* Removes default arrow */
+    -webkit-appearance: none;
+    /* For Safari */
+    -moz-appearance: none;
+    /* For Firefox */
+}
+
+.customizeSearch-area .inputfeildArea .fa-caret-down {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 20px;
+    color: #858C94;
+    /* Ensures clicks pass through to the select */
+}
+
+.selectCityvalue {
+    border-radius: 5px;
+    padding: 5px;
+    background: #1CA8CB;
+    color: #ffffff;
+}
+
+.cityClose {
+    background: none;
+    border: none;
+    color: #ffffff;
+}
+
+.custom-checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #1CA8CB;
+    border-radius: 2px;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    background-color: #fff;
+}
+
+.custom-checkbox:checked {
+    background-color: #1CA8CB;
+}
+
+.custom-checkbox:checked::after {
+    content: "";
+    position: absolute;
+    left: 8px;
+    top: 2px;
+    width: 5px;
+    height: 11px;
+    border: solid #ffffff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.whatsappConfirmation label {
+    margin-bottom: 0;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 17.01px;
+    line-height: 125%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #000000;
+    cursor: pointer;
+}
+
+.preferencesboxheader {
+    padding: 0 10px;
+}
+
+.preferencesboxheader h6 {
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22.95px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #09101D;
+    margin-bottom: 0;
+}
+
+.preferencesboxheader p {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 15px;
+    letter-spacing: -0.6%;
+    text-align: right;
+    vertical-align: middle;
+    margin-bottom: 0;
+    color: #6E7070;
+}
+
+.counterbox {
+    padding: 10px;
+}
+
+.counterbox button {
+    background: none;
+    border: none;
+    color: #000000;
+    font-size: 25px;
+}
+
+.counterbox .countnumber {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 19.27px;
+    line-height: 36.45px;
+    letter-spacing: -0.6%;
+    color: #0A0A0A;
+}
+
+.bookingfor label {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 15.99px;
+    line-height: 125%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #000000;
+}
+
+.reqsubmitbtn {
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 22.8px;
+    line-height: 20.65px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: capitalize;
+    padding: 14px 27px;
+    border-radius: 30px;
+    color: #ffffff;
+    background: #1CA8CB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    width: fit-content;
+    text-wrap: nowrap;
+}
+
+.custom-radio {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #49454F;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    background-color: #fff;
+}
+
+.custom-radio:checked {
+    border-color: #1CA8CB;
+}
+
+.custom-radio:checked::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #1CA8CB;
+}
+
+.forflight-area-fill {
+    display: none;
+}
+
+/* ---------------customize search area end--------------- */
 
 
 /* -------------------------------------------------------------- */
