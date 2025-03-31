@@ -1631,7 +1631,7 @@ ul {
 }
 
 .moreinfomodal .modal-body {
-    padding: 40px !important;
+    padding: 40px 20px !important;
 }
 
 .moreinfomodal .modal-body article {
