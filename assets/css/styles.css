@@ -1646,3 +1646,69 @@ ul {
 /* ------------------------------------------------------------ */
 /* -------------------our teams page end---------------------- */
 /* ------------------------------------------------------------ */
+
+
+
+/* ------------------------------------------------------------ */
+/* -------------------Why Choose page start---------------------- */
+/* ------------------------------------------------------------ */
+.whychoose-us {
+    padding: 60px 0 !important;
+    background: #ffffff;
+}
+
+.whychoose-us p {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29.7px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    color: #000000;
+}
+
+.notJustaJourney {
+    padding: 60px 0 !important;
+}
+
+.whatSetsmyyatra {
+    padding: 60px 0 !important;
+}
+
+.whatSetsmyyatra p {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29.7px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    color: #8E8E93;
+}
+
+.whysetsmyyatradetails h3 {
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 36.7px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #000000;
+    margin-bottom: 0px;
+}
+
+.whysetsmyyatradetails small {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 36.7px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+
+    color: #000000;
+}
+
+/* ------------------------------------------------------------ */
+/* -------------------Why Choose page end---------------------- */
+/* ------------------------------------------------------------ */
