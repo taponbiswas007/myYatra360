@@ -297,6 +297,7 @@ ul {
     background: none;
     border: none;
     font-size: 25px;
+
 }
 
 .specialization-area {}
@@ -1556,7 +1557,7 @@ ul {
     color: #8E8E93;
 }
 
-.teamsmembar-area .teams-card a {
+.teamsmembar-area .teams-card .moreinfoBtn {
     border: 1.5px solid #1CA8CB;
     font-family: Inter;
     font-weight: 600;
@@ -1575,10 +1576,12 @@ ul {
     border-radius: 30px;
     margin-top: 22px;
     transition: all 0.3s ease;
+    background: none;
+    text-wrap: nowrap;
 
 }
 
-.teamsmembar-area .teams-card a:hover {
+.teamsmembar-area .teams-card .moreinfoBtn:hover {
     background: #0172CD;
     color: #ffffff;
 }
@@ -1587,6 +1590,57 @@ ul {
     width: 11px;
 }
 
+.teamsmembar-area .teams-card .linkedinlink {
+    height: 35px;
+    width: 35px;
+    display: block;
+}
+
+.teamsmembar-area .teams-card .linkedinlink img {
+    width: 100%;
+}
+
+
+
+/* more info modal area */
+.moreinfomodal .modal-header {
+    background: #EEFBFF;
+    border-bottom: 2.5px solid #D1D1D6;
+}
+
+.moreinfomodal .modal-header h5 {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #000000;
+}
+
+.moreinfomodal .modal-header button {
+    color: #ffffff;
+    background: none;
+    border: none;
+    font-size: 20px;
+    background: #1CA8CB;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+
+}
+
+.moreinfomodal .modal-body {
+    padding: 40px !important;
+}
+
+.moreinfomodal .modal-body article {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    color: #000000;
+}
 
 /* ------------------------------------------------------------ */
 /* -------------------our teams page end---------------------- */

@@ -84,6 +84,15 @@
         font-size: 14px;
         line-height: 23px;
     }
+
+    .moreinfomodal .modal-body {
+        padding: 40px 20px !important;
+    }
+
+    .moreinfomodal .modal-body article {
+        font-size: 15px;
+        line-height: 24px;
+    }
 }
 
 @media (max-width: 768px) {
