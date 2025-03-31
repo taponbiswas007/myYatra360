@@ -128,9 +128,9 @@ ul {
 }
 
 .navlink span {
-    background: linear-gradient(90deg, #0172CD 0%, #1CA8CB 100%);
+    /* background: linear-gradient(90deg, #0172CD 0%, #1CA8CB 100%);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; */
     font-family: Inter;
     font-weight: 600;
     font-size: 16px;
@@ -139,6 +139,7 @@ ul {
     vertical-align: middle;
     text-transform: capitalize;
     transition: all 0.3s ease;
+    color: #010B13;
 
 
 }
@@ -205,7 +206,8 @@ ul {
     left: 0;
     width: 100%;
     height: 3px;
-    background: linear-gradient(90deg, #0172CD 0%, #1CA8CB 100%);
+    /* background: linear-gradient(90deg, #0172CD 0%, #1CA8CB 100%); */
+    background: #010B13;
     border-radius: 5px;
     transition: all 0.3s ease;
 }
@@ -286,10 +288,11 @@ ul {
     letter-spacing: 0%;
     vertical-align: middle;
     color: #113D48;
+    text-align: center;
 }
 
 .banner-content-area h1 span {
-    color: #1CA8CB;
+    color: #FF8C00;
     font-family: Poppins;
     font-weight: 600;
     letter-spacing: 0%;
