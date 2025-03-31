@@ -73,6 +73,16 @@ ul {
     display: inline-block;
 }
 
+.languagebox {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #0D0D0C;
+}
+
 .custom-select {
     appearance: none;
     /* Hide default arrow */
@@ -271,7 +281,7 @@ ul {
 
 /* our specialization area start */
 #ourSpecialization .modal-header {
-    background: #113d48b1;
+    background: #1CA8CB;
 }
 
 #ourSpecialization .modal-header h5 {
