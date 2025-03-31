@@ -28,25 +28,21 @@
 </head>
 
 <body>
-       <!-- =====================top header start======================= -->
-       <div class="topheader  py-1">
+
+    <!-- =====================top header start======================= -->
+    <div class="topheader  py-1">
         <div class="container">
             <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center">
                 <div class="marquee-container">
-                    <div class="marquee-content">
+                    <div class="marquee-content" data-bs-toggle="modal" data-bs-target="#ourSpecialization">
                         Our Specialization: Divine Destinations | Luxury Retreats | Timeless Experience
                     </div>
                 </div>
                 <div class=" language-and-currency-changer d-flex ps-3 gap-4  justify-content-between align-items-center"
                     style="color: #999999;">
                     <!-- Language Select with Custom Icon -->
-                    <div class="custom-select-wrapper">
-                        <select name="language" class="custom-select">
-                            <option value="English">English</option>
-                            <option value="Hindi">Hindi</option>
-                            <option value="Bangla">Bangla</option>
-                        </select>
-                        <i class="fa-solid fa-caret-down custom-select-icon"></i>
+                    <div class="languagebox">
+                        English
                     </div>
                     |
                     <!-- Currency Select with Custom Icon -->
@@ -90,7 +86,7 @@
                                 <img src="assets/images/user.svg" alt="About Us">
                                 <span>About Us</span>
                                 <div
-                                    class="submenu bg-white shadow rounded-3 p-2 pt-3 position-absolute top-100 start-50 translate-middle-x">
+                                    class="submenu shadow rounded-3 p-2 pt-3 position-absolute top-100 start-50 translate-middle-x">
                                     <ul class=" ps-0">
                                         <li>
                                             <a class=" dropdown-item mb-1" href="whyWeAre.html">
@@ -144,11 +140,114 @@
 
 
     <!-- ====================hero start===================== -->
-     <section class="about-hero">
-        <h1>Journey to the Divine</h1>
-     </section>
+    <section class="about-hero">
+        <h1 class=" display-1">Journey to the Divine</h1>
+    </section>
     <!-- ====================hero end===================== -->
 
+
+    <!-- ===============Who We Are start================ -->
+    <section class="who-we-are sectionitems">
+        <div class="container-fluid px-2 px-lg-5">
+            <div class="row g-4">
+                <div class="col-md-7 col-sm-7 col-12">
+                    <h1>Who We Are</h1>
+                    <div class="who-we-are-content">
+                        <article>
+                            At MyYatra360, we don’t just organize Trips—we orchestrate divine Yatra that leave a lasting
+                            imprint on the soul. We understand that a Yatra is not just about reaching a destination; it
+                            is about the journey within—a sacred expedition that deepens faith, brings spiritual
+                            clarity, and fosters an unbreakable connection with the divine.
+                            <br><br>
+                            With an unwavering commitment to excellence, MyYatra360 stands as the gold standard in
+                            religious travel. We meticulously plan, curate, and personalize each journey to ensure that
+                            every Yatri experiences not just a trip, but a soulful transformation.
+                        </article>
+                    </div>
+                </div>
+                <div class="col-md-5 col-sm-5 col-12">
+                    <div class="who-we-are-img-area">
+                        <img src="assets/images/who-we-are-img.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===============Who We Are end================ -->
+
+
+    <!-- =======================The MyYatra360 Difference start======================= -->
+     <section class="theMyYatra360Difference sectionitems">
+        <div class="container-fluid px-2 px-lg-5">
+            <h1 class=" text-center ">
+                The MyYatra360 Difference
+            </h1>
+            <div class="d-flex justify-content-center align-items-center">
+                <p class=" text-center mb-5" style=" max-width: 1279px;">
+                    Unlike conventional travel platforms that focus solely on logistics, we are devoted to crafting experiences that nourish the mind, body, and soul. Our Yatras are designed to immerse Yatris in the true essence of devotion, bringing together tradition, spirituality, and comfort.
+                </p>
+            </div>
+            <div class="myyatraDifference-card-box d-flex justify-content-center flex-wrap">
+                <div class="myyatra-cards">
+                    <div class="card-icon d-flex justify-content-start align-items-center">
+                        <img src="assets/images/who-we-are-icons/sparkles-solid.svg" alt="">
+                    </div>
+                    <h1>
+                        Sacred Destinations, Seamless Experiences
+                    </h1>
+                    <article>
+                        From the charms of Char Dham to the tranquility of Vaishno Devi, from the divinity of Kashi Vishwanath to the serenity of Rameswaram, we cover India’s most revered spiritual destinations with unmatched expertise and meticulous planning. Every journey is thoughtfully designed to minimize stress and maximize devotion.
+                    </article>
+                </div>
+                <div class="myyatra-cards">
+                    <div class="card-icon d-flex justify-content-start align-items-center">
+                        <img src="assets/images/who-we-are-icons/bags-rounded.svg" alt="">
+                    </div>
+                    <h1>
+                        Beyond Travel – A Holistic  Experience
+                    </h1>
+                    <article>
+                        At MyYatra360, we redefine divine tourism. We integrate sacred rituals, meditation sessions, guided prayers, spiritual discourses, and devotional experience into our journeys, ensuring that pilgrims not only visit a holy site but truly experience its divine energy.
+                    </article>
+                </div>
+                <div class="myyatra-cards">
+                    <div class="card-icon d-flex justify-content-start align-items-center">
+                        <img src="assets/images/who-we-are-icons/hotel-fill.svg" alt="">
+                    </div>
+                    <h1>
+                        Uncompromised Comfort with a Spiritual Touch
+                    </h1>
+                    <article>
+                        While devotion fuels the soul, comfort and safety fuel the journey. Our expert team ensures that every trip is equipped with premium accommodations, hygienic meals, safe transportation, and assistance at your fingertips, allowing Yatris to surrender to their faith while we take care of everything else.
+                    </article>
+                </div>
+                <div class="myyatra-cards">
+                    <div class="card-icon d-flex justify-content-start align-items-center">
+                        <img src="assets/images/who-we-are-icons/travel.svg" alt="">
+                    </div>
+                    <h1>
+                        Personalized  for Every Seeker
+                    </h1>
+                    <article>
+                        Whether you seek a quiet, introspective retreat, a family spiritual tour, or a group yatra with guided discourse, we offer customized packages that cater to every preference. No two Yatras are the same, and neither are our packages.
+                    </article>
+                </div>
+                <div class="myyatra-cards">
+                    <div class="card-icon d-flex justify-content-start align-items-center">
+                        <img src="assets/images/who-we-are-icons/pray.svg" alt="">
+                    </div>
+                    <h1>
+                        Technology Meets Tradition
+                    </h1>
+                    <article>
+                        While we honor age-old traditions, we embrace modern innovations and AI to enhance your travel experience. Our platform ensures hassle-free bookings, real-time updates, support, guidance, making it easier than ever to embark on your sacred yatras with complete peace of mind
+                    </article>
+                </div>
+            </div>
+         
+        </div>
+     </section>
+    <!-- =======================The MyYatra360 Difference end======================= -->
 
     <!-- ======================footer area start========================= -->
     <footer class="footer-area overflow-hidden">
@@ -316,6 +415,48 @@
     <!-- ======================footer area end========================= -->
 
 
+
+    <!-- =============our specialization start============ -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="ourSpecialization" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ourSpecializationLabel">Our Specialization</h5>
+                    <button type="button" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="specialization-area">
+                        <h1>Divine Destinations </h1>
+                        <ul>
+                            <li>Flexible tour options to suit different preferences and budgets. </li>
+                            <li>Seamless and stress-free travel experience with all logistics handled. </li>
+                        </ul>
+                        <h1>Luxury Retreats </h1>
+                        <ul>
+                            <li>Premium accommodations and high-end travel experiences.</li>
+                            <li>Exclusive services for a comfortable and enriching journey. </li>
+                            <li>Explore the rich heritage and timeless beauty of ancient sites.</li>
+                            <li>Curated itineraries covering sacred and historical landmarks. </li>
+                        </ul>
+                        <h1>Timeless Experience </h1>
+                        <ul>
+                            <li>Hassle-free travel. </li>
+                            <li>Expert travel guides to enhance your journey. </li>
+                            <li>Medical assistance – round-the-clock support for health and safety. </li>
+                            <li>A trustworthy site for religious seekers and cultural explorers.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- =============our specialization end============ -->
 
     <!-- jquery js -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>

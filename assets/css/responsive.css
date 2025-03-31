@@ -4,6 +4,10 @@
         line-height: 55px;
         margin-bottom: 30px;
     }
+
+    .myyatra-cards {
+        width: calc((100% - 30px) / 2);
+    }
 }
 
 @media (max-width: 992px) {
@@ -62,12 +66,30 @@
     .subscriptions input {
         width: 70%;
     }
+
+    .who-we-are-content p {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .myyatra-cards h1 {
+        font-size: 21px;
+    }
+
+    .myyatra-cards article {
+        font-size: 14px;
+        line-height: 23px;
+    }
 }
 
 @media (max-width: 768px) {
     .sectionitems h1 {
         font-size: 32px;
         margin-bottom: 10px;
+    }
+
+    .myyatra-cards {
+        width: 100%;
     }
 }
 
@@ -151,6 +173,11 @@
 
     .addressbox {
         text-align: center;
+    }
+
+    .who-we-are-img-area {
+        height: 300px;
+        width: 100%;
     }
 
 }

@@ -1282,20 +1282,125 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+}
+
+.about-hero::after {
+    content: ' ';
+    background: rgba(255, 255, 255, 0.25);
+    ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
 }
 
 .about-hero h1 {
     font-family: Poppins;
     font-weight: 700;
-    font-size: 60px;
-    line-height: 70.8px;
     letter-spacing: 0%;
     vertical-align: middle;
     color: #FFFFFF;
+    -webkit-text-stroke: 1px #113D48;
     text-align: center;
     box-shadow: 0px 4px 30px 0px #0000002B;
+    position: relative;
+    z-index: 2;
+    /* background: url(https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZTRxZzVqNjRzemxkaWNwMmk3aGt2amN6ODc5dW80ZHAzOG1iMTB6YiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/D4ZyhhDJ5QvCZ8WU1X/giphy.gif);
+    background-size: 100% 200px;
+    background-position: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
 
 }
+
+/* ----------who we are start----------- */
+.who-we-are {
+    background: #E7F6FA;
+    padding: 50px 0 !important;
+}
+
+.who-we-are-content article {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29.7px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #000000;
+}
+
+.who-we-are-img-area {
+    height: 100%;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.who-we-are-img-area img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    object-position: center;
+}
+
+/* ----------who we are end----------- */
+
+
+/* -------------------The MyYatra360 Difference start--------------------- */
+.theMyYatra360Difference {
+    background: #ffffff;
+    padding: 50px 0;
+}
+
+.myyatraDifference-card-box {
+    column-gap: 15px;
+    row-gap: 15px;
+    align-items: stretch;
+}
+
+.myyatra-cards {
+    background: #ffffff;
+    box-shadow: 0px 5.42px 20.33px 0px #00000033;
+    border-radius: 15px;
+    padding: 20px;
+    width: calc((100% - 45px) / 3);
+    /* height: 100%; */
+}
+
+.myyatra-cards .card-icon img {
+    height: 55px;
+    width: 55px;
+}
+
+.myyatra-cards h1 {
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 25.9px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #000000;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.myyatra-cards article {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28.9px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #000000;
+}
+
+/* -------------------The MyYatra360 Difference end--------------------- */
 
 
 
