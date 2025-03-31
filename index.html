@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/images/Logo.png" type="image/x-icon">
     <title>My Yatra 360</title>
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -84,10 +86,32 @@
                             <img src="assets/images/booking.svg" alt="My Bookings">
                             <span>My Bookings</span>
                         </a>
-                        <a href="#" class="navlink">
-                            <img src="assets/images/user.svg" alt="About Us">
-                            <span>About Us</span>
-                        </a>
+                        <div class="position-relative aboutuslink">
+                            <a href="#" class="navlink ">
+                                <img src="assets/images/user.svg" alt="About Us">
+                                <span>About Us</span>
+                                <div
+                                    class="submenu bg-white shadow rounded-3 p-2 position-absolute top-100 start-50 translate-middle-x">
+                                    <ul class=" ps-0">
+                                        <li>
+                                            <a class=" dropdown-item mb-1" href="#">
+                                                Who we are
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class=" dropdown-item mb-1" href="#">
+                                                Our Team
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class=" dropdown-item" href="#">
+                                                Why Choose MyYatra360?
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </div>
                         <a href="#" class="navlink">
                             <img src="assets/images/faq.svg" alt="Faq’s">
                             <span>Faq’s</span>
@@ -313,8 +337,8 @@
 
             </div>
             <div class="custom-arrows">
-                <button class="custom-prev"><i class="fa-solid fa-arrow-left"></i></button>
-                <button class="custom-next"><i class="fa-solid fa-arrow-right"></i></button>
+                <button class="custom-prev pil-prev"><i class="fa-solid fa-arrow-left"></i></button>
+                <button class="custom-next pil-next"><i class="fa-solid fa-arrow-right"></i></button>
             </div>
         </div>
     </section>
@@ -457,8 +481,8 @@
 
                 </div>
                 <div class="custom-arrows">
-                    <button class="custom-prev"><i class="fa-solid fa-arrow-left"></i></button>
-                    <button class="custom-next"><i class="fa-solid fa-arrow-right"></i></button>
+                    <button class="custom-prev best-prev"><i class="fa-solid fa-arrow-left"></i></button>
+                    <button class="custom-next best-next"><i class="fa-solid fa-arrow-right"></i></button>
                 </div>
             </div>
         </div>

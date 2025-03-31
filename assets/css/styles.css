@@ -144,6 +144,26 @@ ul {
 
 }
 
+.submenu {
+    display: none;
+}
+
+.aboutuslink:hover .submenu {
+    display: block;
+}
+
+.submenu ul li a {
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19.5px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    text-transform: capitalize;
+    transition: all 0.3s ease;
+    color: #010B13;
+}
+
 .navlink:hover span {
     background: linear-gradient(90deg, #1CA8CB 0%, #0172CD 100%);
     -webkit-background-clip: text;

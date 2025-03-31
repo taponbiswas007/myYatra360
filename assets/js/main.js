@@ -50,8 +50,8 @@ $(document).ready(function () {
 
     // pilgrims slider area
     $('.pilgrims-slider').slick({
-        prevArrow: $('.custom-prev'),
-        nextArrow: $('.custom-next'),
+        prevArrow: $('.pil-prev'),
+        nextArrow: $('.pil-next'),
         dots: false,
         infinite: true,
         speed: 300,
@@ -95,8 +95,8 @@ $(document).ready(function () {
 
     // bestrecommendedSlider slider area
     $('.bestrecommendedSlider').slick({
-        prevArrow: $('.custom-prev'),
-        nextArrow: $('.custom-next'),
+        prevArrow: $('.best-prev'),
+        nextArrow: $('.best-next'),
         dots: false,
         infinite: true,
         speed: 300,
