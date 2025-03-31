@@ -554,7 +554,7 @@ ul {
 }
 
 .best-recomended-card {
-    border-width: 0px, 0.87px, 0.87px, 0.87px;
+    border-width: 0px 0.87px 0.87px 0.87px;
     border-style: solid;
     border-color: #BCCED2;
     border-radius: 14px;
