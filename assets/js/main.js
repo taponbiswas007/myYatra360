@@ -92,6 +92,50 @@ $(document).ready(function () {
     });
 
 
+    // gallery-slider area
+    $('.gallery-slider').slick({
+        prevArrow: $('.gallery-prev'),
+        nextArrow: $('.gallery-next'),
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        arrows: true,
+        centerPadding: '20px',
+        // centerMode: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        responsive: [
+            {
+                breakpoint: 1400,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    infinite: true,
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
+    });
+
+
 
     // bestrecommendedSlider slider area
     $('.bestrecommendedSlider').slick({
