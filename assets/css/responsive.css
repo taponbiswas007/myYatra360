@@ -91,6 +91,12 @@
     .myyatra-cards {
         width: 100%;
     }
+
+    .ourMission-area ul li {
+        padding-left: 10px;
+        font-size: 17px;
+        line-height: 21px;
+    }
 }
 
 @media (max-width: 579px) {

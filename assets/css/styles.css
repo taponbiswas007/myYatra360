@@ -1403,7 +1403,38 @@ ul {
 /* -------------------The MyYatra360 Difference end--------------------- */
 
 
+/* -----------------our mission start-------------------- */
+.ourMission-area {
+    background: #E7F6FA;
+    padding: 50px 0 !important;
 
+}
+
+.ourMission-area ul {
+    padding-left: 0;
+}
+
+.ourMission-area ul li {
+    font-family: Manrope;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 36.86px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #000000;
+    padding: 16px 10px 16px 57px;
+    box-shadow: 0px 5.42px 20.33px 0px #00000033;
+    background: #ffffff;
+    border-radius: 8.33px;
+    border-left: 17px solid #1CA8CB;
+    margin-bottom: 20px;
+}
+
+.ourMission-area ul li:last-child {
+    margin-bottom: 0;
+}
+
+/* -----------------our mission end-------------------- */
 
 
 
