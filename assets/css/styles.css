@@ -1335,7 +1335,7 @@ ul {
 .who-we-are-img-area {
     height: 100%;
     position: relative;
-    border-radius: 20px;
+    border-radius: 10px;
     overflow: hidden;
 }
 
@@ -1437,6 +1437,27 @@ ul {
 /* -----------------our mission end-------------------- */
 
 
+/* ----------------------our vission start---------------------- */
+.ourVisstion {
+    padding: 50px 0 !important;
+    background: #ffffff !important;
+}
+
+.ourVisstion ul {
+    list-style-type: disc;
+}
+
+.ourVisstion ul li {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29.7px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #000000;
+}
+
+/* ----------------------our vission end---------------------- */
 
 
 
