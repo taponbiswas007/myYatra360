@@ -29,6 +29,15 @@
 
 <body>
 
+     <!-- Preloader -->
+     <div class="preloader">
+        <div class="loader">
+            <img src="assets/images/Logo.png" alt="Logo">
+            <div class="spinner"></div>
+        </div>
+    </div>
+
+<div class="website-content">
     <!-- =====================top header start======================= -->
     <div class="topheader  py-1">
         <div class="container">
@@ -599,6 +608,9 @@
     </div>
     <!-- =============our specialization end============ -->
 
+</div>
+
+
     <!-- jquery js -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- slick js -->
@@ -610,6 +622,14 @@
     </script>
     <!-- main js -->
     <script src="assets/js/main.js"></script>
+
+
+    <script>
+        window.addEventListener("load", function () {
+            document.querySelector(".preloader").style.display = "none";
+            document.querySelector(".website-content").style.display = "block";
+        });
+    </script>
 
 </body>
 
