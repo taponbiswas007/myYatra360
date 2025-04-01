@@ -239,7 +239,7 @@
     }
 
     .pilgrims-slider-item .pilgrims-slider-inner h1 {
-        font-size: 25px;
+        font-size: 35px;
     }
 }
 
@@ -256,6 +256,16 @@
         padding: 5px 10px;
         font-size: 10px;
     }
+
+
+}
+
+@media (max-width: 346px) {
+    .pilgrims-slider-item .pilgrims-slider-inner h1 {
+        font-size: 25px;
+    }
+
+
 }
 
 @media screen and (min-width: 420px) and (max-width: 576px) {
