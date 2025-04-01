@@ -127,9 +127,7 @@ $(document).ready(function () {
                 slidesToScroll: 1
             }
         }
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
+
         ]
     });
 
@@ -146,7 +144,6 @@ $(document).ready(function () {
         slidesToScroll: 1,
         arrows: true,
         centerPadding: '20px',
-        // centerMode: true,
         autoplay: true,
         autoplaySpeed: 2000,
         responsive: [{
@@ -171,11 +168,41 @@ $(document).ready(function () {
                 slidesToScroll: 1
             }
         }
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
         ]
     });
+
+    // $('.gallery-slider').slick({
+    //     prevArrow: $('.gallery-prev'),
+    //     nextArrow: $('.gallery-next'),
+    //     dots: false,
+    //     infinite: true,
+    //     speed: 4000,
+    //     slidesToShow: 4,
+    //     slidesToScroll: 1,
+    //     arrows: true,
+    //     centerPadding: '20px',
+    //     autoplay: true,
+    //     autoplaySpeed: 0,
+    //     cssEase: 'linear',
+    //     pauseOnHover: true,
+    //     pauseOnFocus: false,
+    //     touchThreshold: 100,
+    //     swipeToSlide: true,
+    //     responsive: [{
+    //         breakpoint: 1400,
+    //         settings: { slidesToShow: 3, slidesToScroll: 1 }
+    //     },
+    //     {
+    //         breakpoint: 993,
+    //         settings: { slidesToShow: 2, slidesToScroll: 1 }
+    //     },
+    //     {
+    //         breakpoint: 768,
+    //         settings: { slidesToShow: 1, slidesToScroll: 1 }
+    //     }]
+    // });
+
+
 
     // have questions
     $('.questions-list li').click(function () {

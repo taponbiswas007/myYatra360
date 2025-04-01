@@ -1290,7 +1290,7 @@ ul {
 }
 
 .customizeSearch-area .modal-body {
-    padding: 20px 40px 40px 40px !important;
+    padding: 20px !important;
 }
 
 .customizeSearch-area .modal-body h1 {
@@ -1314,8 +1314,8 @@ ul {
 .customizeSearch-area .inputfeildArea label {
     font-family: Inter;
     font-weight: 600;
-    font-size: 14px;
-    line-height: 22.95px;
+    font-size: 13px;
+    line-height: 20.95px;
     letter-spacing: 0%;
     vertical-align: middle;
     position: absolute;
@@ -1335,7 +1335,7 @@ ul {
     width: 100%;
     border-radius: 9px;
     background: none;
-    padding: 10px 0;
+    padding: 8px 0;
     font-family: Inter;
     font-weight: 500;
     font-size: 18.36px;
@@ -1347,7 +1347,7 @@ ul {
 }
 
 .customizeSearch-area .inputfeildArea textarea {
-    height: 127px;
+    height: 100px;
     resize: none;
     text-align: left;
 }
@@ -1455,7 +1455,7 @@ ul {
 }
 
 .counterbox {
-    padding: 10px;
+    padding: 8px;
 }
 
 .counterbox button {
@@ -1472,6 +1472,10 @@ ul {
     line-height: 36.45px;
     letter-spacing: -0.6%;
     color: #0A0A0A;
+}
+
+.childage {
+    font-size: 14px !important;
 }
 
 .bookingfor label {
@@ -1540,6 +1544,14 @@ ul {
 }
 
 /* ---------------customize search area end--------------- */
+
+.gallery-slider .slick-track {
+    transition-timing-function: linear !important;
+}
+
+.gallery-slider .slick-slide {
+    transition: transform 4s linear;
+}
 
 
 /* -------------------------------------------------------------- */
