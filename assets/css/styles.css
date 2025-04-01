@@ -525,12 +525,12 @@ ul {
     margin-top: 30px;
 }
 
-.pilgrims-slider-area .pilgrims-slider-item {
+.pilgrims-slider-item {
     width: 100%;
     height: 100%;
 }
 
-.pilgrims-slider-area .pilgrims-slider-item .pilgrims-slider-inner {
+.pilgrims-slider-item .pilgrims-slider-inner {
     aspect-ratio: 1 / 0.7;
     width: 100%;
     position: relative;
@@ -539,7 +539,7 @@ ul {
 
 }
 
-.pilgrims-slider-area .pilgrims-slider-item .pilgrims-slider-inner img {
+.pilgrims-slider-item .pilgrims-slider-inner img {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -550,10 +550,10 @@ ul {
 
 }
 
-.pilgrims-slider-area .pilgrims-slider-item .pilgrims-slider-inner h1 {
+.pilgrims-slider-item .pilgrims-slider-inner h1 {
     font-family: Poppins;
     font-weight: 600;
-    font-size: 40px;
+    font-size: 35px;
     line-height: 27.96px;
     letter-spacing: 0%;
     text-align: center;
@@ -1996,3 +1996,18 @@ ul {
 /* ------------------------------------------------------------ */
 /* -------------------Why Choose page end---------------------- */
 /* ------------------------------------------------------------ */
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-wrapper {
+    transition-timing-function: linear !important;
+}

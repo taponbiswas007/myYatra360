@@ -49,92 +49,92 @@ $(document).ready(function () {
     });
 
     // Initialize default Pilgrims slider
-    initDefaultPilgrimsSlider();
+    // initDefaultPilgrimsSlider();
 
-    // Hover effect to switch between sliders
-    $('.pilgrims-slider , .pilg-prev , .pilg-next').hover(
-        function () { // Mouse Enter → Switch to Slider2
-            destroyCurrentPilgrimsSlider();
-            $('.pilgrims-slider')
-                .removeClass('pilgrimsSliderDefault')
-                .addClass('pilgrimsSliderHover');
-            initHoverPilgrimsSlider();
-        },
-        function () { // Mouse Leave → Switch back to default
-            destroyCurrentPilgrimsSlider();
-            $('.pilgrims-slider')
-                .removeClass('pilgrimsSliderHover')
-                .addClass('pilgrimsSliderDefault');
-            initDefaultPilgrimsSlider();
-        }
-    );
+    // // Hover effect to switch between sliders
+    // $('.pilgrims-slider , .pilg-prev , .pilg-next').hover(
+    //     function () { // Mouse Enter → Switch to Slider2
+    //         destroyCurrentPilgrimsSlider();
+    //         $('.pilgrims-slider')
+    //             .removeClass('pilgrimsSliderDefault')
+    //             .addClass('pilgrimsSliderHover');
+    //         initHoverPilgrimsSlider();
+    //     },
+    //     function () { // Mouse Leave → Switch back to default
+    //         destroyCurrentPilgrimsSlider();
+    //         $('.pilgrims-slider')
+    //             .removeClass('pilgrimsSliderHover')
+    //             .addClass('pilgrimsSliderDefault');
+    //         initDefaultPilgrimsSlider();
+    //     }
+    // );
 
-    // Destroy current Slick instance
-    function destroyCurrentPilgrimsSlider() {
-        var $slider = $('.pilgrims-slider');
-        if ($slider.hasClass('slick-initialized')) {
-            $slider.slick('unslick');
-        }
-        // Remove any leftover Slick classes
-        $slider.removeClass('slick-initialized slick-slider');
-    }
+    // // Destroy current Slick instance
+    // function destroyCurrentPilgrimsSlider() {
+    //     var $slider = $('.pilgrims-slider');
+    //     if ($slider.hasClass('slick-initialized')) {
+    //         $slider.slick('unslick');
+    //     }
+    //     // Remove any leftover Slick classes
+    //     $slider.removeClass('slick-initialized slick-slider');
+    // }
 
-    // Default Pilgrims slider (fast autoplay)
-    function initDefaultPilgrimsSlider() {
-        $('.pilgrimsSliderDefault').slick({
-            dots: false,
-            infinite: true,
-            speed: 4000,
-            slidesToShow: 4,
-            slidesToScroll: 3,
-            arrows: false,
-            centerPadding: '20px',
-            autoplay: true,
-            autoplaySpeed: 0,
-            cssEase: 'linear',
-            responsive: [{
-                breakpoint: 1400,
-                settings: { slidesToShow: 3 }
-            },
-            {
-                breakpoint: 600,
-                settings: { slidesToShow: 2 }
-            },
-            {
-                breakpoint: 480,
-                settings: { slidesToShow: 1 }
-            }]
-        });
-    }
+    // // Default Pilgrims slider (fast autoplay)
+    // function initDefaultPilgrimsSlider() {
+    //     $('.pilgrimsSliderDefault').slick({
+    //         dots: false,
+    //         infinite: true,
+    //         speed: 4000,
+    //         slidesToShow: 4,
+    //         slidesToScroll: 3,
+    //         arrows: false,
+    //         centerPadding: '20px',
+    //         autoplay: true,
+    //         autoplaySpeed: 0,
+    //         cssEase: 'linear',
+    //         responsive: [{
+    //             breakpoint: 1400,
+    //             settings: { slidesToShow: 3 }
+    //         },
+    //         {
+    //             breakpoint: 600,
+    //             settings: { slidesToShow: 2 }
+    //         },
+    //         {
+    //             breakpoint: 480,
+    //             settings: { slidesToShow: 1 }
+    //         }]
+    //     });
+    // }
 
-    // Hover-state Pilgrims slider (normal autoplay)
-    function initHoverPilgrimsSlider() {
-        $('.pilgrimsSliderHover').slick({
-            prevArrow: $('.pilg-prev'),
-            nextArrow: $('.pilg-next'),
-            dots: false,
-            infinite: true,
-            speed: 300,
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            arrows: true,
-            centerPadding: '20px',
-            autoplay: false,
-            autoplaySpeed: 2000,
-            responsive: [{
-                breakpoint: 1400,
-                settings: { slidesToShow: 3 }
-            },
-            {
-                breakpoint: 600,
-                settings: { slidesToShow: 2 }
-            },
-            {
-                breakpoint: 480,
-                settings: { slidesToShow: 1 }
-            }]
-        });
-    }
+    // // Hover-state Pilgrims slider (normal autoplay)
+    // function initHoverPilgrimsSlider() {
+    //     $('.pilgrimsSliderHover').slick({
+    //         prevArrow: $('.pilg-prev'),
+    //         nextArrow: $('.pilg-next'),
+    //         dots: false,
+    //         infinite: true,
+    //         speed: 300,
+    //         slidesToShow: 4,
+    //         slidesToScroll: 1,
+    //         arrows: true,
+    //         centerPadding: '20px',
+    //         autoplay: false,
+    //         autoplaySpeed: 2000,
+    //         responsive: [{
+    //             breakpoint: 1400,
+    //             settings: { slidesToShow: 3 }
+    //         },
+    //         {
+    //             breakpoint: 600,
+    //             settings: { slidesToShow: 2 }
+    //         },
+    //         {
+    //             breakpoint: 480,
+    //             settings: { slidesToShow: 1 }
+    //         }]
+    //     });
+    // }
 
 
 
@@ -448,3 +448,133 @@ $(document).ready(function () {
     });
 
 });
+
+// const container = document.querySelector(".pilgrimsSwiper");
+
+// var swiper = new Swiper(".pilgrimsSwiper", {
+//     slidesPerView: "auto",
+//     spaceBetween: 30,
+//     loop: true,
+//     speed: 6000,
+//     freeMode: true,
+//     allowTouchMove: false,
+//     autoplay: {
+//         delay: 0,
+
+//     }
+//     ,
+//     breakpoints: {
+//         0: {
+//             slidesPerView: 1,
+//             spaceBetween: 20,
+//         },
+//         420: {
+//             slidesPerView: 1.5,
+//             spaceBetween: 20,
+//         },
+//         576: {
+//             slidesPerView: 2,
+//             spaceBetween: 20,
+//         },
+//         768: {
+//             slidesPerView: 2.5,
+//             spaceBetween: 20,
+//         },
+//         1024: {
+//             slidesPerView: 3.5,
+//             spaceBetween: 30,
+//         },
+//         1200: {
+//             slidesPerView: 4,
+//             spaceBetween: 30,
+//         },
+//     }
+
+
+// });
+// function stopAutoplay() {
+//     const swiperTranslate = swiper.getTranslate();
+//     swiper.setTranslate(swiperTranslate);
+//     swiper.autoplay.stop();
+// }
+// function startAutoplay() {
+//     swiper.slideTo(swiper.activeIndex, 3000, false)
+//     swiper.autoplay.start();
+// }
+// container.addEventListener("mouseenter", () => stopAutoplay());
+// container.addEventListener("mouseleave", () => startAutoplay());
+
+
+const container = document.querySelector(".pilgrimsSwiper");
+
+var swiper = new Swiper(".pilgrimsSwiper", {
+    slidesPerView: "auto",
+    spaceBetween: 30,
+    loop: true,
+    speed: 6000,
+    freeMode: true,
+    allowTouchMove: false,
+    autoplay: {
+        delay: 0,
+    },
+    navigation: {
+        nextEl: '.pilg-next',
+        prevEl: '.pilg-prev',
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+        },
+        420: {
+            slidesPerView: 1.5,
+            spaceBetween: 20,
+        },
+        576: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        768: {
+            slidesPerView: 2.5,
+            spaceBetween: 20,
+        },
+        1024: {
+            slidesPerView: 3.5,
+            spaceBetween: 30,
+        },
+        1200: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+        },
+    }
+});
+
+function stopAutoplay() {
+    const swiperTranslate = swiper.getTranslate();
+    swiper.setTranslate(swiperTranslate);
+    swiper.autoplay.stop();
+}
+
+function startAutoplay() {
+    swiper.slideTo(swiper.activeIndex, 3000, false)
+    swiper.autoplay.start();
+}
+
+// Add event listeners for container hover
+container.addEventListener("mouseenter", () => stopAutoplay());
+container.addEventListener("mouseleave", () => startAutoplay());
+
+// // Add event listeners for custom arrows
+// document.querySelector('.pilg-prev').addEventListener('click', function () {
+//     stopAutoplay();
+//     swiper.slidePrev();
+//     // Optional: restart autoplay after a delay if you want
+//     // setTimeout(startAutoplay, 3000);
+// });
+
+// document.querySelector('.pilg-next').addEventListener('click', function () {
+//     stopAutoplay();
+//     swiper.slideNext();
+//     // Optional: restart autoplay after a delay if you want
+//     // setTimeout(startAutoplay, 3000);
+// });
