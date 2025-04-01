@@ -449,62 +449,6 @@ $(document).ready(function () {
 
 });
 
-// const container = document.querySelector(".pilgrimsSwiper");
-
-// var swiper = new Swiper(".pilgrimsSwiper", {
-//     slidesPerView: "auto",
-//     spaceBetween: 30,
-//     loop: true,
-//     speed: 6000,
-//     freeMode: true,
-//     allowTouchMove: false,
-//     autoplay: {
-//         delay: 0,
-
-//     }
-//     ,
-//     breakpoints: {
-//         0: {
-//             slidesPerView: 1,
-//             spaceBetween: 20,
-//         },
-//         420: {
-//             slidesPerView: 1.5,
-//             spaceBetween: 20,
-//         },
-//         576: {
-//             slidesPerView: 2,
-//             spaceBetween: 20,
-//         },
-//         768: {
-//             slidesPerView: 2.5,
-//             spaceBetween: 20,
-//         },
-//         1024: {
-//             slidesPerView: 3.5,
-//             spaceBetween: 30,
-//         },
-//         1200: {
-//             slidesPerView: 4,
-//             spaceBetween: 30,
-//         },
-//     }
-
-
-// });
-// function stopAutoplay() {
-//     const swiperTranslate = swiper.getTranslate();
-//     swiper.setTranslate(swiperTranslate);
-//     swiper.autoplay.stop();
-// }
-// function startAutoplay() {
-//     swiper.slideTo(swiper.activeIndex, 3000, false)
-//     swiper.autoplay.start();
-// }
-// container.addEventListener("mouseenter", () => stopAutoplay());
-// container.addEventListener("mouseleave", () => startAutoplay());
-
-
 const container = document.querySelector(".pilgrimsSwiper");
 
 var swiper = new Swiper(".pilgrimsSwiper", {
@@ -513,14 +457,13 @@ var swiper = new Swiper(".pilgrimsSwiper", {
     loop: true,
     speed: 6000,
     freeMode: true,
-    allowTouchMove: false,
+    allowTouchMove: true,
+
     autoplay: {
         delay: 0,
-    },
-    navigation: {
-        nextEl: '.pilg-next',
-        prevEl: '.pilg-prev',
-    },
+
+    }
+    ,
     breakpoints: {
         0: {
             slidesPerView: 1,
@@ -547,22 +490,80 @@ var swiper = new Swiper(".pilgrimsSwiper", {
             spaceBetween: 30,
         },
     }
-});
 
+
+});
 function stopAutoplay() {
     const swiperTranslate = swiper.getTranslate();
     swiper.setTranslate(swiperTranslate);
     swiper.autoplay.stop();
 }
-
 function startAutoplay() {
     swiper.slideTo(swiper.activeIndex, 3000, false)
     swiper.autoplay.start();
 }
-
-// Add event listeners for container hover
 container.addEventListener("mouseenter", () => stopAutoplay());
 container.addEventListener("mouseleave", () => startAutoplay());
+
+
+// const container = document.querySelector(".pilgrimsSwiper");
+
+// var swiper = new Swiper(".pilgrimsSwiper", {
+//     slidesPerView: "auto",
+//     spaceBetween: 30,
+//     loop: true,
+//     speed: 6000,
+//     freeMode: true,
+//     allowTouchMove: false,
+//     autoplay: {
+//         delay: 0,
+//     },
+//     navigation: {
+//         nextEl: '.pilg-next',
+//         prevEl: '.pilg-prev',
+//     },
+//     breakpoints: {
+//         0: {
+//             slidesPerView: 1,
+//             spaceBetween: 20,
+//         },
+//         420: {
+//             slidesPerView: 1.5,
+//             spaceBetween: 20,
+//         },
+//         576: {
+//             slidesPerView: 2,
+//             spaceBetween: 20,
+//         },
+//         768: {
+//             slidesPerView: 2.5,
+//             spaceBetween: 20,
+//         },
+//         1024: {
+//             slidesPerView: 3.5,
+//             spaceBetween: 30,
+//         },
+//         1200: {
+//             slidesPerView: 4,
+//             spaceBetween: 30,
+//         },
+//     }
+// });
+
+// function stopAutoplay() {
+//     const swiperTranslate = swiper.getTranslate();
+//     swiper.setTranslate(swiperTranslate);
+//     swiper.autoplay.stop();
+// }
+
+// function startAutoplay() {
+//     swiper.slideTo(swiper.activeIndex, 3000, false)
+//     swiper.autoplay.start();
+// }
+
+// // Add event listeners for container hover
+// container.addEventListener("mouseenter", () => stopAutoplay());
+// container.addEventListener("mouseleave", () => startAutoplay());
 
 // // Add event listeners for custom arrows
 // document.querySelector('.pilg-prev').addEventListener('click', function () {
@@ -578,3 +579,6 @@ container.addEventListener("mouseleave", () => startAutoplay());
 //     // Optional: restart autoplay after a delay if you want
 //     // setTimeout(startAutoplay, 3000);
 // });
+
+
+
