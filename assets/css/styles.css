@@ -1296,12 +1296,12 @@ ul {
 .customizeSearch-area .modal-body h1 {
     font-family: Inter;
     font-weight: 600;
-    font-size: 26px;
-    line-height: 27.54px;
+    font-size: 14px;
+    line-height: 20.54px;
     letter-spacing: 0%;
     vertical-align: middle;
     color: #000000;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .customizeSearch-area .inputfeildArea {
