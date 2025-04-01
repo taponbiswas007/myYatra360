@@ -52,7 +52,7 @@ $(document).ready(function () {
     initDefaultPilgrimsSlider();
 
     // Hover effect to switch between sliders
-    $('.pilgrims-card-container').hover(
+    $('.pilgrims-slider , .pilg-prev , .pilg-next').hover(
         function () { // Mouse Enter → Switch to Slider2
             destroyCurrentPilgrimsSlider();
             $('.pilgrims-slider')
@@ -86,7 +86,7 @@ $(document).ready(function () {
             infinite: true,
             speed: 4000,
             slidesToShow: 4,
-            slidesToScroll: 1,
+            slidesToScroll: 3,
             arrows: false,
             centerPadding: '20px',
             autoplay: true,
@@ -119,7 +119,7 @@ $(document).ready(function () {
             slidesToScroll: 1,
             arrows: true,
             centerPadding: '20px',
-            autoplay: true,
+            autoplay: false,
             autoplaySpeed: 2000,
             responsive: [{
                 breakpoint: 1400,
@@ -142,7 +142,7 @@ $(document).ready(function () {
     initDefaultSlider();
 
     // Hover effect to switch between sliders
-    $('.bestrecomended-card-area').hover(
+    $('.best-recomended-slider-area , .best-prev , .best-next ').hover(
         function () { // Mouse Enter → Switch to Slider2
             destroyCurrentSlider();
             $('.best-recomended-slider-area')
@@ -209,10 +209,10 @@ $(document).ready(function () {
             infinite: true,
             speed: 300,
             slidesToShow: 4,
-            slidesToScroll: 1,
+            slidesToScroll: 3,
             arrows: true,
             centerPadding: '20px',
-            autoplay: true,
+            autoplay: false,
             autoplaySpeed: 2000,
             responsive: [{
                 breakpoint: 1400,
@@ -247,7 +247,7 @@ $(document).ready(function () {
     initDefaultGallerySlider();
 
     // Hover effect to switch between sliders
-    $('.gallery-slider-container').hover(
+    $('.gallery-slider , .gallery-prev , .gallery-next').hover(
         function () { // Mouse Enter → Switch to Slider2
             if (!$('.gallery-slider').hasClass('gallerySliderHover')) {
                 destroyCurrentGallerySlider();
@@ -331,7 +331,7 @@ $(document).ready(function () {
             slidesToScroll: 1,
             arrows: true,
             centerPadding: '20px',
-            autoplay: true,
+            autoplay: false,
             autoplaySpeed: 2000,
             responsive: [{
                 breakpoint: 1400,
