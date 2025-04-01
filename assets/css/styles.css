@@ -442,9 +442,11 @@ ul {
 .slider-package-card .card-content h2 {
     font-family: Poppins;
     font-weight: 700;
-    font-size: 14px;
-    line-height: 100%;
+    font-size: 16px;
+    line-height: 19px;
     letter-spacing: 0%;
+    text-align: center;
+
     color: #ffffff;
 }
 
@@ -516,6 +518,17 @@ ul {
     margin-bottom: 20px;
 }
 
+.sectionitems h1 span {
+    font-family: Montez;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 63.7px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    color: #113D48;
+}
+
 .pilgrims-area {
     background-image: url(../images/section_bg.png);
     background-repeat: no-repeat;
@@ -558,15 +571,15 @@ ul {
 .pilgrims-slider-item .pilgrims-slider-inner h1 {
     font-family: Poppins;
     font-weight: 600;
-    font-size: 35px;
+    font-size: 48px;
     line-height: 27.96px;
     letter-spacing: 0%;
     text-align: center;
     vertical-align: middle;
     text-transform: uppercase;
+    -webkit-text-stroke: 1px #113D48;
     color: #ffffff;
     margin-bottom: 0;
-    text-transform: uppercase;
 
 }
 
@@ -1638,7 +1651,7 @@ ul {
 
 .theMyYatra360Difference p {
     font-family: Inter;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 20px;
     line-height: 29.7px;
     letter-spacing: 0%;
@@ -1990,7 +2003,7 @@ ul {
 /* -------------------Why Choose page end---------------------- */
 /* ------------------------------------------------------------ */
 
-.swiper {
+/* .swiper {
     width: 100%;
     height: 100%;
 }
@@ -2003,4 +2016,4 @@ ul {
 
 .swiper-wrapper {
     transition-timing-function: linear !important;
-}
+} */
