@@ -575,7 +575,7 @@ ul {
 
 .custom-arrows {
     position: absolute;
-    bottom: -72px;
+    bottom: 0;
     left: 50%;
     transform: translateX(-50%);
     display: flex;

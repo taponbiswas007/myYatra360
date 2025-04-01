@@ -48,161 +48,315 @@ $(document).ready(function () {
 
     });
 
-    // pilgrims slider area
-    $('.pilgrims-slider').slick({
-        prevArrow: $('.pil-prev'),
-        nextArrow: $('.pil-next'),
-        dots: false,
-        infinite: true,
-        speed: 300,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        arrows: true,
-        centerPadding: '20px',
-        // centerMode: true,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        responsive: [{
-            breakpoint: 1400,
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                infinite: true,
+    // Initialize default Pilgrims slider
+    initDefaultPilgrimsSlider();
+
+    // Hover effect to switch between sliders
+    $('.pilgrims-card-container').hover(
+        function () { // Mouse Enter → Switch to Slider2
+            destroyCurrentPilgrimsSlider();
+            $('.pilgrims-slider')
+                .removeClass('pilgrimsSliderDefault')
+                .addClass('pilgrimsSliderHover');
+            initHoverPilgrimsSlider();
+        },
+        function () { // Mouse Leave → Switch back to default
+            destroyCurrentPilgrimsSlider();
+            $('.pilgrims-slider')
+                .removeClass('pilgrimsSliderHover')
+                .addClass('pilgrimsSliderDefault');
+            initDefaultPilgrimsSlider();
+        }
+    );
+
+    // Destroy current Slick instance
+    function destroyCurrentPilgrimsSlider() {
+        var $slider = $('.pilgrims-slider');
+        if ($slider.hasClass('slick-initialized')) {
+            $slider.slick('unslick');
+        }
+        // Remove any leftover Slick classes
+        $slider.removeClass('slick-initialized slick-slider');
+    }
+
+    // Default Pilgrims slider (fast autoplay)
+    function initDefaultPilgrimsSlider() {
+        $('.pilgrimsSliderDefault').slick({
+            dots: false,
+            infinite: true,
+            speed: 4000,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            arrows: false,
+            centerPadding: '20px',
+            autoplay: true,
+            autoplaySpeed: 0,
+            cssEase: 'linear',
+            responsive: [{
+                breakpoint: 1400,
+                settings: { slidesToShow: 3 }
+            },
+            {
+                breakpoint: 600,
+                settings: { slidesToShow: 2 }
+            },
+            {
+                breakpoint: 480,
+                settings: { slidesToShow: 1 }
+            }]
+        });
+    }
+
+    // Hover-state Pilgrims slider (normal autoplay)
+    function initHoverPilgrimsSlider() {
+        $('.pilgrimsSliderHover').slick({
+            prevArrow: $('.pilg-prev'),
+            nextArrow: $('.pilg-next'),
+            dots: false,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            arrows: true,
+            centerPadding: '20px',
+            autoplay: true,
+            autoplaySpeed: 2000,
+            responsive: [{
+                breakpoint: 1400,
+                settings: { slidesToShow: 3 }
+            },
+            {
+                breakpoint: 600,
+                settings: { slidesToShow: 2 }
+            },
+            {
+                breakpoint: 480,
+                settings: { slidesToShow: 1 }
+            }]
+        });
+    }
+
+
+
+    // Initialize the default slider (bestrecommendedSlider)
+    initDefaultSlider();
+
+    // Hover effect to switch between sliders
+    $('.bestrecomended-card-area').hover(
+        function () { // Mouse Enter → Switch to Slider2
+            destroyCurrentSlider();
+            $('.best-recomended-slider-area')
+                .removeClass('bestrecommendedSlider')
+                .addClass('bestrecommendedSlider2');
+            initSlider2();
+        },
+        function () { // Mouse Leave → Switch back to default Slider
+            destroyCurrentSlider();
+            $('.best-recomended-slider-area')
+                .removeClass('bestrecommendedSlider2')
+                .addClass('bestrecommendedSlider');
+            initDefaultSlider();
+        }
+    );
+
+    // Function to destroy the current Slick instance
+    function destroyCurrentSlider() {
+        if ($('.best-recomended-slider-area').hasClass('slick-initialized')) {
+            $('.best-recomended-slider-area').slick('unslick');
+        }
+    }
+
+    // Function to initialize the default slider (fast autoplay)
+    function initDefaultSlider() {
+        $('.bestrecommendedSlider').slick({
+            prevArrow: $('.best-prev'),
+            nextArrow: $('.best-next'),
+            dots: false,
+            infinite: true,
+            speed: 4000,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            arrows: true,
+            centerPadding: '20px',
+            autoplay: true,
+            autoplaySpeed: 0,
+            cssEase: 'linear',
+            pauseOnHover: true,
+            pauseOnFocus: false,
+            touchThreshold: 100,
+            swipeToSlide: true,
+            responsive: [{
+                breakpoint: 1400,
+                settings: { slidesToShow: 3, slidesToScroll: 1 }
+            },
+            {
+                breakpoint: 993,
+                settings: { slidesToShow: 2, slidesToScroll: 1 }
+            },
+            {
+                breakpoint: 768,
+                settings: { slidesToShow: 1, slidesToScroll: 1 }
+            }]
+        });
+    }
+
+    // Function to initialize Slider2 (normal autoplay)
+    function initSlider2() {
+        $('.bestrecommendedSlider2').slick({
+            prevArrow: $('.best-prev'),
+            nextArrow: $('.best-next'),
+            dots: false,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            arrows: true,
+            centerPadding: '20px',
+            autoplay: true,
+            autoplaySpeed: 2000,
+            responsive: [{
+                breakpoint: 1400,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    infinite: true,
+                }
+            },
+            {
+                breakpoint: 993,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }]
+        });
+    }
+
+
+
+    // gallery slider area start
+
+    // Initialize default slider on page load
+    initDefaultGallerySlider();
+
+    // Hover effect to switch between sliders
+    $('.gallery-slider-container').hover(
+        function () { // Mouse Enter → Switch to Slider2
+            if (!$('.gallery-slider').hasClass('gallerySliderHover')) {
+                destroyCurrentGallerySlider();
+                $('.gallery-slider')
+                    .removeClass('gallerySliderDefault')
+                    .addClass('gallerySliderHover');
+                initHoverGallerySlider();
             }
         },
-        {
-            breakpoint: 600,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1
-            }
-        },
-        {
-            breakpoint: 480,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
+        function () { // Mouse Leave → Switch back to default
+            if (!$('.gallery-slider').hasClass('gallerySliderDefault')) {
+                destroyCurrentGallerySlider();
+                $('.gallery-slider')
+                    .removeClass('gallerySliderHover')
+                    .addClass('gallerySliderDefault');
+                initDefaultGallerySlider();
             }
         }
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
-        ]
-    });
+    );
 
-
-    // gallery-slider area
-    $('.gallery-slider').slick({
-        prevArrow: $('.gallery-prev'),
-        nextArrow: $('.gallery-next'),
-        dots: false,
-        infinite: true,
-        speed: 300,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        arrows: true,
-        centerPadding: '20px',
-        // centerMode: true,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        responsive: [{
-            breakpoint: 1400,
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                infinite: true,
-            }
-        },
-        {
-            breakpoint: 600,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1
-            }
-        },
-        {
-            breakpoint: 480,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
+    // Destroy current Slick instance more thoroughly
+    function destroyCurrentGallerySlider() {
+        var $slider = $('.gallery-slider');
+        if ($slider.hasClass('slick-initialized')) {
+            $slider.slick('unslick');
         }
+        // Clean up any leftover Slick elements and classes
+        $slider.find('.slick-list').remove();
+        $slider.removeClass('slick-initialized slick-slider');
+        $slider.find('[data-slick-index]').removeAttr('data-slick-index');
+    }
 
-        ]
-    });
+    // Default Pilgrims slider (fast autoplay)
+    function initDefaultGallerySlider() {
+        $('.gallerySliderDefault').slick({
+            prevArrow: $('.gallery-prev'),
+            nextArrow: $('.gallery-next'),
+            dots: false,
+            infinite: true,
+            speed: 4000,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            arrows: false,
+            centerPadding: '20px',
+            autoplay: true,
+            autoplaySpeed: 0,
+            cssEase: 'linear',
+            responsive: [{
+                breakpoint: 1400,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }]
+        });
+    }
 
-
-
-    // bestrecommendedSlider slider area
-    // $('.bestrecommendedSlider').slick({
-    //     prevArrow: $('.best-prev'),
-    //     nextArrow: $('.best-next'),
-    //     dots: false,
-    //     infinite: true,
-    //     speed: 300,
-    //     slidesToShow: 4,
-    //     slidesToScroll: 1,
-    //     arrows: true,
-    //     centerPadding: '20px',
-    //     autoplay: true,
-    //     autoplaySpeed: 2000,
-    //     responsive: [{
-    //         breakpoint: 1400,
-    //         settings: {
-    //             slidesToShow: 3,
-    //             slidesToScroll: 1,
-    //             infinite: true,
-    //         }
-    //     },
-    //     {
-    //         breakpoint: 993,
-    //         settings: {
-    //             slidesToShow: 2,
-    //             slidesToScroll: 1
-    //         }
-    //     },
-    //     {
-    //         breakpoint: 768,
-    //         settings: {
-    //             slidesToShow: 1,
-    //             slidesToScroll: 1
-    //         }
-    //     }
-    //     ]
-    // });
-
-    $('.bestrecommendedSlider').slick({
-        prevArrow: $('.best-prev'),
-        nextArrow: $('.best-next'),
-        dots: false,
-        infinite: true,
-        speed: 4000,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        arrows: true,
-        centerPadding: '20px',
-        autoplay: true,
-        autoplaySpeed: 0,
-        cssEase: 'linear',
-        pauseOnHover: true,
-        pauseOnFocus: false,
-        touchThreshold: 100,
-        swipeToSlide: true,
-        responsive: [{
-            breakpoint: 1400,
-            settings: { slidesToShow: 3, slidesToScroll: 1 }
-        },
-        {
-            breakpoint: 993,
-            settings: { slidesToShow: 2, slidesToScroll: 1 }
-        },
-        {
-            breakpoint: 768,
-            settings: { slidesToShow: 1, slidesToScroll: 1 }
-        }]
-    });
-
-
+    // Hover-state Pilgrims slider (normal autoplay)
+    function initHoverGallerySlider() {
+        $('.gallerySliderHover').slick({
+            prevArrow: $('.gallery-prev'),
+            nextArrow: $('.gallery-next'),
+            dots: false,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            arrows: true,
+            centerPadding: '20px',
+            autoplay: true,
+            autoplaySpeed: 2000,
+            responsive: [{
+                breakpoint: 1400,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }]
+        });
+    }
+    // gallery slider area end
 
     // have questions
     $('.questions-list li').click(function () {

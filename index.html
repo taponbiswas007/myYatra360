@@ -293,11 +293,11 @@
 
 
     <!-- ===================Our Top Pilgrims start=================== -->
-    <section class="pilgrims-area sectionitems px-4 overflow-hidden">
+    <section class="pilgrims-area sectionitems px-4 overflow-hidden" style="padding-bottom: 50px;">
         <h2>Our Top Pilgrims</h2>
         <h1>Trending Packages</h1>
-        <div class="slider-container position-relative">
-            <div class="pilgrims-slider-area pilgrims-slider">
+        <div class="slider-container pilgrims-card-container position-relative" style="padding-bottom: 74px;">
+            <div class="pilgrims-slider-area pilgrims-slider pilgrimsSliderDefault">
                 <div class="pilgrims-slider-item">
                     <div class="pilgrims-slider-inner position-relative">
                         <img loading="lazy" loading="lazy" src="assets/images/pilgrims-img/varanasi.png" alt="Varanasi">
@@ -335,10 +335,11 @@
                     </div>
                 </div>
 
+
             </div>
             <div class="custom-arrows">
-                <button class="custom-prev pil-prev"><i class="fa-solid fa-arrow-left"></i></button>
-                <button class="custom-next pil-next"><i class="fa-solid fa-arrow-right"></i></button>
+                <button class="custom-prev pilg-prev" id="pil-prev"><i class="fa-solid fa-arrow-left"></i></button>
+                <button class="custom-next pilg-next" id="pil-next"><i class="fa-solid fa-arrow-right"></i></button>
             </div>
         </div>
     </section>
@@ -346,7 +347,7 @@
 
 
     <!-- ===================Best Recommended Places start=================== -->
-    <section class="best-recommended-place-area sectionitems overflow-hidden">
+    <section class="best-recommended-place-area sectionitems overflow-hidden" style="padding-bottom: 50px;">
         <div class="container">
             <h2>Best Recommended Places</h2>
             <h1>Popular Pilgrims We Offer For All</h1>
@@ -355,13 +356,12 @@
                     do eiusmod tempor
                     incididunt ut labore et dolore magna aliqua.</p>
             </div>
-            <div class="slider-container position-relative">
+            <div class="slider-container bestrecomended-card-area position-relative" style="padding-bottom: 74px;">
                 <div class="best-recomended-slider-area bestrecommendedSlider">
                     <div class="best-recomended-slider-item">
                         <a href="#" class="best-recomended-card">
-                            <div class="card-img loading=" lazy" ">
-                                <img loading=" lazy" src="assets/images/rishikesh.png"
-                                alt="Rishikesh Sightseeing Tour">
+                            <div class="card-img ">
+                                <img loading=" lazy" src="assets/images/rishikesh.png" alt="Rishikesh Sightseeing Tour">
                             </div>
                             <div class="card-content">
                                 <div class="cardheader">
@@ -380,9 +380,9 @@
                     </div>
                     <div class="best-recomended-slider-item">
                         <a href="#" class="best-recomended-card">
-                            <div class="card-img loading=" lazy" ">
+                            <div class="card-img ">
                                 <img loading=" lazy" src="assets/images/varanasi-card.png"
-                                alt="Rishikesh Sightseeing Tour">
+                                    alt="Rishikesh Sightseeing Tour">
                             </div>
                             <div class="card-content">
                                 <div class="cardheader">
@@ -401,7 +401,7 @@
                     </div>
                     <div class="best-recomended-slider-item">
                         <a href="#" class="best-recomended-card">
-                            <div class="card-img loading=" lazy" ">
+                            <div class="card-img ">
                                 <img loading=" lazy" src="assets/images/gaya.png" alt="Rishikesh Sightseeing Tour">
                             </div>
                             <div class="card-content">
@@ -421,9 +421,9 @@
                     </div>
                     <div class="best-recomended-slider-item">
                         <a href="#" class="best-recomended-card">
-                            <div class="card-img loading=" lazy" ">
+                            <div class="card-img  ">
                                 <img loading=" lazy" src="assets/images/varanasi-card2.png"
-                                alt="Rishikesh Sightseeing Tour">
+                                    alt="Rishikesh Sightseeing Tour">
                             </div>
                             <div class="card-content">
                                 <div class="cardheader">
@@ -442,7 +442,7 @@
                     </div>
                     <div class="best-recomended-slider-item">
                         <a href="#" class="best-recomended-card">
-                            <div class="card-img loading=" lazy" ">
+                            <div class="card-img  ">
                                 <img loading=" lazy" src="assets/images/gaya.png" alt="Rishikesh Sightseeing Tour">
                             </div>
                             <div class="card-content">
@@ -462,9 +462,9 @@
                     </div>
                     <div class="best-recomended-slider-item">
                         <a href="#" class="best-recomended-card">
-                            <div class="card-img loading=" lazy" ">
+                            <div class="card-img  ">
                                 <img loading=" lazy" src="assets/images/varanasi-card2.png"
-                                alt="Rishikesh Sightseeing Tour">
+                                    alt="Rishikesh Sightseeing Tour">
                             </div>
                             <div class="card-content">
                                 <div class="cardheader">
@@ -615,11 +615,11 @@
 
     <!-- ========================recent gallery for mobile version start============================== -->
     <section class="pilgrims-area d-xxl-none d-block sectionitems px-4 overflow-hidden"
-        style="background: #E7F6FA; background-image: unset;">
+        style="background: #E7F6FA; background-image: unset; padding-bottom: 50px">
         <h2>Make Your Tour More Pleasure</h2>
         <h1>Recent Gallery</h1>
-        <div class="slider-container position-relative">
-            <div class="pilgrims-slider-area gallery-slider">
+        <div class="slider-container position-relative gallery-slider-container" style="padding-bottom: 74px;">
+            <div class="pilgrims-slider-area gallery-slider gallerySliderDefault">
                 <div class="pilgrims-slider-item">
                     <div class="pilgrims-slider-inner position-relative">
                         <img loading="lazy" src="assets/images/pilgrims-img/varanasi.png" alt="Varanasi">
@@ -979,9 +979,8 @@
 
     <!-- ====================customize search area start======================= -->
     <!-- Modal -->
-    <div class="modal customizeSearch-area fade" id="customizeSearch" data-bs-backdrop="static"
-        data-bs-keyboard="false" tabindex="-1"  aria-labelledby="staticBackdropLabel"
-        aria-hidden="true">
+    <div class="modal customizeSearch-area fade" id="customizeSearch" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
