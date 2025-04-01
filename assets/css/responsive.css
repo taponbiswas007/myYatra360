@@ -186,8 +186,8 @@
 
 
     .footer-area h1 {
-        font-size: 21px;
-        line-height: 29px;
+        font-size: 13px;
+        line-height: 19px;
     }
 
     .footer-logoand-description-area {
@@ -207,14 +207,18 @@
 
     .quick-link-list {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: start;
+        align-items: start;
         flex-direction: column;
 
     }
 
+    .quick-link-list li {
+        margin-bottom: 7px;
+    }
+
     .addressbox {
-        text-align: center;
+        text-align: left;
     }
 
     .who-we-are-img-area {
@@ -222,21 +226,42 @@
         width: 100%;
     }
 
+    .footerlogo {
+        height: 33px;
+        width: 42px;
+        border-radius: 4px;
+    }
+
+    .footer-description {
+        font-size: 10px;
+        line-height: 17px;
+        margin: 10px 0;
+    }
+
+    .subscriptions input {
+        padding: 7px 10px;
+        width: 100%;
+    }
+
+    .subscriptions button {
+        font-size: 9px;
+        line-height: 15.5px;
+        padding: 7px 20px;
+    }
+
+    .subscriptions button img {
+        width: 12px;
+    }
+
+
 }
 
 @media (max-width: 481px) {
 
 
-    .subscriptions {
-        flex-direction: column;
-        row-gap: 20px;
-        justify-content: center;
-        align-items: center;
-    }
 
-    .subscriptions input {
-        width: 100%;
-    }
+
+
 
     .pilgrims-slider-item .pilgrims-slider-inner h1 {
         font-size: 35px;
