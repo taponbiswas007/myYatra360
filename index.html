@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- favicon -->
-    <link rel="shortcut icon" href="assets/images/Logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
     <title>My Yatra 360</title>
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,6 +13,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Montez&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <!-- source sans pro font -->
+     <link rel="stylesheet" href="assets/font/sourceSansPro/stylesheet.css">
     <!-- bootstrap css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -1097,7 +1099,7 @@
                                 <label for="">
                                     Name
                                 </label>
-                                <input type="text" placeholder="Jay">
+                                <input type="text" placeholder="Enter Name">
                             </div>
                         </div>
                         <div class="col-lg-6">
@@ -1118,7 +1120,7 @@
                                         <label for="">
                                             Contact Number
                                         </label>
-                                        <input type="text" placeholder="4893 98349">
+                                        <input type="text" placeholder="Enter Number">
                                     </div>
                                 </div>
                             </div>
@@ -1129,7 +1131,7 @@
                                 <label for="">
                                     Email
                                 </label>
-                                <input type="email" placeholder="jay@gmail.com">
+                                <input type="email" placeholder="Enter Email">
                             </div>
                         </div>
                         <div class="col-lg-6">
@@ -1139,7 +1141,7 @@
                             </div>
                         </div>
                     </div>
-                    <hr style="color: #E5E5EA " class=" my-3">
+                    <hr style="color: #E5E5EA ;height:2px   " class=" my-4">
 
                     <!-- travel details -->
                     <h1>Travel Detail</h1>
@@ -1186,7 +1188,7 @@
                         </div>
 
                     </div>
-                    <hr style="color: #E5E5EA " class=" my-3">
+                    <hr style="color: #E5E5EA ;height:2px   " class=" my-4">
 
 
                     <!-- Preferences details -->
@@ -1240,20 +1242,38 @@
 
                             </div>
                         </div>
-                        <div class="col-md-6 col-sm-6 col-xl-3 col-lg-4">
-                            <div class="d-flex preferencesboxheader justify-content-between align-items-center">
-                                <h6 class="childage">Children Age</h6>
-                                <p>5-11 Year</p>
-                            </div>
-                            <div class="inputfeildArea">
-                                <div class="counter-container">
-                                    <div class="counterbox d-flex justify-content-between align-items-center gap-3">
-                                        <button class="decrease"><i class="fa-solid fa-minus"></i></button>
-                                        <span class="countnumber">0</span>
-                                        <button class="increase"><i class="fa-solid fa-plus"></i></button>
+                        <hr style="color: #E5E5EA ;height:2px   " class=" my-4">
+                        <div class="col-md-12 col-sm-12 col-xl-12 col-lg-12 mt-0">
+                            <h1>Age of Children</h1>
+                            <div class="row g-4">
+                                <div class="col-md-6 col-sm-6 col-xl-3 col-lg-4">
+                                    <div class="d-flex preferencesboxheader justify-content-start align-items-center">
+                                        <h6>Children 1</h6>
+                                      
+                                    </div>
+                                    <div class="inputfeildArea ageOfchildren">
+                                        <select name="" id="">
+                                            <option value="">1</option>
+                                            <option value="">2</option>
+                                            <option value="">3</option>
+                                        </select>
+                                        <i class="fa-solid fa-caret-down"></i>
                                     </div>
                                 </div>
-
+                                <div class="col-md-6 col-sm-6 col-xl-3 col-lg-4">
+                                    <div class="d-flex preferencesboxheader justify-content-start align-items-center">
+                                        <h6>Children 2</h6>
+                                      
+                                    </div>
+                                    <div class="inputfeildArea ageOfchildren">
+                                        <select name="" id="">
+                                            <option value="">1</option>
+                                            <option value="">2</option>
+                                            <option value="">3</option>
+                                        </select>
+                                        <i class="fa-solid fa-caret-down"></i>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-12 col-sm-12 col-xl-12 col-lg-12">
@@ -1289,7 +1309,7 @@
                         </div>
                         <div class="col-md-12 mt-0 col-sm-12 col-xl-12 col-lg-12 forflight-area-fill">
                             <div class="forflight-area">
-                                <hr style="color: #E5E5EA " class=" my-3">
+                                <hr style="color: #E5E5EA ;height:2px   " class=" my-4">
                                 <h1>
                                     Trip type
                                 </h1>
@@ -1344,7 +1364,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <hr style="color: #E5E5EA " class=" my-4">
+                                <hr style="color: #E5E5EA ;height:2px   " class=" my-4">
 
                                 <!-- number of people for flight -->
                                 <h1>Number of People For Flight</h1>
@@ -1403,22 +1423,38 @@
 
                                         </div>
                                     </div>
-                                    <div class="col-md-6 col-sm-6 col-xl-3 col-lg-4">
-                                        <div
-                                            class="d-flex preferencesboxheader justify-content-between align-items-center">
-                                            <h6>Children Age</h6>
-                                            <p>5 - 11 Year</p>
-                                        </div>
-                                        <div class="inputfeildArea">
-                                            <div class="counter-container">
-                                                <div
-                                                    class="counterbox d-flex justify-content-between align-items-center gap-3">
-                                                    <button class="decrease"><i class="fa-solid fa-minus"></i></button>
-                                                    <span class="countnumber">0</span>
-                                                    <button class="increase"><i class="fa-solid fa-plus"></i></button>
+                                    <hr style="color: #E5E5EA ;height:2px   " class=" my-4">
+                                    <div class="col-md-12 col-sm-12 col-xl-12 col-lg-12 mt-0">
+                                        <h1>Age of Children</h1>
+                                        <div class="row g-4">
+                                            <div class="col-md-6 col-sm-6 col-xl-3 col-lg-4">
+                                                <div class="d-flex preferencesboxheader justify-content-start align-items-center">
+                                                    <h6>Children 1</h6>
+                                                  
+                                                </div>
+                                                <div class="inputfeildArea ageOfchildren">
+                                                    <select name="" id="">
+                                                        <option value="">1</option>
+                                                        <option value="">2</option>
+                                                        <option value="">3</option>
+                                                    </select>
+                                                    <i class="fa-solid fa-caret-down"></i>
                                                 </div>
                                             </div>
-
+                                            <div class="col-md-6 col-sm-6 col-xl-3 col-lg-4">
+                                                <div class="d-flex preferencesboxheader justify-content-start align-items-center">
+                                                    <h6>Children 2</h6>
+                                                  
+                                                </div>
+                                                <div class="inputfeildArea ageOfchildren">
+                                                    <select name="" id="">
+                                                        <option value="">1</option>
+                                                        <option value="">2</option>
+                                                        <option value="">3</option>
+                                                    </select>
+                                                    <i class="fa-solid fa-caret-down"></i>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="col-md-12 col-sm-12 col-xl-12 col-lg-12">

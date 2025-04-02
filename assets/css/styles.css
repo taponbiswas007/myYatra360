@@ -265,7 +265,12 @@ ul {
     text-align: center;
     vertical-align: middle;
     text-transform: capitalize;
-    padding: 10px 20px;
+    /* padding: 10px 20px; */
+    height: 35px;
+    width: 103px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 30px;
 }
 
@@ -1376,10 +1381,10 @@ ul {
 }
 
 .customizeSearch-area .modal-body h1 {
-    font-family: Inter;
+    font-family: Source Sans Pro;
     font-weight: 600;
-    font-size: 14px;
-    line-height: 20.54px;
+    font-size: 22px;
+    line-height: 27.54px;
     letter-spacing: 0%;
     vertical-align: middle;
     color: #000000;
@@ -1394,10 +1399,10 @@ ul {
 }
 
 .customizeSearch-area .inputfeildArea label {
-    font-family: Inter;
+    font-family: Source Sans Pro;
     font-weight: 600;
-    font-size: 13px;
-    line-height: 20.95px;
+    font-size: 14px;
+    line-height: 22.95px;
     letter-spacing: 0%;
     vertical-align: middle;
     position: absolute;
@@ -1418,13 +1423,29 @@ ul {
     border-radius: 9px;
     background: none;
     padding: 8px 0;
-    font-family: Inter;
-    font-weight: 500;
-    font-size: 18.36px;
+    font-family: Source Sans Pro;
+    font-weight: 600;
+    font-size: 16.36px;
     line-height: 27.54px;
     letter-spacing: 0%;
     vertical-align: middle;
     color: #09101D;
+
+}
+
+.customizeSearch-area .ageOfchildren select {
+    border: none;
+    height: 100%;
+    width: 100%;
+    border-radius: 9px;
+    background: none;
+    padding: 8px 0;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 19.27px;
+    line-height: 36.45px;
+    letter-spacing: -0.6%;
+    color: #0A0A0A;
 
 }
 
@@ -1488,8 +1509,8 @@ ul {
 .custom-checkbox:checked::after {
     content: "";
     position: absolute;
-    left: 8px;
-    top: 2px;
+    left: 7px;
+    top: 3px;
     width: 5px;
     height: 11px;
     border: solid #ffffff;
@@ -1514,7 +1535,7 @@ ul {
 }
 
 .preferencesboxheader h6 {
-    font-family: Inter;
+    font-family: Source Sans Pro;
     font-weight: 600;
     font-size: 16px;
     line-height: 22.95px;
@@ -1544,7 +1565,7 @@ ul {
     background: none;
     border: none;
     color: #000000;
-    font-size: 25px;
+    font-size: 17px;
 }
 
 .counterbox .countnumber {
@@ -1573,13 +1594,15 @@ ul {
 .reqsubmitbtn {
     font-family: Inter;
     font-weight: 600;
-    font-size: 22.8px;
+    font-size: 20px;
     line-height: 20.65px;
     letter-spacing: 0%;
     text-align: center;
     vertical-align: middle;
     text-transform: capitalize;
-    padding: 14px 27px;
+    /* padding: 14px 27px; */
+    width: 235px;
+    height: 50px;
     border-radius: 30px;
     color: #ffffff;
     background: #1CA8CB;
@@ -1587,8 +1610,18 @@ ul {
     justify-content: center;
     align-items: center;
     column-gap: 10px;
-    width: fit-content;
     text-wrap: nowrap;
+    border: none;
+    transition: all 0.4s ease;
+}
+
+.reqsubmitbtn img {
+    width: 19px;
+    height: 19px;
+}
+
+.reqsubmitbtn:hover {
+    background: #113D48;
 }
 
 .custom-radio {
