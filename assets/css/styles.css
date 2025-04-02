@@ -1265,7 +1265,7 @@ ul {
     letter-spacing: 0%;
     vertical-align: middle;
     color: #FFFFFF;
-    margin: 15px 0;
+    margin: 8px 0;
 }
 
 .social-icons {
@@ -1274,6 +1274,24 @@ ul {
     align-items: center;
     column-gap: 8px;
     padding-left: 0;
+    margin-bottom: 0;
+}
+
+.footerlinkarea {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    row-gap: 1.5rem;
+    column-gap: 1.5rem;
+
+}
+
+.footerItem {
+    width: fit-content;
+}
+
+.instagrampostitems {
+    max-width: 231px;
 }
 
 .social-icons li {}
@@ -1305,6 +1323,7 @@ ul {
     vertical-align: middle;
     color: #ffffff;
     margin-bottom: 20px;
+    text-wrap: nowrap;
 }
 
 .quick-link-list {
@@ -1312,7 +1331,11 @@ ul {
 }
 
 .quick-link-list li {
-    margin-bottom: 15px;
+    margin-bottom: 8px;
+}
+
+.quick-link-list li:last-child {
+    margin-bottom: 0;
 }
 
 .quick-link-list li a {
@@ -1352,6 +1375,7 @@ ul {
     letter-spacing: 0%;
     vertical-align: middle;
     color: #ffffff;
+    text-wrap: nowrap;
 }
 
 .addressbox span {
