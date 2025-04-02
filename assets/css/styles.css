@@ -109,7 +109,7 @@ ul {
     line-height: 26px;
     letter-spacing: 0%;
     vertical-align: middle;
-    color: #755602;
+    color: #113D48;
     cursor: pointer;
 }
 
@@ -217,7 +217,7 @@ ul {
 }
 
 .submenu {
-    background: #57d3f32b !important;
+    background: #1214142b !important;
     backdrop-filter: blur(10px) !important;
     display: none;
 
@@ -237,6 +237,7 @@ ul {
     text-transform: capitalize;
     transition: all 0.3s ease;
     color: #010B13;
+    text-align: center;
 
 }
 
@@ -513,7 +514,7 @@ ul {
     line-height: 19px;
     letter-spacing: 0%;
     text-align: center;
-
+    margin-bottom: 0;
     color: #ffffff;
 }
 
@@ -1840,6 +1841,7 @@ ul {
     color: #000000;
     text-align: left;
     margin-top: 10px;
+    text-align: left !important;
 }
 
 .myyatra-cards article {
