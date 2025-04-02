@@ -217,7 +217,8 @@ ul {
 }
 
 .submenu {
-    background: #1214142b !important;
+    /* background: #1214142b !important; */
+    background: #ffffff !important;
     backdrop-filter: blur(10px) !important;
     display: none;
 

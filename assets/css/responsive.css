@@ -141,6 +141,10 @@
         font-size: 14px;
         line-height: 22px;
     }
+
+    .pr-md-0 {
+        padding-right: 0 !important;
+    }
 }
 
 @media (max-width: 768px) {
@@ -195,6 +199,10 @@
     .who-we-are-img-area {
         height: 300px;
         width: 100%;
+    }
+
+    .pr-sm-0 {
+        padding-right: 0 !important;
     }
 }
 
@@ -329,6 +337,10 @@
 
     .subscriptions button img {
         width: 12px;
+    }
+
+    .pr-0 {
+        padding-right: 0 !important;
     }
 
 
