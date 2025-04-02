@@ -136,6 +136,11 @@
         max-width: unset !important;
 
     }
+
+    .who-we-are-content article {
+        font-size: 14px;
+        line-height: 22px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -185,6 +190,11 @@
     .footerItem:nth-child(4) {
         width: 30%;
 
+    }
+
+    .who-we-are-img-area {
+        height: 300px;
+        width: 100%;
     }
 }
 
@@ -288,10 +298,7 @@
         line-height: 15px;
     }
 
-    .who-we-are-img-area {
-        height: 300px;
-        width: 100%;
-    }
+
 
     /* .footerlogo {
         height: 33px;

@@ -1334,6 +1334,10 @@ ul {
     margin-bottom: 8px;
 }
 
+.quick-link-list li:nth-child(1) .icons-box {
+    transform: rotate(-41deg);
+}
+
 .quick-link-list li:last-child {
     margin-bottom: 0;
 }
@@ -1728,6 +1732,8 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-size: cover;
+    background-position: center;
 
 }
 
@@ -1764,6 +1770,7 @@ ul {
     letter-spacing: 0%;
     vertical-align: middle;
     color: #000000;
+    margin-bottom: -5px;
 }
 
 .who-we-are-img-area {
@@ -1819,8 +1826,8 @@ ul {
 }
 
 .myyatra-cards .card-icon img {
-    height: 55px;
-    width: 55px;
+    height: 44px;
+    width: 44px;
 }
 
 .myyatra-cards h1 {
@@ -1890,6 +1897,7 @@ ul {
 
 .ourVisstion ul {
     list-style-type: disc;
+    margin-bottom: -6px;
 }
 
 .ourVisstion ul li {
