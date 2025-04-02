@@ -112,6 +112,11 @@
     .pilgrims-slider-item .pilgrims-slider-inner h1 {
         font-size: 48px;
     }
+
+    .have-more-questions {
+        aspect-ratio: 1 / 1.1;
+        margin-left: 0;
+    }
 }
 
 @media (max-width: 768px) {
@@ -281,6 +286,13 @@
     .best-recomended-card .card-content .card-footer-area button {
         padding: 5px 10px;
         font-size: 10px;
+    }
+
+    .recent-gallery-area-mobile {
+        background-image: url(../images/background-icon.png);
+        background-repeat: no-repeat;
+        background-position: left 10px top 110px;
+        background-size: 50px;
     }
 
 

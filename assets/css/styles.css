@@ -450,6 +450,7 @@ ul {
     vertical-align: middle;
     color: #113D48;
     text-align: center;
+
 }
 
 .banner-content-area h1 span {
@@ -815,6 +816,7 @@ ul {
     letter-spacing: 0%;
     vertical-align: middle;
     color: #113D48;
+    margin-bottom: 0;
 
 }
 
@@ -949,13 +951,22 @@ ul {
     background-size: 63px;
 }
 
+.recent-gallery-area-mobile {
+    padding: 60px 40px;
+    background: #E7F6FA;
+    background-image: url(../images/background-icon.png);
+    background-repeat: no-repeat;
+    background-position: left 40px top 110px;
+    background-size: 63px;
+}
+
 .gallery-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     /* height: 400px; */
-    gap: 15px;
+    gap: 21px;
     padding: 10px 0;
 }
 
@@ -984,7 +995,7 @@ ul {
     flex-direction: column;
     justify-content: space-between;
 
-    row-gap: 10px;
+    row-gap: 21px;
 }
 
 .double-image .top-image,
@@ -1027,6 +1038,7 @@ ul {
 
 .questions-list {
     padding-left: 0;
+    margin-bottom: 0;
 }
 
 .questions-list li {
@@ -1060,8 +1072,8 @@ ul {
 .answer-area {
     font-family: Inter;
     font-weight: 400;
-    font-size: 10px;
-    line-height: 12.23px;
+    font-size: 11px;
+    line-height: 15.23px;
     letter-spacing: 0.15px;
     color: #757575;
     display: none;
@@ -1094,10 +1106,20 @@ ul {
 
 .have-more-questions {
     position: relative;
-    max-height: 526px;
-    max-width: 395px;
+    height: 100%;
+    width: 100%;
+    margin-left: 15px;
+
+}
+
+.have-more-questions img {
+    position: absolute;
     width: 100%;
     height: 100%;
+    left: 0;
+    top: 0;
+    object-fit: fill;
+    object-position: center;
 
 }
 
@@ -1106,7 +1128,6 @@ ul {
     bottom: 50px;
     left: 50%;
     transform: translateX(-50%);
-    max-width: 250px;
     width: 100%;
     padding: 0 10px;
     display: flex;
@@ -1155,7 +1176,7 @@ ul {
 
 /* ----------------footer-area start---------------------- */
 .footer-area {
-    padding-top: 30px;
+
     background: url(../images/footer-bg.png) no-repeat 0 0 / 100% 100%;
     background-size: cover;
     background-position: center;
@@ -1171,6 +1192,7 @@ ul {
     vertical-align: middle;
     text-transform: capitalize;
     color: #ffffff;
+    margin-bottom: 0;
 }
 
 .subscriptions {
@@ -1186,12 +1208,12 @@ ul {
 
 .subscriptions input {
     border: none;
-    padding: 15px 10px;
+    padding: 12px 10px 12px 25px;
     border-radius: 30px;
     background: #ffffff;
     font-family: Inter;
     font-weight: 400;
-    font-size: 10.5px;
+    font-size: 16.5px;
     line-height: 100%;
     letter-spacing: 0%;
     vertical-align: middle;
