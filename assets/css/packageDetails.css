@@ -1154,7 +1154,8 @@
 @media (max-width:767px) {
     .adds_section {
         position: fixed;
-        top: 120px;
+        top: 50%;
+        transform: translateY(-50%);
         right: 0;
         max-width: 300px;
         background: #ffffff;
@@ -1181,9 +1182,9 @@
         height: 320px;
     }
 
-    .adds_section {
+    /* .adds_section {
         top: 150px;
-    }
+    } */
 }
 
 @media (max-width: 540px) {
