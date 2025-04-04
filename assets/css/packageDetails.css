@@ -147,6 +147,7 @@
     top: -14px;
     left: 10px;
     background: #ffffff;
+    padding: 0 5px;
     font-family: Plus Jakarta Sans;
     font-weight: 600;
     font-size: 14px;
@@ -212,6 +213,7 @@
     row-gap: 23px;
     flex-wrap: wrap;
     margin-bottom: 14px;
+    padding-left: 0;
 }
 
 .roomlist .roomitem button {
@@ -278,6 +280,8 @@
     column-gap: 24px;
     row-gap: 24px;
     flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 20px;
 }
 
 .numberpersonaddlist h2 {
@@ -400,6 +404,442 @@
     color: #8E8E93;
 }
 
+.itinerary_and_summary_selector {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    column-gap: 30px;
+    row-gap: 30px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.itinerary_and_summary_selector li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    width: 143px;
+    height: 44px;
+    border: 1px solid #1CA8CB;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.itinerary_and_summary_selector .summarybtn img {
+    height: 20px;
+    width: 18px;
+    background: #ffffff;
+    border-radius: 4px;
+
+
+}
+
+.itinerary_and_summary_selector .itinerarybtn img {
+    height: 24px;
+    width: 24px;
+    padding: 2px;
+    background: #1CA8CB !important;
+    border-radius: 4px;
+
+}
+
+.itinerary_and_summary_selector li span {
+    font-family: Plus Jakarta Sans;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19.2px;
+    letter-spacing: -0.32px;
+    text-align: center;
+    vertical-align: middle;
+    color: #1CA8CB;
+
+}
+
+.itinerary_and_summary_selector .active span {
+
+    color: #ffffff;
+
+}
+
+.itinerary_and_summary_selector .active {
+
+    color: #ffffff !important;
+    background: #1CA8CB !important;
+
+}
+
+.itinerarylist {
+    padding-left: 0;
+}
+
+.itineryitem {
+    box-shadow: 0px 2px 16px 0px #00000014;
+    border-radius: 13px;
+    background: #ffffff;
+    padding: 10px 21px;
+    margin-bottom: 31px;
+}
+
+.itineraryitem_header .locationIconbox {
+    background: #1CA8CB;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    padding: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #113D48;
+    flex-shrink: 0;
+}
+
+.itineraryheader_inner {
+    column-gap: 16px;
+}
+
+.itineraryitem_header {
+    cursor: pointer;
+}
+
+.itineraryitem_header h4 {
+    font-family: Manrope;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #113D48;
+    margin-bottom: 0;
+}
+
+.itineraryitem_header .dropdownIcon {
+    color: #1CA8CB;
+    font-size: 20px;
+    background: none;
+    border: none;
+}
+
+.itinerarylist .itineryitem .itinerary_content_area {
+    padding-left: 38px;
+    margin-left: 22px;
+    border-left: 2px dashed #0F1D231A;
+    display: none;
+}
+
+.itinerary_content_area .itineraryitem_content {
+    font-family: Plus Jakarta Sans;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 27px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #113D48;
+    margin-bottom: 23px;
+
+}
+
+.itinerary_section_header {
+    font-family: Manrope;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #113D48;
+    margin-bottom: 13px;
+    position: relative;
+}
+
+.itinerary_section_header::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -46px;
+    background: #ffffff;
+    border: 2px solid #1CA8CB;
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+}
+
+.howto_pickup_box {
+    border: 1px solid #E5E5EA;
+    border-radius: 12px;
+    padding: 10px 15px;
+    background: #ffffff;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    column-gap: 15px;
+    row-gap: 15px;
+    margin-bottom: 20px;
+}
+
+.howto_pickup_box .pickup_icon_box {
+    border-radius: 3;
+    height: 90px;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.howto_pickup_box h6 {
+    font-family: Manrope;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #000000;
+    margin-bottom: 2px;
+}
+
+.howto_pickup_box p {
+    font-family: Manrope;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    margin-bottom: 13px;
+    color: #000000;
+}
+
+.howto_pickup_box button {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 7.62px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: capitalize;
+    border: 1px solid #1CA8CB;
+    border-radius: 30px;
+    background: #ffffff;
+    padding: 10px;
+    color: #1CA8CB;
+}
+
+.where_checkin_box {
+    border: 1px solid #E5E5EA;
+    border-radius: 12px;
+    padding: 10px 15px;
+    background: #ffffff;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    column-gap: 15px;
+    row-gap: 15px;
+    margin-bottom: 20px;
+}
+
+.where_checkin_box .checkin_icon_box {
+    border-radius: 3;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkindetails_box {
+    width: calc(100% - 120px);
+}
+
+.where_checkin_box h6 {
+    font-family: Manrope;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #2E2224;
+    margin-bottom: 0px;
+}
+
+.startratingbox {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.startratingbox .staricon {
+    color: #D9D9D9;
+    font-size: 12px;
+}
+
+.startratingbox .givestar {
+    color: #FFD700;
+
+}
+
+.where_checkin_box p {
+    font-family: Manrope;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 22px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    margin-bottom: 0px;
+    color: #ADADAD;
+}
+
+.where_checkin_box p span {
+
+    color: #373737;
+}
+
+.where_checkin_box button {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 7.62px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: capitalize;
+    border: 1px solid #1CA8CB;
+    border-radius: 30px;
+    background: #ffffff;
+    padding: 10px;
+    color: #1CA8CB;
+    margin-top: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.where_checkin_box button:hover {
+    background: #1CA8CB;
+    color: #ffffff;
+}
+
+.addActivities {
+    background: #1CA8CB;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 14.49px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: capitalize;
+    border-radius: 30px;
+    width: 100%;
+    padding: 15px 0;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    border: none;
+    margin-bottom: 20px;
+
+}
+
+.addActivities img {
+    height: 13px;
+    width: 13px;
+}
+
+.temple_visite_box {
+    border: 1px solid #E5E5EA;
+    border-radius: 12px;
+    padding: 10px 13px;
+    background: #ffffff;
+    margin-bottom: 20px;
+    max-width: 331px;
+    width: 100%;
+}
+
+.temple_visite_box .aarti_image_box {
+    position: relative;
+    height: 115px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.temple_visite_box .aarti_image_box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.temple_visite_box .aarti_details_box p {
+    font-family: Manrope;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 21px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #113D48;
+    margin-bottom: 0;
+}
+
+.temple_visite_box .aarti_details_box p a {
+    font-family: Manrope;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 21px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #113D48;
+}
+
+.next_btn_area {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.next_btn_area .nextbtn {
+    background: #1CA8CB;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 14.49px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: capitalize;
+    border-radius: 30px;
+    width: 130px;
+    height: 36px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    border: none;
+}
+
+.next_btn_area .nextbtn img {
+    height: 13px;
+    width: 13px;
+}
+
+
+
+.itinerarylist .active .dropdownIcon {
+    transform: translateZ(0) rotate(180deg);
+    transition: all 0.3s ease-in-out;
+}
+
+.itinerarylist .active .itinerary_content_area {
+    display: block;
+}
+
 @media (max-width: 992px) {
     .details_hero_slider_section {
         height: 271px;
@@ -417,5 +857,82 @@
 
     .details_hero_image_box {
         height: 320px;
+    }
+}
+
+@media (max-width: 540px) {
+    .itineraryitem_header .locationIconbox {
+        background: #1CA8CB;
+        border-radius: 50%;
+        height: 26px;
+        width: 26px;
+        padding: 3px;
+        border: 2px solid #113D48;
+        flex-shrink: 0;
+    }
+
+    .itinerary_content_area {
+        padding-left: 21px;
+        margin-left: 12px;
+
+    }
+
+    .itineraryheader_inner {
+        column-gap: 7px;
+    }
+
+    .itineraryitem_header h4 {
+        font-size: 14px;
+    }
+
+    .itinerary_content_area .itineraryitem_content {
+        font-size: 12px;
+        line-height: 22px;
+    }
+
+    .itinerary_section_header {
+        font-size: 13px;
+    }
+
+    .itinerary_section_header::after {
+        left: -30px;
+    }
+
+    .howto_pickup_box {
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+
+    }
+
+    .where_checkin_box {
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+
+    }
+
+    .checkindetails_box {
+        width: 100%;
+    }
+
+    .howto_pickup_box h6 {
+        font-size: 12px;
+    }
+
+    .where_checkin_box h6 {
+        font-size: 12px;
+    }
+
+    .startratingbox .staricon {
+        font-size: 9px;
+    }
+
+    .howto_pickup_box p {
+        font-size: 11px;
+    }
+
+    .where_checkin_box p {
+        font-size: 11px;
     }
 }

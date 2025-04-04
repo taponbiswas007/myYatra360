@@ -659,6 +659,18 @@ $(document).ready(function () {
     });
 
 
+    // Itinerary and summery selector
+    $('.itinerary_and_summary_selector li').click(function () {
+        $('.itinerary_and_summary_selector li').removeClass('active');
+        $(this).addClass('active');
+    });
+
+    // Itinerary content details viewer
+    $('.itinerarylist .itineryitem .itineraryitem_header').click(function () {
+        $('.itinerarylist .itineryitem').removeClass('active');
+        $(this).closest('.itineryitem').addClass('active');
+    });
+
 
 
 
