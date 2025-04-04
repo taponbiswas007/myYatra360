@@ -592,7 +592,71 @@ $(document).ready(function () {
         }]
     });
 
+    // room select
+    $('.roomlist .roomitem button').click(function () {
+        $('.roomlist .roomitem').removeClass('active');
+        $(this).closest('.roomitem').addClass('active');
+    });
 
+    // person counter
+    $('.person-counter').each(function () {
+        const container = $(this);
+        const counterBox = container.find('.counterbox');
+        const increaseBtn = counterBox.find('.plus');
+        const decreaseBtn = counterBox.find('.minus');
+        const countDisplay = counterBox.find('.countnumber');
+
+        // Get settings from data attributes or use defaults
+        const min = 0; // Fixed minimum value
+        const max = parseInt(container.data('max')) || Infinity; // Unlimited by default
+        let count = parseInt(container.data('start')) || min;
+
+        // Update display with initial value
+        countDisplay.text(count);
+        updateButtonStates();
+
+        // Increase button click handler
+        increaseBtn.on('click', function () {
+            if (count < max) {
+                count++;
+                countDisplay.text(count);
+                updateButtonStates();
+                container.trigger('counter:change', [count]);
+            }
+        });
+
+        // Decrease button click handler
+        decreaseBtn.on('click', function () {
+            if (count > min) {
+                count--;
+                countDisplay.text(count);
+                updateButtonStates();
+                container.trigger('counter:change', [count]);
+            }
+        });
+
+        // Update button disabled states
+        function updateButtonStates() {
+            decreaseBtn.prop('disabled', count <= min);
+            increaseBtn.prop('disabled', count >= max);
+        }
+
+        // Public method to get current value
+        container.getCount = function () {
+            return count;
+        };
+
+        // Public method to set value
+        container.setCount = function (newCount) {
+            if (newCount >= min && newCount <= max) {
+                count = newCount;
+                countDisplay.text(count);
+                updateButtonStates();
+                container.trigger('counter:change', [count]);
+            }
+            return count;
+        };
+    });
 
 
 
