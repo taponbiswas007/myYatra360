@@ -672,6 +672,28 @@ $(document).ready(function () {
     });
 
 
+    // add section
+    $('.addscloseicon').click(function () {
+        $('.adds_section').css('right', '-100%');
+        $('.open_add_section').css({
+            'right': '0',
+            'delay': '0.5s',
+        });
+
+    });
+    $('.open_add_section').click(function () {
+        $('.adds_section').css({
+
+            'right': '0',
+            'transition': 'all 0.5s ease',
+            'delay': '0.5s',
+        });
+        $('.open_add_section').css({
+            'right': '-100%',
+            'delay': '0.5s',
+        });
+
+    });
 
 
 
