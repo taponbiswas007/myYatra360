@@ -550,6 +550,62 @@ $(document).ready(function () {
         }
     });
 
+
+
+
+
+
+    // Package details hero slider
+    $('.packageDetailsheroslider').slick({
+        prevArrow: $('.details_hero_slider_prev'),
+        nextArrow: $('.details_hero_slider_next'),
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        arrows: true,
+        autoplay: true,
+        cssEase: "linear",
+        pushOnHover: true,
+        autoplaySpeed: 2000,
+        responsive: [{
+            breakpoint: 1400,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }]
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 });
 
 const container = document.querySelector(".pilgrimsSwiper");
