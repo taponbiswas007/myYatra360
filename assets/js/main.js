@@ -695,6 +695,15 @@ $(document).ready(function () {
 
     });
 
+    $('.itinerarybtn').click(function () {
+        $('.itinerary_list_area').fadeIn();
+        $('.summery_items_area').fadeOut();
+    });
+    $('.summarybtn').click(function () {
+        $('.itinerary_list_area').fadeOut();
+        $('.summery_items_area').fadeIn();
+    });
+
 
 
 

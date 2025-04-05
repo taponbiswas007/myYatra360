@@ -431,17 +431,19 @@
                                 <!-- Itinerary and summary -->
                                 <ul class="itinerary_and_summary_selector">
                                     <li class="active itinerarybtn">
-                                        <img src="assets/images/packageDetailsImages/travelicon.svg" alt="Travel">
+                                        <img src="assets/images/packageDetailsImages/travelicon.svg" class="select" alt="Travel">
+                                        <img src="assets/images/packageDetailsImages/travelIconunselect.svg" class="unselect" alt="Travel">
                                         <span>Itinerary</span>
                                     </li>
                                     <li class="summarybtn">
-                                        <img src="assets/images/packageDetailsImages/summeryicon.svg" alt="Summary">
+                                        <img src="assets/images/packageDetailsImages/summeryicon.svg" class="unselect" alt="Summary">
+                                        <img src="assets/images/packageDetailsImages/summaryiconselect.svg" class="select" alt="Summary">
                                         <span>Summary</span>
                                     </li>
                                 </ul>
 
                                 <!-- itinerary items area start  -->
-                                <div class="itinerary_list_area d-none">
+                                <div class="itinerary_list_area ">
                                     <ul class="itinerarylist">
 
                                         <!-- =====================itinerary items=================== -->
@@ -944,66 +946,222 @@
                                         </div>
                                     </div>
                                     <!-- inclusions  -->
-                                    <div class="d-flex justify-content-start align-items-center packagedetails_header">
+                                    <div class="d-flex justify-content-start align-items-center packagedetails_header"
+                                        style="margin-top: 45px;">
                                         <div class="custom_border"></div>
                                         <h1>Inclusions</h1>
                                     </div>
                                     <ul class="inclusions_list">
                                         <li class="inclusions_item">
                                             <div class="d-flex justify-content-start align-items-center gap-2">
-                                                <img src="assets/images/packageDetailsImages/greencheckbox.svg" alt="Icon">
+                                                <img src="assets/images/packageDetailsImages/greencheckbox.svg"
+                                                    alt="Icon">
                                                 <p>Access to Personal Tour Manager.</p>
                                             </div>
                                         </li>
                                         <li class="inclusions_item">
                                             <div class="d-flex justify-content-start align-items-center gap-2">
-                                                <img src="assets/images/packageDetailsImages/greencheckbox.svg" alt="Icon">
+                                                <img src="assets/images/packageDetailsImages/greencheckbox.svg"
+                                                    alt="Icon">
                                                 <p>Tour Guide for the entire journey (English & Hindi Speaking).</p>
                                             </div>
                                         </li>
                                         <li class="inclusions_item">
                                             <div class="d-flex justify-content-start align-items-center gap-2">
-                                                <img src="assets/images/packageDetailsImages/greencheckbox.svg" alt="Icon">
-                                                <p>All Inclusive Car (Tax/Toll/Fuel) with driver (Innova Crysta / Similar).</p>
+                                                <img src="assets/images/packageDetailsImages/greencheckbox.svg"
+                                                    alt="Icon">
+                                                <p>All Inclusive Car (Tax/Toll/Fuel) with driver (Innova Crysta /
+                                                    Similar).</p>
                                             </div>
                                         </li>
                                         <li class="inclusions_item">
                                             <div class="d-flex justify-content-start align-items-center gap-2">
-                                                <img src="assets/images/packageDetailsImages/greencheckbox.svg" alt="Icon">
+                                                <img src="assets/images/packageDetailsImages/greencheckbox.svg"
+                                                    alt="Icon">
                                                 <p>Medical/Health services arrangements (as requested).</p>
                                             </div>
                                         </li>
                                         <li class="inclusions_item">
                                             <div class="d-flex justify-content-start align-items-center gap-2">
-                                                <img src="assets/images/packageDetailsImages/greencheckbox.svg" alt="Icon">
-                                                <p>Seamless service from our expert team (managing every detail from booking to your safe return).</p>
+                                                <img src="assets/images/packageDetailsImages/greencheckbox.svg"
+                                                    alt="Icon">
+                                                <p>Seamless service from our expert team (managing every detail from
+                                                    booking to your safe return).</p>
                                             </div>
                                         </li>
                                         <li class="inclusions_item">
                                             <div class="d-flex justify-content-start align-items-center gap-2">
-                                                <img src="assets/images/packageDetailsImages/greencheckbox.svg" alt="Icon">
+                                                <img src="assets/images/packageDetailsImages/greencheckbox.svg"
+                                                    alt="Icon">
                                                 <p>Meet and Greet at the Airport / Railway Station.</p>
                                             </div>
                                         </li>
                                         <li class="inclusions_item">
                                             <div class="d-flex justify-content-start align-items-center gap-2">
-                                                <img src="assets/images/packageDetailsImages/greencheckbox.svg" alt="Icon">
+                                                <img src="assets/images/packageDetailsImages/greencheckbox.svg"
+                                                    alt="Icon">
                                                 <p>Traditional Welcome in the Hotel with Welcome Drinks.</p>
                                             </div>
                                         </li>
                                         <li class="inclusions_item">
                                             <div class="d-flex justify-content-start align-items-center gap-2">
-                                                <img src="assets/images/packageDetailsImages/greencheckbox.svg" alt="Icon">
+                                                <img src="assets/images/packageDetailsImages/greencheckbox.svg"
+                                                    alt="Icon">
                                                 <p>Accommodation on Double & Single Sharing.</p>
                                             </div>
                                         </li>
                                         <li class="inclusions_item">
                                             <div class="d-flex justify-content-start align-items-center gap-2">
-                                                <img src="assets/images/packageDetailsImages/greencheckbox.svg" alt="Icon">
+                                                <img src="assets/images/packageDetailsImages/greencheckbox.svg"
+                                                    alt="Icon">
                                                 <p>Breakfast.</p>
                                             </div>
                                         </li>
                                     </ul>
+
+
+                                    <!-- Exclusions  -->
+                                    <div class="d-flex justify-content-start align-items-center packagedetails_header"
+                                        style="margin-top: 45px;">
+                                        <div class="custom_border"></div>
+                                        <h1>Exclusions</h1>
+                                    </div>
+                                    <ul class="exclusions_list">
+                                        <li class="exclusions_item">
+                                            <div class="d-flex justify-content-start align-items-center gap-2">
+                                                <img src="assets/images/packageDetailsImages/circlecroseIcon.svg"
+                                                    alt="Icon">
+                                                <p>Personal expenses. </p>
+                                            </div>
+                                        </li>
+                                        <li class="exclusions_item">
+                                            <div class="d-flex justify-content-start align-items-center gap-2">
+                                                <img src="assets/images/packageDetailsImages/circlecroseIcon.svg"
+                                                    alt="Icon">
+                                                <p>Any changes to the original booking.</p>
+                                            </div>
+                                        </li>
+                                        <li class="exclusions_item">
+                                            <div class="d-flex justify-content-start align-items-center gap-2">
+                                                <img src="assets/images/packageDetailsImages/circlecroseIcon.svg"
+                                                    alt="Icon">
+                                                <p>Expenses/delays caused by factors beyond our control.</p>
+                                            </div>
+                                        </li>
+                                        <li class="exclusions_item">
+                                            <div class="d-flex justify-content-start align-items-center gap-2">
+                                                <img src="assets/images/packageDetailsImages/circlecroseIcon.svg"
+                                                    alt="Icon">
+                                                <p>Meals other than the ones mentioned in the inclusions.</p>
+                                            </div>
+                                        </li>
+                                        <li class="exclusions_item">
+                                            <div class="d-flex justify-content-start align-items-center gap-2">
+                                                <img src="assets/images/packageDetailsImages/circlecroseIcon.svg"
+                                                    alt="Icon">
+                                                <p>Gratuity</p>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+
+
+                                    <!-- Exclusions  -->
+                                    <div class="d-flex justify-content-start align-items-center packagedetails_header"
+                                        style="margin-top: 45px;">
+                                        <div class="custom_border"></div>
+                                        <h1>Cancellation Policy</h1>
+                                    </div>
+                                    <ul class="cancellationPolicy_list">
+                                        <li class="cancellationPolicy_item">
+                                            <div class="d-flex justify-content-start align-items-center gap-2">
+
+                                                <p>Personal expenses. </p>
+                                            </div>
+                                        </li>
+                                        <li class="cancellationPolicy_item">
+                                            <div class="d-flex justify-content-start align-items-center gap-2">
+
+                                                <p>45 days or more before departure: Booking deposit and an additional
+                                                    10% actual cancellation charges (hotel, ground transport, cruise,
+                                                    etc.) will be deducted.</p>
+                                            </div>
+                                        </li>
+                                        <li class="cancellationPolicy_item">
+                                            <div class="d-flex justify-content-start align-items-center gap-2">
+
+                                                <p>45 to 16 days before departure: 50% of the package cost and actual
+                                                    cancellation charges (hotel, ground transport, cruise, etc.) will be
+                                                    deducted.</p>
+                                            </div>
+                                        </li>
+                                        <li class="cancellationPolicy_item">
+                                            <div class="d-flex justify-content-start align-items-center gap-2">
+
+                                                <p>16 days until departure: 100% of the package cost will be deducted.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li class="cancellationPolicy_item">
+                                            <div class="d-flex justify-content-start align-items-center gap-2">
+
+                                                <p>No-show: 100% of the package cost will be deducted.</p>
+                                            </div>
+                                        </li>
+                                        <li class="cancellationPolicy_item">
+                                            <div class="d-flex justify-content-start align-items-center gap-2">
+
+                                                <p>Rescheduling is subject to the same cancellation charges.
+                                                    Rescheduling is based on availability, and any price differences in
+                                                    hotels, sightseeing, or other activities will be charged
+                                                    additionally.</p>
+                                            </div>
+                                        </li>
+
+
+                                    </ul>
+
+
+
+                                    <!-- Terms & Conditions  -->
+                                    <div class="d-flex justify-content-start align-items-center packagedetails_header"
+                                        style="margin-top: 45px;">
+                                        <div class="custom_border"></div>
+                                        <h1>Terms & Conditions</h1>
+                                    </div>
+                                    <div class="term_and_condition_area">
+                                        <div class="terms_top_item">
+                                            <h2>Check <a href="#">Terms & Conditions</a> of this package</h2>
+                                            <h2 style="margin-top: 12px;">Important Information</h2>
+                                            <ul class="importand_informarion_list">
+                                                <li>
+                                                    To register and check in at your hotel, Indian citizens must provide
+                                                    a valid photo identity card issued by the Government of India (e.g.,
+                                                    Aadhaar card, Voter ID, or Driver's License). Foreign citizens must
+                                                    present a valid passport and visa for each traveler.
+                                                </li>
+                                                <li>For any special requests or queries, please contact us at
+                                                    support@myyatra360.com.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="term_bottom_item">
+                                            <ul>
+                                                <li>I acknowledge that I have reviewed the <a href="#"> Privacy
+                                                        Statement </a> and <a href="#">Government Travel Advice </a> and
+                                                    have reviewed and accept the <a href="#">Rules & Restrictions</a>
+                                                    and <a href="#">Terms of Use.</a></li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                    <div class="prev_btn_area">
+                                        <button class="prevbtn">
+                                            <img src="assets/images/packageDetailsImages/arrow-white.svg" alt="">
+                                            Previous
+
+                                        </button>
+                                    </div>
+
                                 </div>
                                 <!-- summery details area end -->
                             </div>
