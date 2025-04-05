@@ -912,6 +912,39 @@ color: #113D48;
 margin-bottom: 0;
 
 }
+
+
+.inclusions_list{
+    padding: 32px 12px 32px 23px;
+    box-shadow: 0px 2px 16px 0px #00000014;
+
+    background: #EEF9EB;
+    border-radius: 13px;
+}
+.inclusions_list .inclusions_item{
+    margin-bottom: 20px;
+}
+.inclusions_list .inclusions_item:last-child{
+    margin-bottom: 0;
+}
+.inclusions_list .inclusions_item img{
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+}
+.inclusions_list .inclusions_item p{
+
+    font-family: Plus Jakarta Sans;
+font-weight: 400;
+font-size: 15px;
+line-height: 18px;
+letter-spacing: 0%;
+vertical-align: middle;
+
+color: #113D48;
+margin-bottom: 0;
+
+}
 /* adds section start */
 .adds_section {
     position: sticky;
