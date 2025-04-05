@@ -681,6 +681,17 @@ $(document).ready(function () {
         });
 
     });
+    $('.enquire_btn').click(function () {
+
+        if ($('.adds_section').css('right') === '0px') {
+            $('.adds_section').css('right', '-100%');
+            $('.open_add_section').css({
+                'right': '0',
+                'delay': '0.5s',
+            });
+        }
+
+    });
     $('.open_add_section').click(function () {
         $('.adds_section').css({
 
@@ -703,7 +714,28 @@ $(document).ready(function () {
         $('.itinerary_list_area').fadeOut();
         $('.summery_items_area').fadeIn();
     });
+    $('.prevbtn').click(function () {
+        $('.itinerary_list_area').fadeIn();
+        $('.summery_items_area').fadeOut();
+        $('.itinerarybtn').addClass('active');
+        $('.summarybtn').removeClass('active');
+    });
+    $('.nextbtn').click(function () {
+        $('.itinerary_list_area').fadeOut();
+        $('.summery_items_area').fadeIn();
+        $('.summarybtn').addClass('active');
+        $('.itinerarybtn').removeClass('active');
 
+    });
+
+
+
+    // traveler details area
+    $('.traveler_details_area ul li button').click(function () {
+        $('.traveler_details_area ul li').removeClass('active');
+        $(this).closest('li').addClass('active');
+
+    });
 
 
 
