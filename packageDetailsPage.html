@@ -489,8 +489,11 @@
                                                     <div class="cardetails_box">
                                                         <h6>Innova Crysta</h6>
                                                         <p>SUV | 6 Seater | 4 Luggage</p>
-                                                        <button>View Details <i
-                                                                class="fa-solid fa-arrow-right ms-2"></i></button>
+                                                        <button type="button" class="btn btn-primary"
+                                                            data-bs-toggle="modal" data-bs-target="#vahicleDetails">
+                                                            View Details
+                                                            <i class="fa-solid fa-arrow-right ms-2"></i>
+                                                        </button>
                                                     </div>
                                                 </div>
                                                 <!-- check in hotel -->
@@ -1443,6 +1446,8 @@
 
 
 
+
+
     </div>
 
 
@@ -1612,33 +1617,75 @@
             </div>
         </div>
 
+    </div>
+    <!-- ======================================================================================== -->
+    <!-- ====================package booking conformation pop up end ============================ -->
+    <!-- ======================================================================================== -->
 
-        <!-- ======================================================================================== -->
-        <!-- ====================package booking conformation pop up end ============================ -->
-        <!-- ======================================================================================== -->
+
+    <!-- ============================================================================= -->
+    <!-- ==========================Vahicle Details start============================== -->
+    <!-- ============================================================================= -->
 
 
-        <!-- jquery js -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <!-- slick js -->
-        <script src="assets/slickSlider/slick.js"></script>
-        <script src="assets/slickSlider/slick.min.js"></script>
-        <!-- bootstrap js -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-        </script>
+    <div class="modal fade vahicle_details_pupup" id="vahicleDetails" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Vehicle Details</h5>
+                    <button type="button" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="vahicle_details_area">
+                        <div class="vahicle_image_box">
+                            <img src="assets/images/packageDetailsImages/car.png" alt="Car">
+                        </div>
+                        <div class="vahicle_content_box">
+                            <h2><span>Vehicle Name :</span> Innova Crysta</h2>
+                            <h2><span>Vehicle Details :</span> SUV | AC</h2>
+                            <h2><span>Vehicle Seater :</span> 6 Seater</h2>
+                            <h2><span>Luggage Capacity :</span> 4 Luggage</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        <!-- swipperjs -->
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <!-- main js -->
-        <script src="assets/js/main.js"></script>
+    <!-- =========================================================================== -->
+    <!-- ==========================Vahicle Details end============================== -->
+    <!-- =========================================================================== -->
 
-        <script>
-            window.addEventListener("load", function () {
-                document.querySelector(".preloader").style.display = "none";
-                document.querySelector(".website-content").style.display = "block";
-            });
-        </script>
+
+
+
+    <!-- jquery js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- slick js -->
+    <script src="assets/slickSlider/slick.js"></script>
+    <script src="assets/slickSlider/slick.min.js"></script>
+    <!-- bootstrap js -->
+    <!-- Make sure you have these in your page -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- swipperjs -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- main js -->
+    <script src="assets/js/main.js"></script>
+
+    <script>
+        window.addEventListener("load", function () {
+            document.querySelector(".preloader").style.display = "none";
+            document.querySelector(".website-content").style.display = "block";
+        });
+    </script>
 
 </body>
 

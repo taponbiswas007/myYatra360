@@ -1834,7 +1834,36 @@
 /* enquire popup area end */
 
 
+/* vahicle details pop up area start */
+.vahicle_details_pupup .modal-header {
+    background: #1CA8CB;
+}
 
+.vahicle_details_pupup .modal-header h5 {
+    font-family: Plus Jakarta Sans;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 35px;
+    letter-spacing: 0%;
+    color: #ffffff;
+    margin-bottom: 0;
+}
+
+.vahicle_details_pupup .modal-header button {
+    color: #ffffff;
+    background: none;
+    border: none;
+    font-size: 24px;
+}
+
+.vahicle_details_pupup .vahicle_details_area {
+    padding: 24px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* vahicle details pop up area end */
 
 
 
