@@ -858,6 +858,7 @@
 .package_summary_list .package_summary_item img{
     width: 15px;
     height: 20px;
+    flex-shrink: 0;
 }
 .package_summary_list .package_summary_item p{
 
@@ -880,6 +881,37 @@ margin-bottom: 0;
 
 }
 
+
+.tourtipslist{
+    padding: 32px 12px 32px 23px;
+    box-shadow: 0px 2px 16px 0px #00000014;
+    background: #ffffff;
+    border-radius: 13px;
+}
+.tourtipslist .tourtipsItem{
+    margin-bottom: 20px;
+}
+.tourtipslist .tourtipsItem:last-child{
+    margin-bottom: 0;
+}
+.tourtipslist .tourtipsItem img{
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+}
+.tourtipslist .tourtipsItem p{
+
+    font-family: Plus Jakarta Sans;
+font-weight: 400;
+font-size: 15px;
+line-height: 18px;
+letter-spacing: 0%;
+vertical-align: middle;
+
+color: #113D48;
+margin-bottom: 0;
+
+}
 /* adds section start */
 .adds_section {
     position: sticky;
