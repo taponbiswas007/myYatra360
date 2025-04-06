@@ -527,7 +527,7 @@
                                                         <p>Thu, 8 - 12, Aug 2024</p>
                                                         <p><span>Check-in:</span> 9 Aug <span>Check-out:</span> 12 Aug
                                                         </p>
-                                                        <button>View Details <i
+                                                        <button aria-controls="hotelDetailsshow" type="button" data-bs-target="#hotelDetailsshow" data-bs-toggle="offcanvas">View Details <i
                                                                 class="fa-solid fa-arrow-right ms-2"></i></button>
                                                     </div>
                                                 </div>
@@ -1685,6 +1685,30 @@
 
     <!-- =========================================================================== -->
     <!-- ==========================Vahicle Details end============================== -->
+    <!-- =========================================================================== -->
+
+
+
+    <!-- =========================================================================== -->
+    <!-- ==========================hotel Details dtart============================== -->
+    <!-- =========================================================================== -->
+    
+
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+        Toggle right offcanvas
+    </button>
+    
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="hotelDetailsshow" aria-labelledby="hotelDetailsshowLabel">
+        <div class="offcanvas-header">
+            <h5 id="hotelDetailsshowLabel">Offcanvas right</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            Content goes here...
+        </div>
+    </div>
+    <!-- =========================================================================== -->
+    <!-- ==========================hotel Details end============================== -->
     <!-- =========================================================================== -->
 
 

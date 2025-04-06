@@ -2144,3 +2144,7 @@
         align-items: center;
     }
 }
+
+.offcanvas {
+    visibility: visible;
+}
