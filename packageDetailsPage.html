@@ -1641,7 +1641,11 @@
                 <div class="modal-body">
                     <div class="vahicle_details_area">
                         <div class="vahicle_image_box">
-                            <img src="assets/images/packageDetailsImages/car.png" alt="Car">
+                            <img class="vahicle_image_show" src="assets/images/packageDetailsImages/car.png" alt="Car">
+                            <button class="allcarImageshow" data-bs-target="#expendCarImage" data-bs-toggle="modal"
+                                data-bs-dismiss="modal">
+                                <img src="assets/images/packageDetailsImages/fe_expand.svg" alt="Expand">
+                            </button>
                         </div>
                         <div class="vahicle_content_box">
                             <h2><span>Vehicle Name :</span> Innova Crysta</h2>
@@ -1652,8 +1656,28 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <div class="vahicle_facilities">
+                        <h1>Facilities</h1>
+                        <ul>
+                            <li>Air Conditioning & Climate Control</li>
+                            <li>Wi-Fi Access</li>
+                            <li>Comfortable Seating</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="expendCarImage" aria-hidden="true" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <img src="assets/images/packageDetailsImages/car_image.png" class="vahicle_image_show w-100"
+                        alt="Vehicle Image">
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button class="btn btn-primary" data-bs-target="#vahicleDetails" data-bs-toggle="modal"
+                        data-bs-dismiss="modal">Back</button>
                 </div>
             </div>
         </div>

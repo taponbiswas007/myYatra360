@@ -1856,11 +1856,111 @@
     font-size: 24px;
 }
 
-.vahicle_details_pupup .vahicle_details_area {
+@media (min-width: 992px) {
+    .vahicle_details_pupup .modal-lg {
+        max-width: 576px;
+    }
+}
+
+.vahicle_details_pupup .modal-body {
     padding: 24px 40px;
+}
+
+.vahicle_details_pupup .vahicle_details_area {
+
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
+    column-gap: 25px;
     align-items: center;
+}
+
+.vahicle_details_pupup .modal-footer {
+    padding: 24px 40px;
+    justify-content: flex-start;
+}
+
+.vahicle_details_pupup .vahicle_facilities {}
+
+.vahicle_details_pupup .vahicle_facilities h1 {
+    font-family: Plus Jakarta Sans;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #000000;
+    margin-bottom: 16px;
+
+}
+
+.vahicle_details_pupup .vahicle_facilities ul {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 40px;
+    row-gap: 10px;
+    padding-left: 11px;
+    margin-bottom: 0;
+    list-style-type: disc;
+}
+
+.vahicle_details_pupup .vahicle_facilities ul li {
+    font-family: Plus Jakarta Sans;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #000000;
+}
+
+.vahicle_details_pupup .vahicle_details_area .vahicle_image_box {
+    height: 152px;
+    width: 208px;
+    border: 1px solid #D2D2D2;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.vahicle_details_pupup .vahicle_details_area .vahicle_content_box h2 {
+    font-family: Plus Jakarta Sans;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #000000;
+    margin-bottom: 8px;
+
+}
+
+.vahicle_details_pupup .vahicle_details_area .vahicle_content_box h2 span {
+    font-weight: 500;
+}
+
+.vahicle_details_pupup .vahicle_details_area .vahicle_image_box img {
+    height: 100%;
+    width: 100%;
+}
+
+.allcarImageshow {
+    height: 18px;
+    width: 18px;
+    position: absolute;
+    top: -15px;
+    right: -8px;
+    border: none;
+    background: none;
+
+}
+
+.allcarImageshow img {
+    height: 100%;
+    width: 100%;
 }
 
 /* vahicle details pop up area end */
@@ -1937,6 +2037,12 @@
         display: block;
         top: -21px;
         left: -21px;
+    }
+}
+
+@media(max-height: 600px) {
+    .adds_section {
+        height: 300px;
     }
 }
 
@@ -2029,10 +2135,12 @@
     .where_checkin_box p {
         font-size: 11px;
     }
-}
 
-@media(max-height: 600px) {
-    .adds_section {
-        height: 300px;
+    .vahicle_details_pupup .vahicle_details_area {
+
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 25px;
+        align-items: center;
     }
 }
