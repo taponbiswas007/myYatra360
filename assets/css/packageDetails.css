@@ -1977,6 +1977,7 @@
     background: #ffffff;
     width: 100%;
     z-index: 1031;
+    padding-bottom: 100px;
 
 }
 
@@ -2395,6 +2396,7 @@
     background: #ffffff;
     width: 100%;
     z-index: 1031;
+    padding-bottom: 100px;
 }
 
 .add_activity_header_area {
