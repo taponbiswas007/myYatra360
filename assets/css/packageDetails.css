@@ -1971,7 +1971,7 @@
     height: 100vh;
     overflow-y: auto;
     position: fixed;
-    right: 0;
+    right: -100%;
     top: 0;
     max-width: 503px;
     background: #ffffff;
@@ -1989,6 +1989,7 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
     z-index: 1030;
+    display: none;
 }
 
 .hotel_details_popup .hotel_details_header_area {
@@ -2096,6 +2097,7 @@
     align-items: center;
     column-gap: 5px;
     margin-top: -7px;
+    font-size: 15px;
 }
 
 .hotel_details_popup .hotel_details_content .rating_box .star_done {
@@ -2166,7 +2168,21 @@
     border-top: 1px solid  #E5E5EA;
     border-bottom: 1px solid  #E5E5EA;
 }
+.other_amenities_box  {
+    padding: 22px 22px 22px 29px;
+    border-bottom: 1px solid  #E5E5EA;
+}
 .amenities_box h1{
+    font-family: Plus Jakarta Sans;
+font-weight: 600;
+font-size: 16px;
+line-height: 22px;
+letter-spacing: 0%;
+vertical-align: middle;
+color: #000000;
+margin-bottom: 10px;
+}
+.other_amenities_box h1{
     font-family: Plus Jakarta Sans;
 font-weight: 600;
 font-size: 16px;
@@ -2180,8 +2196,32 @@ margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 30px;
     padding-left: 0;
     margin-bottom: 0;
+}
+.other_amenities_box .other_amenities_list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 30px;
+    padding-left: 13px;
+    margin-bottom: 0;
+    list-style-type: disc;
+}
+.other_amenities_box .other_amenities_list .other_amenities_item{
+    font-family: Plus Jakarta Sans;
+font-weight: 400;
+font-size: 14px;
+line-height: 22px;
+letter-spacing: 0%;
+vertical-align: middle;
+color: #000000;
+flex-shrink: 0;
 }
 .amenities_box .amenities_list .amenities_item{
     display: flex;
@@ -2203,7 +2243,95 @@ height: 22px;
     color: #000000;   
     margin-bottom: 0; 
 }
+.about_hotel_box {
+    padding: 22px 22px 22px 29px;
+    border-bottom: 1px solid  #E5E5EA;
+}
+.hotel_facility {
+    padding: 22px 22px 22px 29px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    column-gap: 30px;
+    row-gap: 10px;
+    flex-wrap: wrap;
 
+}
+.hotel_facility .facility_items h1{
+    font-family: Plus Jakarta Sans;
+font-weight: 600;
+font-size: 16px;
+line-height: 22px;
+letter-spacing: 0%;
+vertical-align: middle;
+color: #000000;
+margin-bottom: 16px;
+}
+.hotel_facility .facility_items h2{
+    font-family: Plus Jakarta Sans;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    margin-bottom: 0;
+color: #000000;
+}
+.hotel_facility .facility_items img{
+    height: 22px;
+    width: 22px;
+}
+.about_hotel_box h1{
+    font-family: Plus Jakarta Sans;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #000000;
+    margin-bottom: 10px;
+}
+.about_hotel_box p{
+    font-family: Plus Jakarta Sans;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #000000;
+    margin-bottom: 0;
+}
+
+
+.backbtn {
+    background: #1CA8CB;
+   border: none;
+    color: #ffffff;
+    border-radius: 30px;
+    font-size: 16px;
+    padding: 10px 30px;
+}
+.hotelImagefull_screen{
+    height: 506px;
+    max-width: 506px;
+    width: 100%;
+    background: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 0px 2px 16px 0px #00000014;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+.hotelImagefull_screen .image_box {
+    padding: 20px;
+    height: 444px;
+}
+.hotelImagefull_screen .image_box img{
+    height: 100%;
+    width: 100%;
+}
 /* hotel details area end */
 
 

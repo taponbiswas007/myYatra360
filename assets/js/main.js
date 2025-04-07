@@ -738,6 +738,29 @@ $(document).ready(function () {
     });
 
 
+    // hotel details popup
+    $('#hotelDetailsshow').click(function () {
+        $('.overlay').fadeIn();
+        $('.hotel_details_popup').css({
+            'right': '0',
+            'transition': 'all 0.5s ease',
+        });
+    });
+    $('.hotelDetailsClose').click(function () {
+        $('.overlay').fadeOut();
+        $('.hotel_details_popup').css({
+            'right': '-100%',
+            'transition': 'all 0.5s ease',
+        });
+    });
+    $('.expendedbtn').click(function () {
+        $('.hotelImagefull_screen').fadeIn();
+       
+    });
+    $('.expendedimageclose').click(function () {
+        $('.hotelImagefull_screen').fadeOut();
+       
+    });
 
 
 
