@@ -1989,7 +1989,7 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
     z-index: 1030;
-    display: none;
+    display: block;
 }
 
 .hotel_details_popup .hotel_details_header_area {
@@ -2335,7 +2335,149 @@ color: #000000;
 /* hotel details area end */
 
 
+/* add activity area start */
+.add_activity_area {
+    height: 100vh;
+    overflow-y: auto;
+    position: fixed;
+    right:0;
+    top: 0;
+    max-width: 503px;
+    background: #ffffff;
+    width: 100%;
+    z-index: 1031;
+}
+.add_activity_header_area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #E5E5EA;
+    padding: 34px 22px 27px 29px;
+}
+.add_activity_header_area input{
+    border: none;
+    background: #ECECEC;
+    border-radius: 10px;
+    height: 48px;
+    max-width: 230px;
+    padding: 10px 15px 10px 42px;
+    font-family: Outfit;
+font-weight: 400;
+font-size: 16px;
+line-height: 100%;
+letter-spacing: 0%;
+color: #555454;
+}
+.add_activity_header_area span{
+    left: 10px;
+    color: #8f8c8c;
+    font-size: 22px;
+    display: block;
+}
+.add_activity_header_area h5 {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #333333;
+    margin-bottom: 0;
+}
+.add_activity_header_area button {
+    background: none;
+    border: none;
+    color: #333333;
+    font-size: 30px;
+}
+.add_activity_body {
+    padding: 24px 22px 27px 29px;
+}
+.add_activity_item{
+    border: 1.25px solid #BCCED2;
+    border-radius: 8px;
+    background: #FFFFFF;
+}
 
+.add_activity_item .activity_image_box{
+    height: 164px;
+    width: 100%;position: relative;
+}
+.add_activity_item .activity_image_box img{
+   position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 8px 8px 0px 0px;
+    object-fit: cover;  
+    object-position: center;
+}
+.add_activity_item .activity_content_box{
+    padding: 12px;
+}
+.add_activity_item .activity_content_box h1{
+    font-family: Plus Jakarta Sans;
+font-weight: 600;
+font-size: 18px;
+line-height: 100%;
+letter-spacing: 0%;
+vertical-align: middle;
+color: #2E2224;
+margin-bottom: 10px;
+}
+.add_activity_item .activity_content_box p{
+    font-family: Plus Jakarta Sans;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: 0%;
+vertical-align: middle;
+color:#717171 ;
+margin-bottom: 12px;
+}
+.add_activity_item .activity_content_box .duration_area{
+
+}
+.add_activity_item .activity_content_box .duration_area img{
+    height: 24px;
+    width: 24px;
+}
+.add_activity_item .activity_content_box .duration_area h2{
+    font-family: Plus Jakarta Sans;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #717171;
+    margin-bottom: 0;
+}
+.add_activity_item .activity_content_box .duration_area h2 span{
+    font-weight: 500;
+    color: #000000;
+
+}
+.add_activity_item .activity_content_box .duration_area .travelers_counter{
+  
+
+}
+.add_activity_item .activity_content_box .duration_area .travelers_counter h3{
+  
+    font-family: Plus Jakarta Sans;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22.95px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #000000;
+    margin-bottom: 0;
+}
+.add_activity_item .activity_content_box .duration_area .travelers_counter .person-counter .counterbox{
+  
+padding: 0 10px !important;
+}
+
+/* add activity area end */
 
 
 
@@ -2530,6 +2672,18 @@ color: #000000;
     }
 }
 
+@media (max-width: 440px) {
+    .add_activity_header_area button {
+        position: absolute;
+        top: 21px;
+        right: 29px;
+      }
+      .add_activity_header_area{
+        flex-direction: column;
+        row-gap: 10px;
+        align-items: flex-start;
+      }
+}
 @media (max-width: 346px) {
     .hotel_details_popup .hotel_image_box {
         width: 80px;
