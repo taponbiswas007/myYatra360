@@ -151,21 +151,30 @@ $(document).ready(function () {
         pushOnHover: true,
         autoplaySpeed: 2000,
         responsive: [{
-            breakpoint: 1400,
-            settings: { slidesToShow: 3 }
-        },
-        {
-            breakpoint: 992,
-            settings: { slidesToShow: 2 }
-        },
-        {
-            breakpoint: 768,
-            settings: { slidesToShow: 1.5 }
-        },
-        {
-            breakpoint: 480,
-            settings: { slidesToShow: 1 }
-        }]
+                breakpoint: 1400,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1.5
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
     });
 
     // Initialize the default slider (bestrecommendedSlider)
@@ -285,27 +294,28 @@ $(document).ready(function () {
         autoplaySpeed: 2000,
 
         responsive: [{
-            breakpoint: 1400,
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                infinite: true,
+                breakpoint: 1400,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    infinite: true,
+                }
+            },
+            {
+                breakpoint: 993,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
             }
-        },
-        {
-            breakpoint: 993,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1
-            }
-        },
-        {
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
-        }]
+        ]
     });
 
     // gallery slider area start
@@ -438,26 +448,27 @@ $(document).ready(function () {
         pushOnHover: true,
         autoplaySpeed: 2000,
         responsive: [{
-            breakpoint: 1400,
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1
+                breakpoint: 1400,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
             }
-        },
-        {
-            breakpoint: 600,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1
-            }
-        },
-        {
-            breakpoint: 480,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
-        }]
+        ]
     });
     // gallery slider area end
 
@@ -570,26 +581,27 @@ $(document).ready(function () {
         pushOnHover: true,
         autoplaySpeed: 2000,
         responsive: [{
-            breakpoint: 1400,
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1
+                breakpoint: 1400,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
             }
-        },
-        {
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1
-            }
-        },
-        {
-            breakpoint: 576,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
-        }]
+        ]
     });
 
     // room select
@@ -753,14 +765,89 @@ $(document).ready(function () {
             'transition': 'all 0.5s ease',
         });
     });
-    $('.expendedbtn').click(function () {
-        $('.hotelImagefull_screen').fadeIn();
-       
-    });
+   
     $('.expendedimageclose').click(function () {
         $('.hotelImagefull_screen').fadeOut();
+        $('.hotel_details_popup').css({
+            'right': '0',
+            'transition': 'all 0.5s ease',
+        });
+
+    });
+    $('.selectbtn').click(function () {
+        $(this).toggleClass('active');
+
+    });
+
+    // add activity
+    $('.addActivities').click(function () {
+        $('.overlay').fadeIn();
+        $('.add_activity_area').css({
+            'right': '0',
+            'transition': 'all 0.5s ease',
+        });
+    });
+    $('.addActivityClose').click(function () {
+        $('.overlay').fadeOut();
+        $('.add_activity_area').css({
+            'right': '-100%',
+            'transition': 'all 0.5s ease',
+        });
+    });
+
+    // expand image slider
+    $(document).on('click', '.expendedbtn', function() {
+        // Open your modal/popup
+        $('.hotelImagefull_screen').show();
+    
+        // Animate .add_activity_area to move right
+        $('.hotel_details_popup').css({
+            'right': '-100%',  // Move it out of view to the right
+            'transition': 'all 0.5s ease',  // Apply smooth transition
+        });
+    
+        // Initialize Slick slider after the popup is visible
+        setTimeout(function() {
+            // Initialize slick slider for the images
+            $('.hotel_image_slider').slick({
+                dots: false,
+                infinite: true,
+                speed: 500,
+                fade: false,
+                cssEase: 'linear'
+            });
+        }, 100); // Delay to ensure the popup is fully visible
+    
+        // Optional: If you want to trigger the animation of .add_activity_area after a slight delay
+        // You can adjust the time for better synchronization.
        
     });
+    // expand image slider
+    $(document).on('click', '.allcarImageshow', function() {
+        // Open your modal/popup
+        $('#expendCarImage').show();
+    
+      
+    
+        // Initialize Slick slider after the popup is visible
+        setTimeout(function() {
+            // Initialize slick slider for the images
+            $('.car_image_slider').slick({
+                dots: false,
+                infinite: true,
+                speed: 500,
+                fade: false,
+                cssEase: 'linear'
+            });
+        }, 100); // Delay to ensure the popup is fully visible
+    
+        // Optional: If you want to trigger the animation of .add_activity_area after a slight delay
+        // You can adjust the time for better synchronization.
+       
+    });
+    
+    
+    
 
 
 
@@ -783,8 +870,7 @@ var swiper = new Swiper(".pilgrimsSwiper", {
     autoplay: {
         delay: 0,
 
-    }
-    ,
+    },
     breakpoints: {
         0: {
             slidesPerView: 1,
@@ -814,11 +900,13 @@ var swiper = new Swiper(".pilgrimsSwiper", {
 
 
 });
+
 function stopAutoplay() {
     const swiperTranslate = swiper.getTranslate();
     swiper.setTranslate(swiperTranslate);
     swiper.autoplay.stop();
 }
+
 function startAutoplay() {
     swiper.slideTo(swiper.activeIndex, 3000, false)
     swiper.autoplay.start();
@@ -900,5 +988,3 @@ container.addEventListener("mouseleave", () => startAutoplay());
 //     // Optional: restart autoplay after a delay if you want
 //     // setTimeout(startAutoplay, 3000);
 // });
-
-
