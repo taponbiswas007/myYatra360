@@ -1967,7 +1967,7 @@
 
 
 /* hotel details area start */
-.hotel_details_popup{
+.hotel_details_popup {
     height: 100vh;
     overflow-y: auto;
     position: fixed;
@@ -1979,7 +1979,8 @@
     z-index: 1031;
 
 }
-.overlay{
+
+.overlay {
     content: '';
     position: fixed;
     top: 0;
@@ -1989,30 +1990,178 @@
     background: rgba(0, 0, 0, 0.5);
     z-index: 1030;
 }
-.hotel_details_popup .hotel_details_header_area{
+
+.hotel_details_popup .hotel_details_header_area {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid  #E5E5EA;
+    border-bottom: 1px solid #E5E5EA;
     padding: 22px 24px 13px 40px;
 }
-.hotel_details_popup .hotel_details_body{
-    padding: 22px 24px 13px 40px;
-}
-.hotel_details_popup .hotel_details_header_area h5{
+
+.hotel_details_popup .hotel_details_body {}
+
+.hotel_details_popup .hotel_details_header_area h5 {
     font-family: Poppins;
-font-weight: 500;
-font-size: 20px;
-line-height: 100%;
-letter-spacing: 0%;
-color: #333333;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #333333;
 }
-.hotel_details_popup .hotel_details_header_area button{
+
+.hotel_details_popup .hotel_details_header_area button {
     background: none;
     border: none;
     color: #333333;
     font-size: 24px;
 }
+
+.hotel_details_popup .hotel_details_box {
+    border: 1px solid #E5E5EA;
+    box-shadow: 0px 4px 11px 0px #00000021;
+    border-radius: 12px;
+    margin: 22px 24px 13px 40px;
+
+}
+
+.hotel_details_popup .hotel_details_inner_box {
+    padding: 18px 13px;
+    border-bottom: 1px solid #E5E5EA;
+}
+
+.hotel_details_popup .hotel_image_box {
+    height: 98px;
+    width: 98px;
+    border-radius: 3px;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.hotel_details_popup .hotel_image_box img {
+    height: 100%;
+    width: 100%;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: fill;
+    object-position: center;
+
+}
+
+.hotel_details_popup .hotel_image_box .expendedbtn {
+    border-radius: 3px;
+    position: absolute;
+    top: -7px;
+    right: -8px;
+    width: 18px;
+    height: 18px;
+    background: none;
+    border: none;
+
+
+}
+
+.hotel_details_popup .hotel_details_content h2 {
+    font-family: Plus Jakarta Sans;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #2E2224;
+    margin-bottom: 10px;
+    margin-top: -7px;
+}
+
+.hotel_details_popup .hotel_details_content h3 {
+    font-family: Plus Jakarta Sans;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.hotel_details_popup .hotel_details_content h3 span {
+    font-weight: 600;
+}
+
+.hotel_details_popup .hotel_details_content .rating_box {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    column-gap: 5px;
+    margin-top: -7px;
+}
+
+.hotel_details_popup .hotel_details_content .rating_box .star_done {
+    color: #F1CF45;
+}
+
+.hotel_details_popup .hotel_details_content .rating_box .star_not {
+    color: #D9D9D9;
+}
+
+.hotel_details_popup .hotel_details_content p {
+    font-family: Plus Jakarta Sans;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #000000;
+    margin-bottom: 0;
+}
+
+.hotel_details_popup .checkin_check_out {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 13px
+}
+
+.hotel_details_popup .checkin_check_out button {
+    font-family: Plus Jakarta Sans;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14.49px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: capitalize;
+    color: #1CA8CB;
+    border: 1px solid #1CA8CB;
+    border-radius: 30px;
+    height: 36px;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    padding: 0 15px;
+
+}
+
+.hotel_details_popup .checkin_check_out button img {
+    height: 22px;
+    width: 22px;
+}
+
+.hotel_details_popup .checkin_check_out h2 {
+    font-family: Plus Jakarta Sans;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #373737;
+    margin-bottom: 0;
+}
+
 /* hotel details area end */
 
 
@@ -2189,6 +2338,31 @@ color: #333333;
         justify-content: center;
         row-gap: 25px;
         align-items: center;
+    }
+
+    .hotel_details_popup .hotel_details_box {
+        margin: 22px 10px 13px 10px;
+    }
+
+    .hotel_details_popup .checkin_check_out {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 15px;
+    }
+
+    .hotel_details_popup .hotel_details_header_area {
+        padding: 22px 10px 13px 10px;
+    }
+
+    .hotel_details_popup .hotel_details_content .rating_box {
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 346px) {
+    .hotel_details_popup .hotel_image_box {
+        width: 80px;
     }
 }
 

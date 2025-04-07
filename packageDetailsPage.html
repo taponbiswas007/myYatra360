@@ -527,7 +527,9 @@
                                                         <p>Thu, 8 - 12, Aug 2024</p>
                                                         <p><span>Check-in:</span> 9 Aug <span>Check-out:</span> 12 Aug
                                                         </p>
-                                                        <button aria-controls="hotelDetailsshow" type="button" data-bs-target="#hotelDetailsshow" data-bs-toggle="offcanvas">View Details <i
+                                                        <button aria-controls="hotelDetailsshow" type="button"
+                                                            data-bs-target="#hotelDetailsshow"
+                                                            data-bs-toggle="offcanvas">View Details <i
                                                                 class="fa-solid fa-arrow-right ms-2"></i></button>
                                                     </div>
                                                 </div>
@@ -1465,13 +1467,33 @@
         </div>
         <div class="hotel_details_body">
             <div class="hotel_details_box">
-                <div class="d-flex">
+                <div class="d-flex justify-content-start align-items-stretch gap-3 hotel_details_inner_box">
                     <div class="hotel_image_box">
                         <img src="assets/images/packageDetailsImages/hotel.png" alt="Varanasi">
+                        <button class="expendedbtn">
+                            <img src="assets/images/packageDetailsImages/fe_expand.svg" alt="EX">
+                        </button>
                     </div>
-                    div.
+                    <div class="hotel_details_content">
+                        <div class="rating_box">
+                            <span class="star_done"><i class="fa-solid fa-star"></i></span>
+                            <span class="star_done"><i class="fa-solid fa-star"></i></span>
+                            <span class="star_done"><i class="fa-solid fa-star"></i></span>
+                            <span class="star_done"><i class="fa-solid fa-star"></i></span>
+                            <span class="star_not"><i class="fa-solid fa-star"></i></span>
+                        </div>
+                        <h2>Hotel Varanasi</h2>
+                        <h3><span>Location:</span> NH- 58, Near Toll Plaza, Bahadrabad, Haridwar, Uttarakhand</h3>
+                        <p>Thu, 8 - 12, Aug 2024</p>
+                    </div>
+                </div>
+                <div class="checkin_check_out">
+                    <button><img src="assets/images/packageDetailsImages/locationIconformap.svg" alt="Icon"> view on
+                        Map</button>
+                    <h2>Check-in : 9 Aug | Check-out : 12 Aug </h2>
                 </div>
             </div>
+            <hr>
         </div>
     </div>
     <!-- =========================================================================== -->
@@ -1482,7 +1504,7 @@
     <!-- ======================================================================================== -->
     <!-- ====================package booking conformation pop up start ========================== -->
     <!-- ======================================================================================== -->
-   
+
     <div class="modal fade enquire_modal" id="enquireNow" tabindex="-1" aria-labelledby="enquiryNowlabel"
         aria-hidden="true">
         <div class="modal-dialog modal-xl">
