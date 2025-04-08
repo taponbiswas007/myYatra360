@@ -864,7 +864,7 @@ $(document).ready(function () {
                 fade: false, // Don't use fade effect
                 cssEase: 'linear', // Transition easing
                 autoplay: true, // Enable autoplay
-                autoplaySpeed: 3000, // Autoplay interval (ms) - adjust as needed
+                autoplaySpeed: 2000, // Autoplay interval (ms) - adjust as needed
                 pauseOnHover: false, // Continue autoplay on hover
                 pauseOnFocus: false, // Continue autoplay when focus
                 slidesToShow: 1, // Number of slides to show
@@ -873,12 +873,13 @@ $(document).ready(function () {
                 centerMode: false // Disable center mode
 
             });
-        }, 100); // Delay to ensure the popup is fully visible
+        }, 10); // Delay to ensure the popup is fully visible
 
         // Optional: If you want to trigger the animation of .add_activity_area after a slight delay
         // You can adjust the time for better synchronization.
 
     });
+   
 
     $('.login_content_main_area .inputfeildArea .passwork_look').click(function(){
         // Toggle the eye icons

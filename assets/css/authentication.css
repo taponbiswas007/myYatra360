@@ -1,9 +1,8 @@
-#loginNow .modal-dialog .modal-content {
+.authenticationpopuparea .modal-dialog .modal-content {
     border-radius: 16px;
     overflow: hidden;
 }
-
-#loginNow .modal-dialog .modal-content .modal-body {
+.authenticationpopuparea .modal-dialog .modal-content .modal-body {
     /* height: 547px; */
     padding: 0px !important;
 
@@ -14,8 +13,7 @@
     margin: 0;
     padding: 0;
 }
-
-#loginNow .slick-dotted.slick-slider {
+.authenticationpopuparea .slick-dotted.slick-slider {
     margin-bottom: 0 !important;
 }
 
@@ -267,15 +265,15 @@
 }
 
 @media (min-width: 992px) {
-    #loginNow .modal-lg {
+    .authenticationpopuparea .modal-lg {
         max-width: 895px;
     }
 
-    #loginNow .loginbanner_side {
+    .authenticationpopuparea .loginbanner_side {
         width: 376px;
     }
 
-    #loginNow .login_content_side {
+    .authenticationpopuparea .login_content_side {
         width: calc(100% - 376px);
     }
 }
