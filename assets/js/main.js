@@ -765,7 +765,7 @@ $(document).ready(function () {
             'transition': 'all 0.5s ease',
         });
     });
-   
+
     $('.expendedimageclose').click(function () {
         $('.hotelImagefull_screen').fadeOut();
         $('.hotel_details_popup').css({
@@ -796,18 +796,18 @@ $(document).ready(function () {
     });
 
     // expand image slider
-    $(document).on('click', '.expendedbtn', function() {
+    $(document).on('click', '.expendedbtn', function () {
         // Open your modal/popup
         $('.hotelImagefull_screen').show();
-    
+
         // Animate .add_activity_area to move right
         $('.hotel_details_popup').css({
-            'right': '-100%',  // Move it out of view to the right
-            'transition': 'all 0.5s ease',  // Apply smooth transition
+            'right': '-100%', // Move it out of view to the right
+            'transition': 'all 0.5s ease', // Apply smooth transition
         });
-    
+
         // Initialize Slick slider after the popup is visible
-        setTimeout(function() {
+        setTimeout(function () {
             // Initialize slick slider for the images
             $('.hotel_image_slider').slick({
                 dots: false,
@@ -817,20 +817,20 @@ $(document).ready(function () {
                 cssEase: 'linear'
             });
         }, 100); // Delay to ensure the popup is fully visible
-    
+
         // Optional: If you want to trigger the animation of .add_activity_area after a slight delay
         // You can adjust the time for better synchronization.
-       
+
     });
     // expand image slider
-    $(document).on('click', '.allcarImageshow', function() {
+    $(document).on('click', '.allcarImageshow', function () {
         // Open your modal/popup
         $('#expendCarImage').show();
-    
-      
-    
+
+
+
         // Initialize Slick slider after the popup is visible
-        setTimeout(function() {
+        setTimeout(function () {
             // Initialize slick slider for the images
             $('.car_image_slider').slick({
                 dots: false,
@@ -840,14 +840,62 @@ $(document).ready(function () {
                 cssEase: 'linear'
             });
         }, 100); // Delay to ensure the popup is fully visible
-    
+
         // Optional: If you want to trigger the animation of .add_activity_area after a slight delay
         // You can adjust the time for better synchronization.
-       
+
     });
-    
-    
-    
+
+    // login page slider area
+    $(document).on('click', '.login', function () {
+        // Open your modal/popup
+        $('#loginNow').show();
+
+
+
+        // Initialize Slick slider after the popup is visible
+        setTimeout(function () {
+            // Initialize slick slider for the images
+            $('.login_slider').slick({
+                dots: true, // Show dots navigation
+                arrows: false, // Hide arrow navigation
+                infinite: true, // Infinite looping
+                speed: 500, // Transition speed (ms)
+                fade: false, // Don't use fade effect
+                cssEase: 'linear', // Transition easing
+                autoplay: true, // Enable autoplay
+                autoplaySpeed: 3000, // Autoplay interval (ms) - adjust as needed
+                pauseOnHover: false, // Continue autoplay on hover
+                pauseOnFocus: false, // Continue autoplay when focus
+                slidesToShow: 1, // Number of slides to show
+                slidesToScroll: 1, // Number of slides to scroll
+                adaptiveHeight: false, // Disable adaptive height
+                centerMode: false // Disable center mode
+
+            });
+        }, 100); // Delay to ensure the popup is fully visible
+
+        // Optional: If you want to trigger the animation of .add_activity_area after a slight delay
+        // You can adjust the time for better synchronization.
+
+    });
+
+    $('.login_content_main_area .inputfeildArea .passwork_look').click(function(){
+        // Toggle the eye icons
+        $('.hidden, .visible').toggle();
+        
+        // Get the password input field
+        var passwordField = $('.passwordFeild');
+        
+        // Toggle the input type between password and text
+        if (passwordField.attr('type') === 'password') {
+            passwordField.attr('type', 'text');
+        } else {
+            passwordField.attr('type', 'password');
+        }
+    });
+
+
 
 
 

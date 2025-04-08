@@ -7,12 +7,22 @@
     <!-- favicon -->
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
     <title>My Yatra 360</title>
-    <!-- google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Montez&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+      <!-- google font -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link
+          href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Montez&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+      <!-- plus jakarta sanse -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+          rel="stylesheet">
+    
+      <!-- out fit font -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <!-- source sans pro font -->
     <link rel="stylesheet" href="assets/font/sourceSansPro/stylesheet.css">
     <!-- bootstrap css -->
@@ -29,6 +39,7 @@
     <!-- custom css -->
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/authentication.css">
 </head>
 
 <body>
@@ -131,7 +142,7 @@
                     </div>
 
                     <div class="login-area d-flex align-items-center">
-                        <a href="#" class="login">
+                        <a data-bs-toggle="modal" role="button" href="#loginNow" class="login">
                             Log in <i class="fa-solid fa-arrow-right ms-2"></i>
                         </a>
                         <a href="#" class="signup ms-2">
@@ -173,7 +184,7 @@
                     </div>
                     <div class="col-lg-7 pr-md-0">
                         <div class="banner-content-area">
-                            <h1 class=" ">Craft Your divine yatra<br> <span>All over India!</span></h1>
+                            <h1 class=" ">Craft your divine Yatra<br> <span>All over India!</span></h1>
                             <div class="d-flex justify-content-center align-items-center">
                                 <div class="search-box position-relative">
                                     <input type="search" data-bs-toggle="modal" data-bs-target="#customizeSearch"
@@ -1529,6 +1540,148 @@
             </div>
         </div>
         <!-- ====================customize search area end======================= -->
+
+
+        <!-- ===================================================== -->
+        <!-- =======================Login page start============== -->
+        <!-- ===================================================== -->
+        <div class="modal fade" id="loginNow" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+              <div class="modal-content">
+                <!-- <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalToggleLabel">Modal 1</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div> -->
+                <div class="modal-body">
+                  <div class="d-flex justify-content-between align-items-stretch">
+                    <div class="loginbanner_side d-none d-lg-block">
+                        <div class="login_page_slider_area">
+                            <div class="login_slider">
+                               
+                                <div class="slider_item">
+                                    <div class="slider_image_box">
+                                        <img loading="lazy" src="assets/images/authentication/slider/image_1.png" alt="Slider 1">
+                                    </div>
+                                   
+                                </div>
+                                <div class="slider_item">
+                                    <div class="slider_image_box">
+                                        <img loading="lazy" src="assets/images/authentication/slider/image_2.png" alt="Slider 1">
+                                    </div>
+                                   
+                                </div>
+                                <div class="slider_item">
+                                    <div class="slider_image_box">
+                                        <img loading="lazy" src="assets/images/authentication/slider/image_3.png" alt="Slider 1">
+                                    </div>
+                                   
+                                </div>
+                                <div class="slider_item">
+                                    <div class="slider_image_box">
+                                        <img loading="lazy" src="assets/images/authentication/slider/image_4.png" alt="Slider 1">
+                                    </div>
+                                   
+                                </div>
+                                <div class="slider_item">
+                                    <div class="slider_image_box">
+                                        <img loading="lazy" src="assets/images/authentication/slider/image_5.png" alt="Slider 1">
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="login_content_side ">
+                        <div class="d-flex justify-content-end align-items-center" style=" padding: 9px 12px 12px 0;">
+                            <button class="login_area_close" data-bs-dismiss="modal" aria-label="Close">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </div>
+                        <div class="login_content_main_area">
+                            <div class="login_and_create_new_button_area">
+                                <button class=" active">Login Your Account</button>
+                                <button>Create New Account</button>
+                            </div>
+                            <!-- enter mail -->
+                            <div class="inputfeildArea ">
+                                <label for="">
+                                    Email Id
+                                </label>
+                                <input type="email" placeholder="Enter Your Email">
+                            </div>
+                            <div class="inputfeildArea ">
+                                <label for="">
+                                    Password
+                                </label>
+                                <input class="passwordFeild" type="text" placeholder="Enter Your Password">
+                               <button class="passwork_look">
+                                <i class="fa-regular fa-eye visible"></i>
+                                <i class="fa-regular fa-eye-slash hidden"></i>
+                               </button>
+                            </div>
+                            <div class="d-flex justify-content-end align-items-center">
+                                <button class="forgotpassword">Forgot Password?</button>
+                            </div>
+                            <button class="login_btn">
+                                Login
+                            </button>
+                            <p>Don't have an account? <button>Sign up!</button></p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="orBorder"></div>
+                            <div class="orContent">
+                                Or
+                            </div>
+                            <div class="orBorder"></div>
+                        </div>
+                        <!-- guest -->
+                         <div class="d-flex justify-content-center align-items-center">
+                            <button class="guestbutton">
+                                Continue as guest
+                                <img loading="lazy" src="assets/images/arrow-green.svg" alt="Icon">
+                             </button>
+                         </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- <div class="modal-footer">
+                  <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Open second modal</button>
+                </div> -->
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalToggleLabel2">Modal 2</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Hide this modal and show the first with the button below.
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Back to first</button>
+                </div>
+              </div>
+            </div>
+          </div>
+         
+        <!-- ===================================================== -->
+        <!-- =======================Login page end================ -->
+        <!-- ===================================================== -->
+
+
+
+
+
+
+
+
+
+
+
+
     </div>
     <!-- jquery js -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>

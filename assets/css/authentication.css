@@ -1,0 +1,292 @@
+#loginNow .modal-dialog .modal-content {
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+#loginNow .modal-dialog .modal-content .modal-body {
+    /* height: 547px; */
+    padding: 0px !important;
+
+    border-radius: 16px;
+}
+
+.login_slider .slick-slide {
+    margin: 0;
+    padding: 0;
+}
+
+#loginNow .slick-dotted.slick-slider {
+    margin-bottom: 0 !important;
+}
+
+.login_slider .slick-dots {
+    bottom: 20px !important;
+}
+
+.login_slider .slick-dots li button::before {
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.login_slider .slider_item .slider_image_box {
+    height: 547px;
+    width: 100%;
+    position: relative;
+}
+
+.login_slider .slider_item .slider_image_box img {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    object-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.login_content_side {
+    background-image: url(../images/authentication/loginpagebg.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 100px;
+    height: 547px;
+    width: 100%;
+}
+
+.login_content_side .login_area_close {
+    color: #ffffff;
+    background: #1CA8CB;
+    height: 27px;
+    width: 27px;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.login_content_main_area {
+    padding: 0 35px;
+}
+
+.login_and_create_new_button_area {
+    box-shadow: 0px 0px 9px 0px #0000001C;
+    background: #ffffff;
+    padding: 10px 19px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login_and_create_new_button_area button {
+    font-family: Plus Jakarta Sans;
+    font-weight: 500;
+    font-size: 16px;
+
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: capitalize;
+    color: #1CA8CB;
+    background: #ffffff;
+    border: 1px solid #1CA8CB;
+
+    padding: 10px 19px;
+    border-radius: 30px;
+
+}
+
+.login_and_create_new_button_area button.active {
+    background: #1CA8CB;
+    color: #ffffff;
+}
+
+.login_content_main_area .inputfeildArea {
+    border: 1.74px solid #C2C2C2;
+    border-radius: 9px;
+    position: relative;
+    padding: 0 17px;
+    height: 46px;
+    margin-top: 35px;
+}
+
+.login_content_main_area .inputfeildArea label {
+    font-family: Plus Jakarta Sans;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22.95px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+
+    position: absolute;
+    top: -13px;
+    left: 10px;
+    background: #ffffff;
+    padding: 0 5px;
+    color: #09101D;
+}
+
+.orBorder {
+    height: 1px;
+    width: calc((100% - 34px) / 2);
+    background: #E5E5EA;
+}
+
+.orContent {
+    font-family: Plus Jakarta Sans;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 27.54px;
+    letter-spacing: 0%;
+    text-align: right;
+    vertical-align: middle;
+    color: #8E8E93;
+    width: 34px;
+    flex-shrink: 0;
+    background: #ffffff;
+    text-align: center;
+}
+
+.guestbutton {
+    font-family: Plus Jakarta Sans;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14.49px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    color: #1CA8CB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+    margin-top: 11px;
+}
+
+.guestbutton img {
+    height: 13px;
+    width: 13px;
+    margin-top: 5px;
+}
+
+.login_content_main_area .inputfeildArea input {
+    font-family: Plus Jakarta Sans;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 27.54px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    border: none;
+    height: 100%;
+    width: 100%;
+    border-radius: 9px;
+    background: none;
+    padding: 8px 0;
+    color: #09101D;
+}
+
+.login_content_main_area .inputfeildArea .passwork_look {
+    font-size: 20px;
+    color: #AEAEB2;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+    position: absolute;
+    background: none;
+    border: none;
+}
+
+.login_content_main_area .inputfeildArea .passwork_look .hidden {
+    display: none;
+}
+
+.forgotpassword {
+    font-family: Plus Jakarta Sans;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0%;
+    text-align: right;
+    vertical-align: middle;
+    color: #1CA8CB;
+    background: none;
+    border: none;
+    margin-top: 7px;
+    margin-bottom: 35px;
+    transition: all 0.3s ease;
+}
+
+.login_content_main_area .forgotpassword:hover {
+    color: #09101D;
+}
+
+.login_content_main_area .login_btn {
+    font-family: Plus Jakarta Sans;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    background: #1CA8CB;
+    border: none;
+    border-radius: 30px;
+    width: 100%;
+    height: 36px;
+}
+
+.login_content_main_area p {
+    font-family: Plus Jakarta Sans;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14.49px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    color: #000000;
+    margin: 21px 0 11px 0;
+    text-align: center;
+}
+
+.login_content_main_area p button {
+    font-family: Plus Jakarta Sans;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14.49px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    color: #1CA8CB;
+    border: none;
+    background: none;
+}
+
+@media (min-width: 992px) {
+    #loginNow .modal-lg {
+        max-width: 895px;
+    }
+
+    #loginNow .loginbanner_side {
+        width: 376px;
+    }
+
+    #loginNow .login_content_side {
+        width: calc(100% - 376px);
+    }
+}
+@media (max-width: 540px) {
+    .login_and_create_new_button_area{
+        flex-direction: column;
+        row-gap: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+    .login_content_main_area {
+        padding: 0 10px;
+      }
+}
