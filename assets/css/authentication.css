@@ -68,6 +68,61 @@
 .login_content_main_area {
     padding: 0 35px;
 }
+.forgotpassword_content_main_area {
+    padding: 0 35px;
+    height: calc(100% - 100px);
+}
+.forgotpassword_content_main_area h2 {
+    font-family: Plus Jakarta Sans;
+font-weight: 600;
+font-size: 20px;
+line-height: 14.49px;
+letter-spacing: 0%;
+text-align: center;
+vertical-align: middle;
+text-transform: capitalize;
+color: #1CA8CB;
+}
+.forgotpassword_content_main_area p {
+    font-family: Plus Jakarta Sans;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14.49px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: capitalize;
+    margin-bottom: 0;
+color: #000000;
+}
+.forgotpassword_content_main_area .underlineborder {
+    width: calc(100% + 70px);
+    height: 1px;
+    background: #E5E5EA;
+    margin-top: 17px;
+}
+.forgotpassword_content_main_area .otpbox_area {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   column-gap: 17px;
+   margin-top: 24px;
+}
+.forgotpassword_content_main_area .otpbox_area input{
+   height: 39px;
+   width: 39px;
+   background: #ffffff;
+   border: 1px solid  #1CA8CB;
+   border-radius: 4px;
+   font-family: Plus Jakarta Sans;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 27.54px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    text-align: center;
+}
 
 .login_and_create_new_button_area {
     box-shadow: 0px 0px 9px 0px #0000001C;
@@ -110,8 +165,32 @@
     height: 46px;
     margin-top: 35px;
 }
+.forgotpassword_content_main_area .inputfeildArea {
+    border: 1.74px solid #C2C2C2;
+    border-radius: 9px;
+    position: relative;
+    padding: 0 17px;
+    height: 46px;
+    width: 100%;
+    margin-top: 35px;
+}
 
 .login_content_main_area .inputfeildArea label {
+    font-family: Plus Jakarta Sans;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22.95px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+
+    position: absolute;
+    top: -13px;
+    left: 10px;
+    background: #ffffff;
+    padding: 0 5px;
+    color: #09101D;
+}
+.forgotpassword_content_main_area .inputfeildArea label {
     font-family: Plus Jakarta Sans;
     font-weight: 600;
     font-size: 14px;
@@ -186,6 +265,21 @@
     padding: 8px 0;
     color: #09101D;
 }
+.forgotpassword_content_main_area .inputfeildArea input {
+    font-family: Plus Jakarta Sans;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 27.54px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    border: none;
+    height: 100%;
+    width: 100%;
+    border-radius: 9px;
+    background: none;
+    padding: 8px 0;
+    color: #09101D;
+}
 .login_content_main_area .inputfeildArea select {
     font-family: Plus Jakarta Sans;
     font-weight: 400;
@@ -211,8 +305,21 @@
     background: none;
     border: none;
 }
+.forgotpassword_content_main_area .inputfeildArea .passwork_look {
+    font-size: 20px;
+    color: #AEAEB2;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+    position: absolute;
+    background: none;
+    border: none;
+}
 
 .login_content_main_area .inputfeildArea .passwork_look .hidden {
+    display: none;
+}
+.forgotpassword_content_main_area .inputfeildArea .passwork_look .hidden {
     display: none;
 }
 .login_content_main_area .inputfeildArea .passwork_look_confirm {
@@ -225,8 +332,21 @@
     background: none;
     border: none;
 }
+.forgotpassword_content_main_area .inputfeildArea .passwork_look_confirm {
+    font-size: 20px;
+    color: #AEAEB2;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+    position: absolute;
+    background: none;
+    border: none;
+}
 
 .login_content_main_area .inputfeildArea .passwork_look_confirm .conhidden {
+    display: none;
+}
+.forgotpassword_content_main_area .inputfeildArea .passwork_look_confirm .conhidden {
     display: none;
 }
 
@@ -267,6 +387,22 @@
     height: 36px;
 }
 .login_content_main_area .signup_btn {
+    font-family: Plus Jakarta Sans;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    background: #1CA8CB;
+    border: none;
+    border-radius: 30px;
+    width: 100%;
+    height: 36px;
+}
+.forgotpassword_content_main_area .continuebtn {
     font-family: Plus Jakarta Sans;
     font-weight: 500;
     font-size: 16px;

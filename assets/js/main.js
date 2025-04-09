@@ -940,6 +940,34 @@ $(document).ready(function () {
             confirmpasswordField.attr('type', 'password');
         }
     });
+    $('.forgotpassword_content_main_area .inputfeildArea .passwork_look').click(function(){
+        // Toggle the eye icons
+        $('.hidden, .visible').toggle();
+        
+        // Get the password input field
+        var passwordField = $('.passwordFeild');
+        
+        // Toggle the input type between password and text
+        if (passwordField.attr('type') === 'password') {
+            passwordField.attr('type', 'text');
+        } else {
+            passwordField.attr('type', 'password');
+        }
+    });
+    $('.forgotpassword_content_main_area .inputfeildArea .passwork_look_confirm').click(function(){
+        // Toggle the eye icons
+        $('.conhidden, .convisible').toggle();
+        
+        // Get the password input field
+        var confirmpasswordField = $('.confirmpasswordFeild');
+        
+        // Toggle the input type between password and text
+        if (confirmpasswordField.attr('type') === 'password') {
+            confirmpasswordField.attr('type', 'text');
+        } else {
+            confirmpasswordField.attr('type', 'password');
+        }
+    });
 
 
 
