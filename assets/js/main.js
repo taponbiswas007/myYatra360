@@ -867,16 +867,47 @@ $(document).ready(function () {
                 autoplaySpeed: 2000, // Autoplay interval (ms) - adjust as needed
                 pauseOnHover: false, // Continue autoplay on hover
                 pauseOnFocus: false, // Continue autoplay when focus
+                slidesToShow: 1, 
+                slidesToScroll: 1, 
+                adaptiveHeight: false, 
+                centerMode: false 
+
+            });
+        }, 10);
+
+    
+
+    });
+    // sign page slider area
+    $(document).on('click', '.signup', function () {
+        // Open your modal/popup
+        $('#signupNow').show();
+
+
+
+       
+        setTimeout(function () {
+       
+            $('.login_slider').slick({
+                dots: true, // Show dots navigation
+                arrows: false, // Hide arrow navigation
+                infinite: true, // Infinite looping
+                speed: 500, // Transition speed (ms)
+                fade: false, // Don't use fade effect
+                cssEase: 'linear', // Transition easing
+                autoplay: true, // Enable autoplay
+                autoplaySpeed: 2000, // Autoplay interval (ms) - adjust as needed
+                pauseOnHover: false, // Continue autoplay on hover
+                pauseOnFocus: false, // Continue autoplay when focus
                 slidesToShow: 1, // Number of slides to show
                 slidesToScroll: 1, // Number of slides to scroll
                 adaptiveHeight: false, // Disable adaptive height
                 centerMode: false // Disable center mode
 
             });
-        }, 10); // Delay to ensure the popup is fully visible
+        }, 10); 
 
-        // Optional: If you want to trigger the animation of .add_activity_area after a slight delay
-        // You can adjust the time for better synchronization.
+      
 
     });
    
@@ -893,6 +924,20 @@ $(document).ready(function () {
             passwordField.attr('type', 'text');
         } else {
             passwordField.attr('type', 'password');
+        }
+    });
+    $('.login_content_main_area .inputfeildArea .passwork_look_confirm').click(function(){
+        // Toggle the eye icons
+        $('.conhidden, .convisible').toggle();
+        
+        // Get the password input field
+        var confirmpasswordField = $('.confirmpasswordFeild');
+        
+        // Toggle the input type between password and text
+        if (confirmpasswordField.attr('type') === 'password') {
+            confirmpasswordField.attr('type', 'text');
+        } else {
+            confirmpasswordField.attr('type', 'password');
         }
     });
 

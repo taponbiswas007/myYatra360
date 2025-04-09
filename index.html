@@ -145,7 +145,7 @@
                         <a data-bs-toggle="modal" role="button" href="#loginNow" class="login">
                             Log in <i class="fa-solid fa-arrow-right ms-2"></i>
                         </a>
-                        <a href="#" class="signup ms-2">
+                        <a data-bs-toggle="modal" role="button" href="#signupNow" class="signup ms-2">
                             Sign Up <i class="fa-solid fa-arrow-right ms-2"></i>
                         </a>
                         <div class="toggle-menu d-block d-lg-none">
@@ -1692,7 +1692,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="login_content_side ">
+                    <div class="login_content_side signup_content_side">
                         <div class="d-flex justify-content-end align-items-center" style=" padding: 9px 12px 12px 0;">
                             <button class="login_area_close" data-bs-dismiss="modal" aria-label="Close">
                                 <i class="fa-solid fa-xmark"></i>
@@ -1703,26 +1703,77 @@
                                 <button type="button" data-bs-target="#loginNow" data-bs-toggle="modal" data-bs-dismiss="modal">Login Your Account</button>
                                 <button class=" active">Create New Account</button>
                             </div>
-                           
-                            <button class="login_btn">
+                           <div class="row g-4" style="margin-top: 5px;">
+                            <div class="col-sm-6 col-12 mt-0">
+                                <div class="inputfeildArea ">
+                                    <label for="">
+                                        First Name
+                                    </label>
+                                    <input type="text" placeholder="Enter First Name">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-12 mt-0">
+                                <div class="inputfeildArea ">
+                                    <label for="">
+                                        Last Name
+                                    </label>
+                                    <input type="text" placeholder="Enter Last Name">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-12 mt-0">
+                                <div class="inputfeildArea ">
+                                    <label for="">
+                                        Email Id
+                                    </label>
+                                    <input type="email" placeholder="Enter Your Email">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-12 mt-0">
+                                <div class="inputfeildArea ">
+                                    <label for="">
+                                        Contact No
+                                    </label>
+                                   <div class="d-flex justify-content-start align-items-center">
+                                    <select>
+                                        <option value="">+1</option>
+                                        <option value="">+91</option>
+                                        <option value="">+880</option>
+                                    </select>
+                                    <input type="text" placeholder="Enter Mobile number">
+                                   </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-12 mt-0">
+                                <div class="inputfeildArea ">
+                                    <label for="">
+                                        Password
+                                    </label>
+                                    <input class="passwordFeild" type="text" placeholder="Enter Password">
+                                   <button class="passwork_look">
+                                    <i class="fa-regular fa-eye visible"></i>
+                                    <i class="fa-regular fa-eye-slash hidden"></i>
+                                   </button>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-12 mt-0">
+                                <div class="inputfeildArea ">
+                                    <label for="">
+                                        Confirm Password
+                                    </label>
+                                    <input class="confirmpasswordFeild" type="text" placeholder="Confirm Password">
+                                   <button class="passwork_look_confirm">
+                                    <i class="fa-regular fa-eye convisible"></i>
+                                    <i class="fa-regular fa-eye-slash conhidden"></i>
+                                   </button>
+                                </div>
+                            </div>
+                           </div>
+                            <button class="signup_btn" style="margin-top: 35px">
                                 Sign Up
                             </button>
-                            <p>Don't have an account? <button>Sign up!</button></p>
+                            <p>Already have an account? <button  type="button" data-bs-target="#loginNow" data-bs-toggle="modal" data-bs-dismiss="modal">Login!</button></p>
                         </div>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="orBorder"></div>
-                            <div class="orContent">
-                                Or
-                            </div>
-                            <div class="orBorder"></div>
-                        </div>
-                        <!-- guest -->
-                         <div class="d-flex justify-content-center align-items-center">
-                            <button class="guestbutton">
-                                Continue as guest
-                                <img loading="lazy" src="assets/images/arrow-green.svg" alt="Icon">
-                             </button>
-                         </div>
+                       
                     </div>
                   </div>
                 </div>
