@@ -27,7 +27,7 @@
 }
 
 .exploration_popup_area .modal-body {
-    padding: 30px 40px 0 40px !important;
+    padding: 30px 40px !important;
 }
 
 .exploration_popup_area .tabcontent_area .videoPlayer {
@@ -145,7 +145,9 @@
     border: none;
 
 }
-
+.subplacelistActive{
+    display: block;
+}
 .expmarquee-content {
     display: inline-block;
     padding-left: 100%;
