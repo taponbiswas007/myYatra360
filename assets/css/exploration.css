@@ -1,13 +1,15 @@
-.exploration_text{
+.exploration_text {
     text-transform: capitalize;
     background: linear-gradient(90deg, #FD8F01 0%, #F1CB5A 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.exploration_popup_area .modal-header{
+
+.exploration_popup_area .modal-header {
     background: #1CA8CB;
 }
-.exploration_popup_area .modal-header h5{
+
+.exploration_popup_area .modal-header h5 {
     font-family: Plus Jakarta Sans;
     font-weight: 600;
     font-size: 22px;
@@ -16,27 +18,127 @@
     color: #ffffff;
 
 }
-.exploration_popup_area .modal-header button{
+
+.exploration_popup_area .modal-header button {
     background: none !important;
     border: none !important;
     color: #ffffff !important;
     font-size: 22px;
 }
-.exploration_popup_area .modal-body{
-    padding: 30px 40px !important;
+
+.exploration_popup_area .modal-body {
+    padding: 30px 40px 0 40px !important;
 }
-.exploration_popup_area .tabcontent_area .videoPlayer{
+
+.exploration_popup_area .tabcontent_area .videoPlayer {
     height: 330px;
     width: 100%;
     border-radius: 10px;
     overflow: hidden;
 }
-.exploration_popup_area .tabcontent_area p{
+
+.exploration_popup_area .tabcontent_area p {
     font-family: Plus Jakarta Sans;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0%;
-    color: #000000;   
-    margin-top: 21px; 
+    color: #000000;
+    margin-top: 21px;
+}
+
+.exploration_popup_area .placeTablist {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    column-gap: 20px;
+    padding-left: 0;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.exploration_popup_area .placeTablist button {
+    font-family: Plus Jakarta Sans;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 14.49px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: capitalize;
+    color: #1CA8CB;
+    background: #ffffff;
+    border: 1px solid #1CA8CB;
+    border-radius: 5px;
+    padding: 10px 17px;
+    transition: all 0.3s ease;
+}
+
+.exploration_popup_area .placeTablist .active {
+    background: #1CA8CB;
+    color: #ffffff;
+}
+
+.exploration_popup_area .placeTablist button:hover {
+    background: #1CA8CB;
+    color: #ffffff;
+}
+
+.subplaceList_area .subplaceList {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.subplaceList_area .subplaceList li {
+    color: #1CA8CB;
+}
+
+.subplaceList_area .subplaceList li button {
+    background: none;
+    border: none;
+    font-family: Plus Jakarta Sans;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #1CA8CB;
+    transition: all 0.3s ease;
+
+}
+
+.subplaceList_area .subplaceList li:active {
+    color: #006882;
+}
+
+.exploration_popup_area .modal-footer {
+    background: #EEFBFF;
+    border-top: none !important;
+}
+
+.exploration_popup_area .modal-footer .submitbtn img {
+    height: 20px;
+    width: 20px;
+}
+
+.exploration_popup_area .modal-footer .submitbtn {
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20.65px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: capitalize;
+    color: #ffffff;
+    background: #1CA8CB;
+    border-radius: 30px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 7px;
+    border: none;
+
 }
