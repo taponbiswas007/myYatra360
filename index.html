@@ -96,16 +96,15 @@
                     <a href="#" class="logo">
                         <img loading="lazy" src="assets/images/Logo.png" alt="Yatra360">
                     </a>
-                    <!-- =====Exploration area start===== -->
-                    <div class="explorationbtn_area">
-                        <button>
-                            <img src="assets/images/exploration.png" alt="EX">
-                            <span>Exploration</span>
-                        </button>
-                    </div>
-                     <!-- =====Exploration area end===== -->
+                   
                     <div class="menu-content">
                         <nav class=" d-flex   justify-content-center align-items-center gap-xl-5 gap-lg-4">
+                              <!-- =====Exploration area start===== -->
+                            <a href="#explorationPopup" data-bs-toggle="modal" role="button" class="navlink">
+                                <img loading="lazy" src="assets/images/exploration.png" alt="Home">
+                                <span class="exploration_text">Exploration</span>
+                            </a>
+                             <!-- =====Exploration area end===== -->
                             <a href="index.html" class="navlink">
                                 <img loading="lazy" src="assets/images/home.svg" alt="Home">
                                 <span>Home</span>
@@ -2106,6 +2105,50 @@
         <!-- =======================================---------============== -->
 
 
+        <!-- ===================Exploration popup area start=================== -->
+        <div class="modal fade exploration_popup_area" id="explorationPopup" aria-hidden="true"
+        aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="customizeSearchLabel">Somnath</h5>
+                    <button type="button" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="modal-body ">
+                  <!-- tabwise content area start -->
+                   <div class="tabcontent_area">
+                    <div class="videoPlayer">
+                        <iframe 
+                            width="100%" 
+                            height="100%" 
+                            src="https://www.youtube.com/embed/5RmpWj-cFgQ" 
+                            title="All-In-One Solution for Tailoring Management" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen>
+                        </iframe>
+                        <!-- you need just change the vido id
+                        exmple  src="https://www.youtube.com/embed/YOUR VIDEO PEST HERE"  -->
+
+                    </div>
+                    <p>
+                        Somnath Temple is a Hindu temple, located in Prabhas Patan, Veraval in Gujarat, India. It is one of the most sacred pilgrimage sites the Tirtha Kshetra for Hindus and is the first among the twelve jyotirlinga shrines of Shiva. It is unclear when the first version of the Somnath temple was built, with estimates varying between the early centuries of the 1st millennium and about the 9th century CE.
+                    </p>
+                   </div>
+                  <!-- tabwise content area end -->
+
+
+                  <!-- tab area start -->
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+        <!-- ===================Exploration popup area end=================== -->
 
 
 
