@@ -1,0 +1,30 @@
+.explorationbtn_area {
+    button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: none;
+        border: none;
+        row-gap: 5px;
+        img {
+            width: 30px;
+            height: 30px;
+        }
+
+        span {
+            font-family: Inter;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 19.5px;
+            letter-spacing: 0%;
+            vertical-align: middle;
+            text-transform: capitalize;
+            background: linear-gradient(90deg, #FD8F01 0%, #F1CB5A 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+
+        }
+    }
+}
