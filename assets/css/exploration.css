@@ -36,6 +36,9 @@
     border-radius: 10px;
     overflow: hidden;
 }
+.exploration_popup_area .contentActive {
+    display: block;
+}
 
 .exploration_popup_area .tabcontent_area p {
     font-family: Plus Jakarta Sans;
@@ -91,11 +94,11 @@
     column-gap: 10px;
 }
 
-.subplaceList_area .subplaceList li {
+.subplaceList_area .subplaceList span {
     color: #1CA8CB;
 }
 
-.subplaceList_area .subplaceList li button {
+.subplaceList_area .subplaceList  button {
     background: none;
     border: none;
     font-family: Plus Jakarta Sans;
@@ -108,7 +111,7 @@
 
 }
 
-.subplaceList_area .subplaceList li:active {
+.subplaceList_area .subplaceList .active {
     color: #006882;
 }
 
