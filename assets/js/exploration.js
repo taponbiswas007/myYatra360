@@ -113,13 +113,20 @@ $(document).ready(function () {
     });
 
     // Subplace buttons (with text update)
+    // $(document).on('click', '.subplaceList button', function() {
+    //     $(".subplaceList button").removeClass("active");
+    //     $(this).addClass('active');
+        
+    //     // Update explorarTitle with button text
+    //     var buttonText = $(this).text().trim(); // Trim whitespace
+    //     $(".explorarTitle").text(buttonText); // Ensure correct spelling
+    // });
     $(document).on('click', '.subplaceList button', function() {
         $(".subplaceList button").removeClass("active");
         $(this).addClass('active');
-        
-        // Update explorarTitle with button text
-        var buttonText = $(this).text().trim(); // Trim whitespace
-        $(".explorarTitle").text(buttonText); // Ensure correct spelling
+        var selectedText = $(this).text();
+        $("#explorarTitle").text(selectedText);
+        localStorage.setItem('lastSelectedButton', selectedText); 
     });
 
     // Main content tabs
