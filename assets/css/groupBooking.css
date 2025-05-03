@@ -1,0 +1,34 @@
+.groupBooking{
+    padding-top: 50px;
+    background-color:#E7F6FA ;
+    background-image: url(../images/bg_victor.png);
+    background-repeat: no-repeat;
+    background-position:right  0  bottom 0;
+    padding-left: 71px;
+}
+.groupBooking h1{
+    font-family: Manrope;
+font-weight: 700;
+font-size: 48px;
+line-height: 53.5px;
+letter-spacing: 0%;
+vertical-align: middle;
+color: #113D48;
+}
+.recent-gallery-area{
+    background: #ffffff;
+}
+.have-questions-area{
+    background: #E7F6FA;
+}
+.womenImg{
+    height: 596px;
+    width: 546px;
+}
+.groupBookingArrow{
+    transform: unset !important;
+    right: 0 !important;
+    top: 0 !important;
+    left: unset !important;
+    bottom: unset !important;
+}
