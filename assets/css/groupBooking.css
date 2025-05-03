@@ -1,35 +1,172 @@
-.groupBooking{
+.groupBooking {
     padding-top: 50px;
-    background-color:#E7F6FA ;
+    background-color: #E7F6FA;
     background-image: url(../images/bg_victor.png);
     background-repeat: no-repeat;
-    background-position:right  0  bottom 0;
+    background-position: right 0 bottom 0;
     padding-left: 71px;
-    
+
 }
-.groupBooking h1{
+
+.groupBooking h1 {
     font-family: Manrope;
-font-weight: 700;
-font-size: 48px;
-line-height: 53.5px;
-letter-spacing: 0%;
-vertical-align: middle;
-color: #113D48;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 53.5px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #113D48;
 }
-.recent-gallery-area{
+
+.recent-gallery-area {
     background: #ffffff;
 }
-.have-questions-area{
+
+.recent-gallery-area-mobile {
+    background: #ffffff;
+}
+
+.have-questions-area {
     background: #E7F6FA;
 }
-.womenImg{
+
+.womenImg {
     height: 596px;
     width: 546px;
 }
-.groupBookingArrow{
+
+.groupBookingArrow {
     transform: unset !important;
     right: 0 !important;
-    top: 0 !important;
+    top: 22px !important;
     left: unset !important;
     bottom: unset !important;
+}
+
+.groupBooking .card-img {
+    height: 233px;
+}
+
+.groupBooking .viewAllbtn {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 13.44px;
+    line-height: 21.83px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    background: #113D48;
+    border: none;
+    border-radius: 30px;
+    padding: 16px;
+}
+
+.groupBooking .viewAllbtn img {
+    height: 20px;
+    width: 20px;
+}
+
+@media (max-width: 1400px) {
+    .groupBooking {
+        background-size: 61% 400px;
+    }
+
+    .womenImg {
+        height: 500px;
+        width: 446px;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .groupBooking h1 {
+        font-size: 39px;
+        line-height: 53px;
+    }
+
+}
+
+@media (max-width: 1080px) {
+
+    .womenImg {
+        height: 460px;
+        width: 406px;
+    }
+
+}
+
+@media (max-width: 992px) {
+    .groupBooking {
+        padding-left: 20px;
+    }
+
+    .groupBooking h1 {
+        font-size: 25px;
+        line-height: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .groupBooking {
+        padding-left: 20px;
+        padding-right: 20px;
+        background-image: unset;
+    }
+
+    .groupBooking h1 {
+        font-size: 35px;
+        line-height: 44px;
+    }
+}
+
+@media (max-width: 576px) {
+
+
+    .groupBooking h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+
+
+    .groupBooking h1 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+}
+
+@media (max-width: 420px) {
+
+
+    .groupBooking h1 {
+        font-size: 25px;
+        line-height: 40px;
+    }
+}
+
+@media (max-width: 374px) {
+
+
+    .groupBooking h1 {
+        font-size: 23px;
+        line-height: 30px;
+    }
+}
+
+@media (max-width: 346px) {
+
+
+    .groupBooking h1 {
+        font-size: 21px;
+        line-height: 29px;
+    }
 }
