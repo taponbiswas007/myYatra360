@@ -49,3 +49,61 @@
     margin-bottom: 0;
 
 }
+
+.offerDetails_header {
+    background: #1CA8CB;
+}
+
+.offerDetails_header h5 {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.offerDetails_header button {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 25px;
+}
+
+.our_offer_details_arae {}
+
+.our_offer_details_arae ul {
+    list-style-type: disc;
+    margin-top: 30px;
+}
+
+.our_offer_details_arae ul li {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.our_offer_details_arae ul li:last-child {
+    margin-bottom: 0;
+}
+
+.our_offer_details_arae .offer_details_area_logo {
+    height: 92px;
+    width: 92px;
+}
+
+.gotItbtn {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20.65px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: capitalize;
+    color: #ffffff;
+    background: #1CA8CB;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+}

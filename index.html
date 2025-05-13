@@ -331,7 +331,8 @@
 
 
         <!-- ===================Our Top Pilgrims start=================== -->
-        <section class=" sectionitems px-4 overflow-hidden mt-lg-5 mt-3" style="padding-bottom: 50px; background: #E7F6FA;">
+        <section class=" sectionitems px-4 overflow-hidden mt-lg-5 mt-3"
+            style="padding-bottom: 50px; background: #E7F6FA;">
             <!-- <h2>Our Top Pilgrims</h2> -->
             <h1>Find <span>Best Recommended</span> Cities</h1>
 
@@ -375,7 +376,7 @@
                         </div>
                     </div>
                 </div>
-            
+
 
                 <div class="custom-arrows">
                     <button class="custom-prev pilg-prev" id="pil-prev"><i class="fa-solid fa-arrow-left"></i></button>
@@ -391,64 +392,111 @@
 
             <h1 class="mb-0">Find <span>Best Offers</span> For You</h1>
 
-              <div class="d-flex justify-content-center align-items-center">
-                    <p class=" mb-1 text-center" style="max-width: 689px;">Discover handpicked pilgrimage offers designed to bring you closer to your faith, while ensuring comfort and peace of mind throughout your journey.</p>
-                </div>
+            <div class="d-flex justify-content-center align-items-center">
+                <p class=" mb-1 text-center" style="max-width: 689px;">Discover handpicked pilgrimage offers designed to
+                    bring you closer to your faith, while ensuring comfort and peace of mind throughout your journey.
+                </p>
+            </div>
 
             <div class="slider-container pilgrims-card-container  position-relative" style="padding-bottom: 74px;">
                 <div class="offerCard-area offerCard offerCardSlider">
-                    <a href="" class="offerCard-item">
+                    <a href="#offerDetails" role="button" data-bs-toggle="modal" class="offerCard-item">
                         <div class="offerCard-inner position-relative">
                             <img loading="lazy" src="assets/images/offerCard/offer_card1.png" alt="Varanasi">
-                           
+
                         </div>
-                      
+
                     </a>
-                    <a href="" class="offerCard-item">
+                    <a href="#offerDetails" role="button" data-bs-toggle="modal" class="offerCard-item">
                         <div class="offerCard-inner position-relative">
                             <img loading="lazy" src="assets/images/offerCard/offer_card2.png" alt="Varanasi">
-                           
+
                         </div>
-                      
+
                     </a>
-                    <a href="" class="offerCard-item">
+                    <a href="#offerDetails" role="button" data-bs-toggle="modal" class="offerCard-item">
                         <div class="offerCard-inner position-relative">
                             <img loading="lazy" src="assets/images/offerCard/offer_card3.png" alt="Varanasi">
-                           
+
                         </div>
-                      
+
                     </a>
-                    <a href="" class="offerCard-item">
+                    <a href="#offerDetails" role="button" data-bs-toggle="modal" class="offerCard-item">
                         <div class="offerCard-inner position-relative">
                             <img loading="lazy" src="assets/images/offerCard/offer_card1.png" alt="Varanasi">
-                           
+
                         </div>
-                      
+
                     </a>
-                    <a href="" class="offerCard-item">
+                    <a href="#offerDetails" role="button" data-bs-toggle="modal" class="offerCard-item">
                         <div class="offerCard-inner position-relative">
                             <img loading="lazy" src="assets/images/offerCard/offer_card2.png" alt="Varanasi">
-                           
+
                         </div>
-                      
+
                     </a>
-                    <a href="" class="offerCard-item">
+                    <a href="#offerDetails" role="button" data-bs-toggle="modal" class="offerCard-item">
                         <div class="offerCard-inner position-relative">
                             <img loading="lazy" src="assets/images/offerCard/offer_card3.png" alt="Varanasi">
-                           
+
                         </div>
-                      
+
                     </a>
-                  
-                 
+
+
                 </div>
-              
+
 
                 <div class="custom-arrows">
-                    <button class="custom-prev offC-prev" ><i class="fa-solid fa-arrow-left"></i></button>
-                    <button class="custom-next offC-next" ><i class="fa-solid fa-arrow-right"></i></button>
+                    <button class="custom-prev offC-prev"><i class="fa-solid fa-arrow-left"></i></button>
+                    <button class="custom-next offC-next"><i class="fa-solid fa-arrow-right"></i></button>
                 </div>
             </div>
+
+
+            <!-- ========================================= -->
+            <!-- ============offer details area=========== -->
+            <!-- ========================================= -->
+            <div class="modal fade" id="offerDetails" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header offerDetails_header">
+                            <h5 class="modal-title" id="offerDetailsLabel">Offer Details</h5>
+                            <button type="button" data-bs-dismiss="modal" aria-label="Close">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="our_offer_details_arae">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="offer_details_area_logo">
+                                        <img src="assets/images/Logo.png" alt="logo">
+                                    </div>
+                                </div>
+                                <ul>
+                                    <li>Flexible tour options to suit different preferences and budgets. </li>
+                                    <li>Seamless and stress-free travel experience with all logistics handled. </li>
+                                    <li>Seamless and stress-free travel experience with all logistics handled. </li>
+                                    <li>Seamless and stress-free travel experience with all logistics handled. </li>
+                                    <li>Seamless and stress-free travel experience with all logistics handled. </li>
+                                    <li>Seamless and stress-free travel experience with all logistics handled. </li>
+                                    <li>Seamless and stress-free travel experience with all logistics handled. </li>
+                                </ul>
+                                <div class="d-flex mt-4 justify-content-center align-items-center">
+                                    <button class="gotItbtn" type="button" data-bs-dismiss="modal" aria-label="Close">
+                                        Ok Got It
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- ========================================= -->
+            <!-- ============offer details end=========== -->
+            <!-- ======================================== -->
         </section>
         <!-- ===================offer area end=================== -->
 
