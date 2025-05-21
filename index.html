@@ -44,6 +44,7 @@
     <link rel="stylesheet" href="assets/css/exploration.css">
     <link rel="stylesheet" href="assets/css/groupBooking.css">
     <link rel="stylesheet" href="assets/css/offerCard.css">
+    <link rel="stylesheet" href="assets/css/newmenu.css">
 </head>
 
 <body>
@@ -72,16 +73,25 @@
                     <div class=" language-and-currency-changer d-flex ps-3 gap-4  justify-content-between align-items-center"
                         style="color: #999999;">
                         <!-- Language Select with Custom Icon -->
-                        <div class="languagebox">
+                        <!-- <div class="languagebox">
                             English
-                        </div>
-                        |
-                        <!-- Currency Select with Custom Icon -->
+                        </div> -->
                         <div class="custom-select-wrapper">
                             <select name="currency" class="custom-select">
                                 <option value="₹ INR">₹ INR</option>
                             </select>
                             <i class="fa-solid fa-caret-down custom-select-icon"></i>
+                        </div>
+                        |
+                        <!-- Auth link area -->
+                        <div class="login-area d-flex align-items-center">
+                            <a data-bs-toggle="modal" role="button" href="#loginNow" class="login">
+                                Log in <i class="fa-solid fa-arrow-right ms-2"></i>
+                            </a>
+                            <a data-bs-toggle="modal" role="button" href="#signupNow" class="signup ms-2">
+                                Sign Up <i class="fa-solid fa-arrow-right ms-2"></i>
+                            </a>
+
                         </div>
                     </div>
                 </div>
@@ -102,42 +112,55 @@
                     <div class="menu-content">
                         <nav class=" d-flex   justify-content-center align-items-center gap-xl-5 gap-lg-4">
                             <!-- =====Exploration area start===== -->
-                            <a href="#explorationPopup" data-bs-toggle="modal" role="button" class="navlink">
-                                <img loading="lazy" src="assets/images/exploration.png" alt="Home">
+                            <a href="#explorationPopup" data-bs-toggle="modal" role="button" class="navlink ">
+                                <!-- <img loading="lazy" src="assets/images/exploration.png" alt="Exploration"> -->
+                                <img loading="lazy" src="assets/images/newmenuIcon/ex.png" alt="Exploration">
                                 <span class="exploration_text">Exploration</span>
                             </a>
                             <!-- =====Exploration area end===== -->
-                            <a href="index.html" class="navlink">
-                                <img loading="lazy" src="assets/images/home.svg" alt="Home">
+                            <a href="index.html" class="navlink activepage">
+                                <img loading="lazy" src="assets/images/newmenuIcon/home.svg" alt="Home">
                                 <span>Home</span>
                             </a>
                             <a href="packageDetailsPage.html" class="navlink">
-                                <img loading="lazy" src="assets/images/packages.svg" alt="Packages">
+                                <img loading="lazy" src="assets/images/newmenuIcon/luggage.svg" alt="Packages">
                                 <span>Packages</span>
                             </a>
                             <a href="#" class="navlink">
-                                <img loading="lazy" src="assets/images/booking.svg" alt="My Bookings">
+                                <img loading="lazy" src="assets/images/newmenuIcon/flight.svg" alt="Flight">
+                                <span>Flight</span>
+                            </a>
+                            <a href="#" class="navlink">
+                                <img loading="lazy" src="assets/images/newmenuIcon/hotel.svg" alt="Hotel">
+                                <span>Hotel</span>
+                            </a>
+                            <a href="#" class="navlink">
+                                <img loading="lazy" src="assets/images/newmenuIcon/car.svg" alt="Vehicle">
+                                <span>Vehicle</span>
+                            </a>
+                            <a href="#" class="navlink">
+                                <img loading="lazy" src="assets/images/newmenuIcon/ticket-check.svg" alt="My Bookings">
                                 <span>My Bookings</span>
                             </a>
+
                             <div class="position-relative aboutuslink">
-                                <a href="#" class="navlink ">
-                                    <img src="assets/images/user.svg" alt="About Us">
-                                    <span>About Us</span>
-                                    <div
-                                        class="submenu shadow rounded-3 p-2 pt-3 position-absolute top-100 start-50 translate-middle-x">
+                                <a href="#" class="navlink moremenu ">
+                                    <img loading="lazy" src="assets/images/newmenuIcon/menu.svg" alt="">
+                                    <span>More</span>
+                                    <div class="submenu shadow rounded-3 p-2 pt-3 position-absolute top-100 end-0">
                                         <ul class=" ps-0">
                                             <li>
-                                                <a class=" dropdown-item mb-1" href="whyWeAre.html">
+                                                <a class=" dropdown-item mb-1 submenuLink " href="whyWeAre.html">
                                                     Who we are
                                                 </a>
                                             </li>
                                             <li>
-                                                <a class=" dropdown-item mb-1" href="ourTeams.html">
+                                                <a class=" dropdown-item mb-1 submenuLink" href="ourTeams.html">
                                                     Our Team
                                                 </a>
                                             </li>
                                             <li>
-                                                <a class=" dropdown-item" href="whychooseUs.html">
+                                                <a class=" dropdown-item submenuLink" href="whychooseUs.html">
                                                     Why Choose MyYatra360?
                                                 </a>
                                             </li>
@@ -145,20 +168,15 @@
                                     </div>
                                 </a>
                             </div>
-                            <a href="#" class="navlink">
+                            <!-- <a href="#" class="navlink">
                                 <img loading="lazy" src="assets/images/faq.svg" alt="Faq’s">
                                 <span>Faq’s</span>
-                            </a>
+                            </a> -->
                         </nav>
                     </div>
 
                     <div class="login-area d-flex align-items-center">
-                        <a data-bs-toggle="modal" role="button" href="#loginNow" class="login">
-                            Log in <i class="fa-solid fa-arrow-right ms-2"></i>
-                        </a>
-                        <a data-bs-toggle="modal" role="button" href="#signupNow" class="signup ms-2">
-                            Sign Up <i class="fa-solid fa-arrow-right ms-2"></i>
-                        </a>
+
                         <div class="toggle-menu d-block d-lg-none">
                             <button class="menu-toggle" aria-label="Toggle menu">
                                 <span class="menu-icon">

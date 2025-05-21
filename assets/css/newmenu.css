@@ -1,0 +1,119 @@
+/* .navlink {
+border-radius: 26px;
+padding: 10px 20px;
+} */
+
+.activepage {
+    border: 1px solid #0172CD;
+    border-radius: 26px;
+    padding: 10px 20px;
+}
+
+.navlink:first-child {
+    border: none;
+    border-radius: none;
+    padding: none;
+}
+
+.navlink:last-child {
+    border: none;
+    border-radius: none;
+    padding: none;
+}
+
+.navlink span {
+    color: #0172CD;
+}
+
+.aboutuslink .navlink {
+    border-radius: 0 !important;
+    padding: 0 0 !important;
+}
+
+.submenu {
+    border-top: 8px solid #0172CD;
+}
+
+.submenu ul li a:hover {
+    background: #0172CD !important;
+    color: #ffffff;
+}
+
+.menu-icon .line {
+    background: linear-gradient(180deg, #71C1FF 0%, #0073D2 100%);
+
+}
+
+@media (max-width: 992px) {
+    .menu-content {
+        border-top: 8px solid #0172CD;
+        border-radius: 7px;
+    }
+
+    .navlink {
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 100%;
+        border: 1px solid #0172CD;
+        border-radius: 26px;
+        padding: 10px 20px;
+    }
+
+    .navlink img {
+        margin-right: 10px;
+    }
+
+    .navlink:first-child {
+        border: 1px solid #0172CD;
+        border-radius: 26px;
+        padding: 10px 20px;
+    }
+
+    .aboutuslink .navlink {
+        border: 1px solid #0172CD;
+        border-radius: 26px !important;
+        padding: 10px 20px !important;
+    }
+
+
+
+    .aboutuslink {
+        width: 100%;
+
+    }
+
+    .submenu {
+
+        left: 0 !important;
+    }
+
+    .submenuLink {
+        text-align: left !important;
+
+
+    }
+
+    .submenu .navlink {
+        display: none;
+    }
+
+    .aboutuslink::after {
+        content: '\f105';
+        /* Font Awesome angle-left */
+        font-family: 'Font Awesome 6 Free';
+        font-weight: 900;
+        margin-left: 5px;
+        font-size: 1.5rem;
+        /* Adjust size if needed */
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #0172CD;
+        right: 20px;
+        transition: transform 0.3s ease;
+    }
+
+    .aboutuslink:hover::after {
+        transform: translateY(-50%) rotate(90deg);
+    }
+}

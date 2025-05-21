@@ -197,7 +197,9 @@ ul {
     flex-direction: column;
     row-gap: 5px;
     transition: all 0.3s ease;
+  
 }
+
 
 .navlink span {
     /* background: linear-gradient(90deg, #0172CD 0%, #1CA8CB 100%);
@@ -211,7 +213,7 @@ ul {
     vertical-align: middle;
     text-transform: capitalize;
     transition: all 0.3s ease;
-    color: #000000;
+    color: #0172CD;
 
 
 }
@@ -242,10 +244,7 @@ ul {
 
 }
 
-.submenu ul li a:hover {
-    background: #113d4895 !important;
-    color: #ffffff;
-}
+
 
 .navlink:hover span {
     background: linear-gradient(90deg, #1CA8CB 0%, #0172CD 100%);
@@ -282,8 +281,8 @@ ul {
 }
 
 .login-area .signup {
-    color: #1CA8CB;
-    border: 0.56px solid #1CA8CB;
+    color: #ffffff;
+    background: #1CA8CB;
     transition: all 0.3s ease;
 
 }
@@ -344,6 +343,8 @@ ul {
 .menu-toggle.active .line-3 {
     transform: translateY(-10px) rotate(-45deg);
 }
+
+
 
 
 /* -------------------navigation area end--------------------- */
