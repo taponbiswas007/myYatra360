@@ -48,6 +48,7 @@ padding: 10px 20px;
     .menu-content {
         border-top: 8px solid #0172CD;
         border-radius: 7px;
+        background: #ffffff !important;
     }
 
     .navlink {
