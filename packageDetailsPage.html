@@ -39,6 +39,7 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/packageDetails.css">
+     <link rel="stylesheet" href="assets/css/newmenu.css">
 </head>
 
 <body>
@@ -67,16 +68,25 @@
                     <div class=" language-and-currency-changer d-flex ps-3 gap-4  justify-content-between align-items-center"
                         style="color: #999999;">
                         <!-- Language Select with Custom Icon -->
-                        <div class="languagebox">
+                        <!-- <div class="languagebox">
                             English
-                        </div>
-                        |
-                        <!-- Currency Select with Custom Icon -->
+                        </div> -->
                         <div class="custom-select-wrapper">
                             <select name="currency" class="custom-select">
                                 <option value="₹ INR">₹ INR</option>
                             </select>
                             <i class="fa-solid fa-caret-down custom-select-icon"></i>
+                        </div>
+                        |
+                        <!-- Auth link area -->
+                        <div class="login-area d-flex align-items-center">
+                            <a data-bs-toggle="modal" role="button" href="#loginNow" class="login">
+                                Log in <i class="fa-solid fa-arrow-right ms-2"></i>
+                            </a>
+                            <a data-bs-toggle="modal" role="button" href="#signupNow" class="signup ms-2">
+                                Sign Up <i class="fa-solid fa-arrow-right ms-2"></i>
+                            </a>
+
                         </div>
                     </div>
                 </div>
@@ -91,41 +101,61 @@
             <div class="container">
                 <div class="d-flex position-relative justify-content-between align-items-center">
                     <a href="#" class="logo">
-                        <img  loading="lazy"  src="assets/images/Logo.png" alt="Yatra360">
+                        <img loading="lazy" src="assets/images/Logo.png" alt="Yatra360">
                     </a>
+
                     <div class="menu-content">
                         <nav class=" d-flex   justify-content-center align-items-center gap-xl-5 gap-lg-4">
-                            <a href="index.html" class="navlink">
-                                <img  loading="lazy"  src="assets/images/home.svg" alt="Home">
+                            <!-- =====Exploration area start===== -->
+                            <a href="#explorationPopup" data-bs-toggle="modal" role="button" class="navlink ">
+                                <!-- <img loading="lazy" src="assets/images/exploration.png" alt="Exploration"> -->
+                                <img loading="lazy" src="assets/images/newmenuIcon/ex.png" alt="Exploration">
+                                <span class="exploration_text">Exploration</span>
+                            </a>
+                            <!-- =====Exploration area end===== -->
+                            <a href="index.html" class="navlink ">
+                                <img loading="lazy" src="assets/images/newmenuIcon/home.svg" alt="Home">
                                 <span>Home</span>
                             </a>
-                            <a href="#" class="navlink">
-                                <img  loading="lazy"  src="assets/images/packages.svg" alt="Packages">
+                            <a href="packageDetailsPage.html" class="navlink activepage">
+                                <img loading="lazy" src="assets/images/newmenuIcon/luggage.svg" alt="Packages">
                                 <span>Packages</span>
                             </a>
                             <a href="#" class="navlink">
-                                <img  loading="lazy"  src="assets/images/booking.svg" alt="My Bookings">
+                                <img loading="lazy" src="assets/images/newmenuIcon/flight.svg" alt="Flight">
+                                <span>Flight</span>
+                            </a>
+                            <a href="#" class="navlink">
+                                <img loading="lazy" src="assets/images/newmenuIcon/hotel.svg" alt="Hotel">
+                                <span>Hotel</span>
+                            </a>
+                            <a href="#" class="navlink">
+                                <img loading="lazy" src="assets/images/newmenuIcon/car.svg" alt="Vehicle">
+                                <span>Vehicle</span>
+                            </a>
+                            <a href="#" class="navlink">
+                                <img loading="lazy" src="assets/images/newmenuIcon/ticket-check.svg" alt="My Bookings">
                                 <span>My Bookings</span>
                             </a>
+
                             <div class="position-relative aboutuslink">
-                                <a href="#" class="navlink ">
-                                    <img loading="lazy" src="assets/images/user.svg" alt="About Us">
-                                    <span>About Us</span>
-                                    <div
-                                        class="submenu shadow rounded-3 p-2 pt-3 position-absolute top-100 start-50 translate-middle-x">
+                                <a href="#" class="navlink moremenu ">
+                                    <img loading="lazy" src="assets/images/newmenuIcon/menu.svg" alt="">
+                                    <span>More</span>
+                                    <div class="submenu shadow rounded-3 p-2 pt-3 position-absolute top-100 end-0">
                                         <ul class=" ps-0">
                                             <li>
-                                                <a class=" dropdown-item mb-1" href="whyWeAre.html">
+                                                <a class=" dropdown-item mb-1 submenuLink " href="whyWeAre.html">
                                                     Who we are
                                                 </a>
                                             </li>
                                             <li>
-                                                <a class=" dropdown-item mb-1" href="ourTeams.html">
+                                                <a class=" dropdown-item mb-1 submenuLink" href="ourTeams.html">
                                                     Our Team
                                                 </a>
                                             </li>
                                             <li>
-                                                <a class=" dropdown-item" href="whychooseUs.html">
+                                                <a class=" dropdown-item submenuLink" href="whychooseUs.html">
                                                     Why Choose MyYatra360?
                                                 </a>
                                             </li>
@@ -133,30 +163,22 @@
                                     </div>
                                 </a>
                             </div>
-                            <a href="#" class="navlink">
-                                <img  loading="lazy"  src="assets/images/faq.svg" alt="Faq’s">
+                            <!-- <a href="#" class="navlink">
+                                <img loading="lazy" src="assets/images/faq.svg" alt="Faq’s">
                                 <span>Faq’s</span>
-                            </a>
+                            </a> -->
                         </nav>
                     </div>
 
-                    <div class="login-area d-flex align-items-center">
-                        <a href="#" class="login">
-                            Log in <i class="fa-solid fa-arrow-right ms-2"></i>
-                        </a>
-                        <a href="#" class="signup ms-2">
-                            Sign Up <i class="fa-solid fa-arrow-right ms-2"></i>
-                        </a>
-                        <div class="toggle-menu d-block d-lg-none">
-                            <button class="menu-toggle" aria-label="Toggle menu">
-                                <span class="menu-icon">
-                                    <span class="line line-1"></span>
-                                    <span class="line line-2"></span>
-                                    <span class="line line-3"></span>
-                                </span>
-                            </button>
+                    <div class="toggle-menu d-block d-lg-none">
+                        <button class="menu-toggle" aria-label="Toggle menu">
+                            <span class="menu-icon">
+                                <span class="line line-1"></span>
+                                <span class="line line-2"></span>
+                                <span class="line line-3"></span>
+                            </span>
+                        </button>
 
-                        </div>
                     </div>
 
                 </div>
@@ -191,32 +213,32 @@
                     <div class="details_hero_slider packageDetailsheroslider">
                         <div class="details_hero_slider_item">
                             <div class="details_hero_image_box">
-                                <img  loading="lazy" 
-                                    src="assets/images/packageDetailsImages/heroslider/slider1.png" alt="Image">
+                                <img loading="lazy" src="assets/images/packageDetailsImages/heroslider/slider1.png"
+                                    alt="Image">
                             </div>
                         </div>
                         <div class="details_hero_slider_item">
                             <div class="details_hero_image_box">
-                                <img  loading="lazy" 
-                                    src="assets/images/packageDetailsImages/heroslider/slider2.png" alt="Image">
+                                <img loading="lazy" src="assets/images/packageDetailsImages/heroslider/slider2.png"
+                                    alt="Image">
                             </div>
                         </div>
                         <div class="details_hero_slider_item">
                             <div class="details_hero_image_box">
-                                <img  loading="lazy" 
-                                    src="assets/images/packageDetailsImages/heroslider/slider3.png" alt="Image">
+                                <img loading="lazy" src="assets/images/packageDetailsImages/heroslider/slider3.png"
+                                    alt="Image">
                             </div>
                         </div>
                         <div class="details_hero_slider_item">
                             <div class="details_hero_image_box">
-                                <img  loading="lazy" 
-                                    src="assets/images/packageDetailsImages/heroslider/slider4.png" alt="Image">
+                                <img loading="lazy" src="assets/images/packageDetailsImages/heroslider/slider4.png"
+                                    alt="Image">
                             </div>
                         </div>
                         <div class="details_hero_slider_item">
                             <div class="details_hero_image_box">
-                                <img  loading="lazy" 
-                                    src="assets/images/packageDetailsImages/heroslider/slider3.png" alt="Image">
+                                <img loading="lazy" src="assets/images/packageDetailsImages/heroslider/slider3.png"
+                                    alt="Image">
                             </div>
                         </div>
 
@@ -348,7 +370,7 @@
                                         <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
                                             <div class="facilie_item">
                                                 <div class="activities_icon_box">
-                                                    <img  loading="lazy" 
+                                                    <img loading="lazy"
                                                         src="assets/images/packageDetailsImages/activities_icon/accomodation.svg"
                                                         alt="ACOMODATION">
                                                 </div>
@@ -362,7 +384,7 @@
                                         <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
                                             <div class="facilie_item">
                                                 <div class="activities_icon_box">
-                                                    <img  loading="lazy" 
+                                                    <img loading="lazy"
                                                         src="assets/images/packageDetailsImages/activities_icon/guids.svg"
                                                         alt="GUIDES">
                                                 </div>
@@ -376,7 +398,7 @@
                                         <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
                                             <div class="facilie_item">
                                                 <div class="activities_icon_box">
-                                                    <img  loading="lazy" 
+                                                    <img loading="lazy"
                                                         src="assets/images/packageDetailsImages/activities_icon/language.svg"
                                                         alt="LANGUAGE">
                                                 </div>
@@ -390,7 +412,7 @@
                                         <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
                                             <div class="facilie_item">
                                                 <div class="activities_icon_box">
-                                                    <img  loading="lazy" 
+                                                    <img loading="lazy"
                                                         src="assets/images/packageDetailsImages/activities_icon/transportation.svg"
                                                         alt="TRANSPORTATION">
                                                 </div>
@@ -404,7 +426,7 @@
                                         <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
                                             <div class="facilie_item">
                                                 <div class="activities_icon_box">
-                                                    <img  loading="lazy" 
+                                                    <img loading="lazy"
                                                         src="assets/images/packageDetailsImages/activities_icon/activities.svg"
                                                         alt="ACTIVITIES">
                                                 </div>
@@ -418,7 +440,7 @@
                                         <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
                                             <div class="facilie_item">
                                                 <div class="activities_icon_box">
-                                                    <img  loading="lazy" 
+                                                    <img loading="lazy"
                                                         src="assets/images/packageDetailsImages/activities_icon/destinations.svg"
                                                         alt="DeSTINATIONS">
                                                 </div>
@@ -463,7 +485,7 @@
                                                 <div
                                                     class="d-flex itineraryheader_inner justify-content-start align-items-center">
                                                     <div class="locationIconbox">
-                                                        <img  loading="lazy" 
+                                                        <img loading="lazy"
                                                             src="assets/images/packageDetailsImages/locationIcon.svg"
                                                             alt="Location">
                                                     </div>
@@ -489,7 +511,7 @@
                                                 </h5>
                                                 <div class="howto_pickup_box">
                                                     <div class="pickup_icon_box">
-                                                        <img  loading="lazy" 
+                                                        <img loading="lazy"
                                                             src="assets/images/packageDetailsImages/car.png" alt="Car">
                                                     </div>
                                                     <div class="cardetails_box">
@@ -508,7 +530,7 @@
                                                 </h5>
                                                 <div class="where_checkin_box">
                                                     <div class="checkin_icon_box">
-                                                        <img  loading="lazy" 
+                                                        <img loading="lazy"
                                                             src="assets/images/packageDetailsImages/hotel.png"
                                                             alt="Hotel">
                                                     </div>
@@ -540,7 +562,7 @@
                                                 <!-- add activities button -->
                                                 <button class="addActivities">
                                                     <span>Add Activity</span>
-                                                    <img  loading="lazy" 
+                                                    <img loading="lazy"
                                                         src="assets/images/packageDetailsImages/arrow-white.svg"
                                                         alt="Add Activities">
 
@@ -551,18 +573,29 @@
                                                     Ganga Aarti Varanasi
                                                 </h5>
                                                 <div class="temple_visite_box">
-                                                    <div class="d-flex justify-content-start flex-lg-row flex-column align-items-stretch gap-3">
+                                                    <div
+                                                        class="d-flex justify-content-start flex-lg-row flex-column align-items-stretch gap-3">
                                                         <div class="aarti_image_box">
-                                                            <img  loading="lazy" 
+                                                            <img loading="lazy"
                                                                 src="assets/images/packageDetailsImages/aarti_img.png"
                                                                 alt="Aarti Image">
                                                         </div>
                                                         <div class="aarti_details_box">
-                                                            <p>This Aarti will be performed by the young priests who are pursuing their Vedas and Upanishads. This group will be led by Head Priest from Gangotri Seva Samiti. Devotees gather around the dais to watch this holy event. Aarti will be offered to the River Ganga amid chanting Mantras. Young priests will make the sounds using Conch shells. 7 priests will be offering Aarti to the Holy River Ganga by standing on the specially decorated dais. The whole process will be performed in rhythm with a unique dress code. Ganga Aarti will be performed with a 7 layered camphor lighting.
+                                                            <p>This Aarti will be performed by the young priests who are
+                                                                pursuing their Vedas and Upanishads. This group will be
+                                                                led by Head Priest from Gangotri Seva Samiti. Devotees
+                                                                gather around the dais to watch this holy event. Aarti
+                                                                will be offered to the River Ganga amid chanting
+                                                                Mantras. Young priests will make the sounds using Conch
+                                                                shells. 7 priests will be offering Aarti to the Holy
+                                                                River Ganga by standing on the specially decorated dais.
+                                                                The whole process will be performed in rhythm with a
+                                                                unique dress code. Ganga Aarti will be performed with a
+                                                                7 layered camphor lighting.
                                                             </p>
                                                         </div>
                                                     </div>
-                                                   
+
                                                 </div>
 
 
@@ -580,7 +613,7 @@
                                                 <div
                                                     class="d-flex itineraryheader_inner justify-content-start align-items-center">
                                                     <div class="locationIconbox">
-                                                        <img  loading="lazy" 
+                                                        <img loading="lazy"
                                                             src="assets/images/packageDetailsImages/locationIcon.svg"
                                                             alt="Location">
                                                     </div>
@@ -606,7 +639,7 @@
                                                 </h5>
                                                 <div class="howto_pickup_box">
                                                     <div class="pickup_icon_box">
-                                                        <img  loading="lazy" 
+                                                        <img loading="lazy"
                                                             src="assets/images/packageDetailsImages/car.png" alt="Car">
                                                     </div>
                                                     <div class="cardetails_box">
@@ -622,7 +655,7 @@
                                                 </h5>
                                                 <div class="where_checkin_box">
                                                     <div class="checkin_icon_box">
-                                                        <img  loading="lazy" 
+                                                        <img loading="lazy"
                                                             src="assets/images/packageDetailsImages/hotel.png"
                                                             alt="Hotel">
                                                     </div>
@@ -654,7 +687,7 @@
                                                 <!-- add activities button -->
                                                 <button class="addActivities">
                                                     <span>Add Activity</span>
-                                                    <img  loading="lazy" 
+                                                    <img loading="lazy"
                                                         src="assets/images/packageDetailsImages/arrow-white.svg"
                                                         alt="Add Activities">
 
@@ -666,7 +699,7 @@
                                                 </h5>
                                                 <div class="temple_visite_box">
                                                     <div class="aarti_image_box">
-                                                        <img  loading="lazy" 
+                                                        <img loading="lazy"
                                                             src="assets/images/packageDetailsImages/aarti_img.png"
                                                             alt="Aarti Image">
                                                     </div>
@@ -692,7 +725,7 @@
                                                 <div
                                                     class="d-flex itineraryheader_inner justify-content-start align-items-center">
                                                     <div class="locationIconbox">
-                                                        <img  loading="lazy" 
+                                                        <img loading="lazy"
                                                             src="assets/images/packageDetailsImages/locationIcon.svg"
                                                             alt="Location">
                                                     </div>
@@ -718,7 +751,7 @@
                                                 </h5>
                                                 <div class="howto_pickup_box">
                                                     <div class="pickup_icon_box">
-                                                        <img  loading="lazy" 
+                                                        <img loading="lazy"
                                                             src="assets/images/packageDetailsImages/car.png" alt="Car">
                                                     </div>
                                                     <div class="cardetails_box">
@@ -734,7 +767,7 @@
                                                 </h5>
                                                 <div class="where_checkin_box">
                                                     <div class="checkin_icon_box">
-                                                        <img  loading="lazy" 
+                                                        <img loading="lazy"
                                                             src="assets/images/packageDetailsImages/hotel.png"
                                                             alt="Hotel">
                                                     </div>
@@ -766,7 +799,7 @@
                                                 <!-- add activities button -->
                                                 <button class="addActivities">
                                                     <span>Add Activity</span>
-                                                    <img  loading="lazy" 
+                                                    <img loading="lazy"
                                                         src="assets/images/packageDetailsImages/arrow-white.svg"
                                                         alt="Add Activities">
 
@@ -778,7 +811,7 @@
                                                 </h5>
                                                 <div class="temple_visite_box">
                                                     <div class="aarti_image_box">
-                                                        <img  loading="lazy" 
+                                                        <img loading="lazy"
                                                             src="assets/images/packageDetailsImages/aarti_img.png"
                                                             alt="Aarti Image">
                                                     </div>
@@ -824,7 +857,7 @@
                                             <ul class="package_summary_list">
                                                 <li class="package_summary_item">
                                                     <div class="d-flex justify-content-start align-items-start gap-2">
-                                                        <img  loading="lazy" 
+                                                        <img loading="lazy"
                                                             src="assets/images/packageDetailsImages/lagousIcon.svg"
                                                             alt="Icon">
                                                         <p><span>Package Name :</span> Varanasi: The Holy Connection</p>
@@ -832,7 +865,7 @@
                                                 </li>
                                                 <li class="package_summary_item">
                                                     <div class="d-flex justify-content-start align-items-start gap-2">
-                                                        <img  loading="lazy" 
+                                                        <img loading="lazy"
                                                             src="assets/images/packageDetailsImages/lagousIcon.svg"
                                                             alt="Icon">
                                                         <p><span>Package Start Date :</span> Apr 3, 2025</p>
@@ -840,7 +873,7 @@
                                                 </li>
                                                 <li class="package_summary_item">
                                                     <div class="d-flex justify-content-start align-items-start gap-2">
-                                                        <img  loading="lazy" 
+                                                        <img loading="lazy"
                                                             src="assets/images/packageDetailsImages/lagousIcon.svg"
                                                             alt="Icon">
                                                         <p><span>Package Start Date :</span> Apr 3, 2025</p>
@@ -848,7 +881,7 @@
                                                 </li>
                                                 <li class="package_summary_item">
                                                     <div class="d-flex justify-content-start align-items-start gap-2">
-                                                        <img  loading="lazy" 
+                                                        <img loading="lazy"
                                                             src="assets/images/packageDetailsImages/lagousIcon.svg"
                                                             alt="Icon">
                                                         <p><span>Package End Date :</span> Apr 5, 2025</p>
@@ -856,7 +889,7 @@
                                                 </li>
                                                 <li class="package_summary_item">
                                                     <div class="d-flex justify-content-start align-items-start gap-2">
-                                                        <img  loading="lazy" 
+                                                        <img loading="lazy"
                                                             src="assets/images/packageDetailsImages/lagousIcon.svg"
                                                             alt="Icon">
                                                         <p><span>Number of Days :</span> 3 Days 2 Nights</p>
@@ -864,7 +897,7 @@
                                                 </li>
                                                 <li class="package_summary_item">
                                                     <div class="d-flex justify-content-start align-items-start gap-2">
-                                                        <img  loading="lazy" 
+                                                        <img loading="lazy"
                                                             src="assets/images/packageDetailsImages/lagousIcon.svg"
                                                             alt="Icon">
                                                         <p><span>Rooms :</span> 1</p>
@@ -872,7 +905,7 @@
                                                 </li>
                                                 <li class="package_summary_item">
                                                     <div class="d-flex justify-content-start align-items-start gap-2">
-                                                        <img  loading="lazy" 
+                                                        <img loading="lazy"
                                                             src="assets/images/packageDetailsImages/lagousIcon.svg"
                                                             alt="Icon">
                                                         <p><span>Travelers : </span> 2 Adults</p>
@@ -880,7 +913,7 @@
                                                 </li>
                                                 <li class="package_summary_item">
                                                     <div class="d-flex justify-content-start align-items-start gap-2">
-                                                        <img  loading="lazy" 
+                                                        <img loading="lazy"
                                                             src="assets/images/packageDetailsImages/lagousIcon.svg"
                                                             alt="Icon">
                                                         <p><span>Total Price :</span> 62,075.84(Includes Taxes & Fees)
@@ -1202,7 +1235,7 @@
                                     </button>
                                     <div class="d-flex justify-content-start align-items-center gap-3">
                                         <div class="icon_box">
-                                            <img  loading="lazy" 
+                                            <img loading="lazy"
                                                 src="assets/images/packageDetailsImages/grupper_icon.png" alt="Icon">
                                         </div>
                                         <div class="enquire_content_box">
@@ -1213,8 +1246,8 @@
                                     </div>
                                     <button class="enquire_btn" data-bs-toggle="modal" data-bs-target="#enquireNow">
                                         enquire Now
-                                        <img  loading="lazy" 
-                                            src="assets/images/packageDetailsImages/arrow-white.svg" alt="">
+                                        <img loading="lazy" src="assets/images/packageDetailsImages/arrow-white.svg"
+                                            alt="">
                                     </button>
                                 </div>
                                 <div class="package_includes_box">
@@ -1271,16 +1304,15 @@
 
                                     <button>
                                         Connect with Us
-                                        <img  loading="lazy" 
-                                            src="assets/images/packageDetailsImages/arrow-white.svg" alt="">
+                                        <img loading="lazy" src="assets/images/packageDetailsImages/arrow-white.svg"
+                                            alt="">
                                     </button>
 
                                 </div>
                             </div>
                             <!-- adds open button -->
                             <button class="open_add_section">
-                                <img loading="lazy" src="assets/images/packageDetailsImages/booking.png"
-                                    alt="Booking">
+                                <img loading="lazy" src="assets/images/packageDetailsImages/booking.png" alt="Booking">
                             </button>
                         </div>
                     </div>
@@ -1310,7 +1342,7 @@
                     <div class="subscriptions">
                         <input type="email" placeholder="Enter Your Email">
                         <button>Subscribe Now
-                            <img  loading="lazy"  src="assets/images/plane.svg" alt="">
+                            <img loading="lazy" src="assets/images/plane.svg" alt="">
                         </button>
                     </div>
                 </div>
@@ -1318,7 +1350,7 @@
                     <div class="footerItem ">
                         <div class="footer-logoand-description-area">
                             <a href="#" class="footerlogo">
-                                <img  loading="lazy"  src="assets/images/Logo.png" alt="My Yatra360">
+                                <img loading="lazy" src="assets/images/Logo.png" alt="My Yatra360">
                             </a>
                             <p class="footer-description" style="max-width: 345px">
                                 At MyYatra360, we are passionate about creating memorable and meaningful travel
@@ -1426,27 +1458,27 @@
                         <div class="instagrampostitems">
                             <div class="row g-2">
                                 <div class="col-4">
-                                    <img  loading="lazy"  style="height: 72px; max-width:72px;"
+                                    <img loading="lazy" style="height: 72px; max-width:72px;"
                                         src="assets/images/instagrampost/post-1.png" alt="">
                                 </div>
                                 <div class="col-4">
-                                    <img  loading="lazy"  style="height: 72px; max-width:72px;"
+                                    <img loading="lazy" style="height: 72px; max-width:72px;"
                                         src="assets/images/instagrampost/post-2.png" alt="">
                                 </div>
                                 <div class="col-4">
-                                    <img  loading="lazy"  style="height: 72px; max-width:72px;"
+                                    <img loading="lazy" style="height: 72px; max-width:72px;"
                                         src="assets/images/instagrampost/post-3.png" alt="">
                                 </div>
                                 <div class="col-4">
-                                    <img  loading="lazy"  style="height: 72px; max-width:72px;"
+                                    <img loading="lazy" style="height: 72px; max-width:72px;"
                                         src="assets/images/instagrampost/post-4.png" alt="">
                                 </div>
                                 <div class="col-4">
-                                    <img  loading="lazy"  style="height: 72px; max-width:72px;"
+                                    <img loading="lazy" style="height: 72px; max-width:72px;"
                                         src="assets/images/instagrampost/post-5.png" alt="">
                                 </div>
                                 <div class="col-4">
-                                    <img  loading="lazy"  style="height: 72px; max-width:72px;"
+                                    <img loading="lazy" style="height: 72px; max-width:72px;"
                                         src="assets/images/instagrampost/post-6.png" alt="">
                                 </div>
                             </div>
@@ -1462,7 +1494,7 @@
                     <P class=" text-nowrap">© 2025 MyYatra360</P>
                     <div class="d-flex align-items-center justify-content-end gap-3">
                         <p class=" flex-shrink-0">We Accept</p>
-                        <img  loading="lazy"  src="assets/images/cards.png" alt="">
+                        <img loading="lazy" src="assets/images/cards.png" alt="">
                     </div>
                 </div>
             </div>
