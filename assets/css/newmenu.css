@@ -24,6 +24,9 @@ padding: 10px 20px;
 .navlink span {
     color: #0172CD;
 }
+.moremenu{
+    background: none;
+}
 
 .aboutuslink .navlink {
     border-radius: 0 !important;
@@ -54,6 +57,7 @@ padding: 10px 20px;
         left: 50%;
         transform: translateX(-50%);
         overflow-y: auto;
+        padding-bottom: 250px;
      
     }
 
