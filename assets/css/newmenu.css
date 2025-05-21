@@ -49,7 +49,11 @@ padding: 10px 20px;
         border-top: 8px solid #0172CD;
         border-radius: 7px;
         background: #ffffff !important;
-        overscroll-behavior: contain;
+        height: 100vh;
+        width: 100vw;
+        left: 50%;
+        transform: translateX(-50%);
+        overflow-y: auto;
      
     }
 
