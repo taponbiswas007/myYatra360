@@ -46,6 +46,17 @@ padding: 10px 20px;
     background: linear-gradient(180deg, #71C1FF 0%, #0073D2 100%) !important;
 
 }
+ .submenuLink {
+        text-align: left !important;
+
+
+    }
+    .submenu ul li{
+        border-bottom: .9px solid rgba(206, 206, 206, 0.791);
+    }
+        .submenu ul li:last-child{
+            border-bottom: none;
+        }
 
 @media (max-width: 992px) {
     .menu-content {
@@ -98,11 +109,7 @@ padding: 10px 20px;
         left: 0 !important;
     }
 
-    .submenuLink {
-        text-align: left !important;
-
-
-    }
+   
 
     .submenu .navlink {
         display: none;
