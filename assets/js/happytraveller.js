@@ -4,8 +4,8 @@ $(document).ready(function(){
         dots: true,
         infinite: true,
         speed: 300,
-        slidesToShow: 3,
-        slidesToScroll: 1,
+        slidesToShow: 5,
+        slidesToScroll: 2,
         arrows: true,
         centerPadding: '20px',
         autoplay: true,
@@ -14,9 +14,9 @@ $(document).ready(function(){
         autoplaySpeed: 2000,
     
         responsive: [{
-                breakpoint: 1400,
+                breakpoint: 1300,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 5,
                     slidesToScroll: 1,
                     infinite: true,
                 }
@@ -24,14 +24,14 @@ $(document).ready(function(){
             {
                 breakpoint: 993,
                 settings: {
-                    slidesToShow: 1,
+                    slidesToShow: 4,
                     slidesToScroll: 1
                 }
             },
             {
                 breakpoint: 768,
                 settings: {
-                    slidesToShow: 1.5,
+                    slidesToShow: 3,
                     slidesToScroll: 1
                 }
             },
