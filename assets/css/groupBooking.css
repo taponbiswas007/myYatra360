@@ -26,8 +26,11 @@
     background: #ffffff;
 }
 
-.have-questions-area {
+.recent-gallery-area-mobile , .recent-gallery-area {
     background: #E7F6FA;
+}
+.have-questions-area {
+    background: #ffffff;
 }
 
 .womenImg {

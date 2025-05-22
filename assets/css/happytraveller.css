@@ -1,56 +1,62 @@
-.happytraveller_area{
+.happytraveller_area {
     padding: 50px 0;
 }
-.happytraveller_area p{
+
+.happytraveller_area p {
     font-family: Inter;
-font-weight: 400;
-font-size: 14px;
-line-height: 18px;
-letter-spacing: 0%;
-text-align: center;
-vertical-align: middle;
-color: #113D48;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    color: #113D48;
 }
-.happy_traveller_card{
-   box-shadow: 0px 5.42px 20.33px 0px #00000033;
-background: #ffffff;
-padding: 14px;
-border-radius: 12px;
-display: block;
+
+.happy_traveller_card {
+    box-shadow: 0px 5.42px 20.33px 0px #00000033;
+    background: #ffffff;
+    padding: 14px;
+    border-radius: 12px;
+    display: block;
 
 }
-.happy_traveller_card .tr_card_image{
+
+.happy_traveller_card .tr_card_image {
     position: relative;
     width: 100%;
     aspect-ratio: 1 / 1.02;
     overflow: hidden;
     border-radius: 7px;
 }
-.happy_traveller_card .tr_card_inner{
+
+.happy_traveller_card .tr_card_inner {
     position: relative;
 }
-.happy_traveller_card .tr_card_inner .tr_date_box{
+
+.happy_traveller_card .tr_card_inner .tr_date_box {
     font-family: DM Sans;
-font-weight: 700;
-font-size: 10px;
-line-height: 100%;
-letter-spacing: 0px;
-text-align: center;
-color: #ffffff;
-position: absolute;
-top: -31px;
-right: -30px;
-height: 54px;
-width: 54px;
-border: 2.45px solid #ffffff;
-background: #1CA8CB;
-border-radius: 50%;
-display: flex;
-justify-content: center;
-align-items: center;
-z-index: 1;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #ffffff;
+    position: absolute;
+    top: -31px;
+    right: -30px;
+    height: 54px;
+    width: 54px;
+    border: 2.45px solid #ffffff;
+    background: #1CA8CB;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
 }
-.happy_traveller_card .tr_card_image img{
+
+.happy_traveller_card .tr_card_image img {
     position: absolute;
     top: 0;
     left: 0;
@@ -59,59 +65,183 @@ z-index: 1;
     object-position: center;
     object-fit: fill;
 }
-.tr_card_title{
+
+.tr_card_title {
     font-family: Inter;
-font-weight: 500;
-font-size: 14px;
-line-height: 19.23px;
-letter-spacing: 0%;
-vertical-align: middle;
-color: #0D0D0C;
-text-align: left;
-margin-top: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19.23px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #0D0D0C;
+    text-align: left;
+    margin-top: 10px;
 }
-.tr_name{
+
+.tr_name {
     font-family: Inter;
-font-weight: 600;
-font-size: 12px;
-line-height: 18px;
-letter-spacing: 0%;
-vertical-align: middle;
-color: #353F4F;
-text-align: left;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #353F4F;
+    text-align: left;
 }
-.tr_comment{
+
+.tr_comment {
     font-family: Inter;
-font-weight: 400;
-font-size: 12px;
-line-height: 19.6px;
-letter-spacing: 0%;
-vertical-align: middle;
-color: #6E7070;
-text-align: left !important;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 19.6px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #6E7070;
+    text-align: left !important;
 }
-.tr_comment span{
+
+.tr_comment span {
     color: #0073D2;
 }
-.tr_card_footer .tr_cat{
-font-family: DM Sans;
-font-weight: 500;
-font-size: 12px;
-line-height: 100%;
-letter-spacing: 0px;
-text-align: center;
-color: #0A7E22;
-background: #C2FFCF;
-padding: 8px 12px;
-border-radius: 3px;
-}
-.tr_card_footer .tr_location{
-font-family: DM Sans;
-font-weight: 500;
-font-size: 12px;
-line-height: 100%;
-letter-spacing: 0px;
-text-align: center;
-color: #000000;
 
+.tr_card_footer .tr_cat {
+    font-family: DM Sans;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #0A7E22;
+    background: #C2FFCF;
+    padding: 8px 12px;
+    border-radius: 3px;
+}
+
+.happy_traveller_slider_area .happy_travel_card_outer:nth-child(even) .tr_card_footer .tr_cat {
+    color: #1CA8CB;
+    background: #1CA8CB38;
+}
+
+.tr_card_footer .tr_location {
+    font-family: DM Sans;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #000000;
+
+}
+
+.slick-dots li.slick-active button::before {
+    color: #0073D2 !important;
+}
+
+.slick-dots li button::before {
+    font-size: 10px !important;
+}
+
+.recent-gallery-area-mobile,
+.recent-gallery-area {
+    background: #E7F6FA;
+}
+
+.have-questions-area {
+    background: #ffffff;
+}
+.tr_de_img_sl_img{
+    height: 100%;
+}
+.tr_de_img_sl_img .img_inner{
+    position: relative;
+    width: 100%;
+    height: 529px;
+    border-radius: 7px;
+    overflow: hidden;
+}
+.tr_de_img_sl_img .img_inner img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    object-position: center;
+}
+.tr_comment_area h1{
+    font-family: Inter;
+font-weight: 700;
+font-size: 40px;
+line-height: 63.7px;
+letter-spacing: 0%;
+vertical-align: middle;
+color: #113D48;
+margin-bottom: 18px;
+}
+.tr_comment_area .who-we-are-content article{
+   font-family: Inter;
+font-weight: 400;
+font-size: 18px;
+line-height: 29.7px;
+letter-spacing: 0%;
+vertical-align: middle;
+color: #000000;
+}
+.travellers_details_slide_area .custom-arrows{
+    position: unset;
+    transform: unset;
+  display: none;
+  gap: unset;
+  transition: all 0.3s ease;
+
+}
+.travellers_details_slide_area:hover .custom-arrows{
+    display: block;
+}
+
+.travellers_details_slide_area .custom-arrows .custom-prev{
+     position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    color: #ffffff;
+  border: 3px solid #ffffff;
+}
+.travellers_details_slide_area .custom-arrows .custom-next{
+     position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+      color: #ffffff;
+  border: 3px solid #ffffff;
+}
+.viwemore_tr_details{
+    font-family: Inter;
+font-weight: 700;
+font-size: 24px;
+line-height: 63.7px;
+letter-spacing: 0%;
+vertical-align: middle;
+color: #113D48;
+text-align: left;
+}
+
+@media (max-width: 1325px) {
+    .tr_comment_area h1{
+        font-size: 35px;
+    }
+    .tr_comment_area .who-we-are-content article{
+        font-size: 15px;
+    }
+}
+@media (max-width: 630px) {
+    .tr_comment_area h1{
+        line-height: 44px !important;
+       
+    }
+}
+@media (max-width: 440px) {
+    .tr_de_img_sl_img .img_inner {
+        height: 400px;
+    }
 }
