@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <title>My Yatra 360</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Montez&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <!-- plus jakarta sanse -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+
+
+    <!-- out fit font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <!-- source sans pro font -->
+    <link rel="stylesheet" href="assets/font/sourceSansPro/stylesheet.css">
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- slick css -->
+    <link rel="stylesheet" href="assets/slickSlider/slick.css">
+    <link rel="stylesheet" href="assets/slickSlider/slick-theme.css">
+
+    <!-- swipper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- font awesome css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/authentication.css">
+    <link rel="stylesheet" href="assets/css/exploration.css">
+    <link rel="stylesheet" href="assets/css/groupBooking.css">
+    <link rel="stylesheet" href="assets/css/offerCard.css">
+    <link rel="stylesheet" href="assets/css/newmenu.css">
+    <link rel="stylesheet" href="assets/css/happytraveller.css">
+    <link rel="stylesheet" href="assets/css/aiPlanner.css">
+</head>
+
+<body>
+
+
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <img src="assets/images/Logo.png" alt="Logo">
+            <div class="spinner"></div>
+        </div>
+    </div>
+    <div class="website-content">
+
+
+        <!-- =====================top header start======================= -->
+        <div class="topheader  py-1">
+            <div class="container">
+                <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center">
+                    <div class="marquee-container">
+                        <div class="marquee-content" data-bs-toggle="modal" data-bs-target="#ourSpecialization">
+                            Our Specialization: Divine Destinations | Luxury Retreats | Timeless Experience
+                        </div>
+                    </div>
+                    <div class=" language-and-currency-changer d-flex ps-3 gap-4  justify-content-between align-items-center"
+                        style="color: #999999;">
+                        <!-- Language Select with Custom Icon -->
+                        <!-- <div class="languagebox">
+                            English
+                        </div> -->
+                        <div class="custom-select-wrapper">
+                            <select name="currency" class="custom-select">
+                                <option value="₹ INR">₹ INR</option>
+                            </select>
+                            <i class="fa-solid fa-caret-down custom-select-icon"></i>
+                        </div>
+                        |
+                        <!-- Auth link area -->
+                        <div class="login-area d-flex align-items-center">
+                            <a data-bs-toggle="modal" role="button" href="#loginNow" class="login">
+                                Log in <i class="fa-solid fa-arrow-right ms-2"></i>
+                            </a>
+                            <a data-bs-toggle="modal" role="button" href="#signupNow" class="signup ms-2">
+                                Sign Up <i class="fa-solid fa-arrow-right ms-2"></i>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- =====================top header end======================= -->
+
+
+
+        <!-- =====================navigationbar start======================= -->
+        <div class="navigationbar sticky-top">
+            <div class="container">
+                <div class="d-flex position-relative justify-content-between align-items-center">
+                    <a href="#" class="logo">
+                        <img loading="lazy" src="assets/images/Logo.png" alt="Yatra360">
+                    </a>
+
+                    <div class="menu-content">
+                        <nav class=" d-flex   justify-content-center align-items-center gap-xl-5 gap-lg-4">
+                            <!-- =====Exploration area start===== -->
+                            <a href="#explorationPopup" data-bs-toggle="modal" role="button" class="navlink ">
+                                <!-- <img loading="lazy" src="assets/images/exploration.png" alt="Exploration"> -->
+                                <img loading="lazy" src="assets/images/newmenuIcon/ex.png" alt="Exploration">
+                                <span class="exploration_text">Exploration</span>
+                            </a>
+                            <!-- =====Exploration area end===== -->
+                            <a href="index.html" class="navlink activepage">
+                                <img loading="lazy" src="assets/images/newmenuIcon/home.svg" alt="Home">
+                                <span>Home</span>
+                            </a>
+                            <a href="packageDetailsPage.html" class="navlink">
+                                <img loading="lazy" src="assets/images/newmenuIcon/luggage.svg" alt="Packages">
+                                <span>Packages</span>
+                            </a>
+                            <a href="#" class="navlink">
+                                <img loading="lazy" src="assets/images/newmenuIcon/flight.svg" alt="Flight">
+                                <span>Flight</span>
+                            </a>
+                            <a href="#" class="navlink">
+                                <img loading="lazy" src="assets/images/newmenuIcon/hotel.svg" alt="Hotel">
+                                <span>Hotel</span>
+                            </a>
+                            <a href="#" class="navlink">
+                                <img loading="lazy" src="assets/images/newmenuIcon/car.svg" alt="Vehicle">
+                                <span>Vehicle</span>
+                            </a>
+                            <a href="#" class="navlink">
+                                <img loading="lazy" src="assets/images/newmenuIcon/ticket-check.svg" alt="My Bookings">
+                                <span>My Bookings</span>
+                            </a>
+
+                            <div class="position-relative aboutuslink">
+                                <button class="navlink moremenu ">
+                                    <img loading="lazy" src="assets/images/newmenuIcon/menu.svg" alt="">
+                                    <span>More</span>
+                                    <div class="submenu shadow rounded-3 p-2 pt-3 position-absolute top-100 end-0">
+                                        <ul class=" ps-0">
+                                            <li>
+                                                <a class=" dropdown-item mb-1 submenuLink " href="whyWeAre.html">
+                                                    Who we are
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class=" dropdown-item mb-1 submenuLink" href="ourTeams.html">
+                                                    Our Team
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class=" dropdown-item submenuLink" href="whychooseUs.html">
+                                                    Why Choose MyYatra360?
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </button>
+                            </div>
+                            <!-- <a href="#" class="navlink">
+                                <img loading="lazy" src="assets/images/faq.svg" alt="Faq’s">
+                                <span>Faq’s</span>
+                            </a> -->
+                        </nav>
+                    </div>
+
+                    <div class="toggle-menu d-block d-lg-none">
+                        <button class="menu-toggle" aria-label="Toggle menu">
+                            <span class="menu-icon">
+                                <span class="line line-1"></span>
+                                <span class="line line-2"></span>
+                                <span class="line line-3"></span>
+                            </span>
+                        </button>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- =====================navigationbar end======================= -->
+
+
+        <!-- ==================main area start=================== -->
+        <div class="aiPlanner_area">
+            <div class="row g-4 w-100">
+                <div class="col-xl-6">
+
+                </div>
+                <div class="col-xl-6">
+                    <div class="d-flex justify-content-center align-items-center h-100 w-100">
+                        <div class="ai_image_box">
+                            <img loading="lazy" src="assets/images/ai/robot.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ==================main area end=================== -->
+
+
+
+        <!-- =============our specialization start============ -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="ourSpecialization" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="ourSpecializationLabel">Our Specialization</h5>
+                        <button type="button" data-bs-dismiss="modal" aria-label="Close">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="specialization-area">
+                            <h1>Divine Destinations </h1>
+                            <ul>
+                                <li>Flexible tour options to suit different preferences and budgets. </li>
+                                <li>Seamless and stress-free travel experience with all logistics handled. </li>
+                            </ul>
+                            <h1>Luxury Retreats </h1>
+                            <ul>
+                                <li>Premium accommodations and high-end travel experiences.</li>
+                                <li>Exclusive services for a comfortable and enriching journey. </li>
+                                <li>Explore the rich heritage and timeless beauty of ancient sites.</li>
+                                <li>Curated itineraries covering sacred and historical landmarks. </li>
+                            </ul>
+                            <h1>Timeless Experience </h1>
+                            <ul>
+                                <li>Hassle-free travel. </li>
+                                <li>Expert travel guides to enhance your journey. </li>
+                                <li>Medical assistance – round-the-clock support for health and safety. </li>
+                                <li>A trustworthy site for religious seekers and cultural explorers.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- =============our specialization end============ -->
+
+
+
+
+      
+
+
+        <!-- ===========================================---------========== -->
+        <!-- =======================Authentication page start============== -->
+        <!-- ===========================================---------========== -->
+
+
+        <!-- login page -->
+        <div class="modal fade authenticationpopuparea" id="loginNow" aria-hidden="true"
+            aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+                        <div class="d-flex justify-content-between align-items-stretch">
+                            <div class="loginbanner_side d-none d-lg-block">
+                                <div class="login_page_slider_area">
+                                    <div class="login_slider">
+
+                                        <div class="slider_item">
+                                            <div class="slider_image_box">
+                                                <img loading="lazy"
+                                                    src="assets/images/authentication/slider/image_1.png"
+                                                    alt="Slider 1">
+                                            </div>
+
+                                        </div>
+                                        <div class="slider_item">
+                                            <div class="slider_image_box">
+                                                <img loading="lazy"
+                                                    src="assets/images/authentication/slider/image_2.png"
+                                                    alt="Slider 1">
+                                            </div>
+
+                                        </div>
+                                        <div class="slider_item">
+                                            <div class="slider_image_box">
+                                                <img loading="lazy"
+                                                    src="assets/images/authentication/slider/image_3.png"
+                                                    alt="Slider 1">
+                                            </div>
+
+                                        </div>
+                                        <div class="slider_item">
+                                            <div class="slider_image_box">
+                                                <img loading="lazy"
+                                                    src="assets/images/authentication/slider/image_4.png"
+                                                    alt="Slider 1">
+                                            </div>
+
+                                        </div>
+                                        <div class="slider_item">
+                                            <div class="slider_image_box">
+                                                <img loading="lazy"
+                                                    src="assets/images/authentication/slider/image_5.png"
+                                                    alt="Slider 1">
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="login_content_side ">
+                                <div class="d-flex justify-content-end align-items-center"
+                                    style=" padding: 9px 12px 12px 0;">
+                                    <button class="login_area_close" data-bs-dismiss="modal" aria-label="Close">
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </button>
+                                </div>
+                                <div class="login_content_main_area">
+                                    <div class="login_and_create_new_button_area">
+                                        <button class=" active">Login Your Account</button>
+                                        <button type="button" data-bs-target="#signupNow" data-bs-toggle="modal"
+                                            data-bs-dismiss="modal">Create New Account</button>
+                                    </div>
+                                    <!-- enter mail -->
+                                    <div class="inputfeildArea ">
+                                        <label for="">
+                                            Email Id
+                                        </label>
+                                        <input type="email" placeholder="Enter Your Email">
+                                    </div>
+                                    <div class="inputfeildArea ">
+                                        <label for="">
+                                            Password
+                                        </label>
+                                        <input class="passwordFeild" type="text" placeholder="Enter Your Password">
+                                        <button class="passwork_look">
+                                            <i class="fa-regular fa-eye visible"></i>
+                                            <i class="fa-regular fa-eye-slash hidden"></i>
+                                        </button>
+                                    </div>
+                                    <div class="d-flex justify-content-end align-items-center">
+                                        <button class="forgotpassword" data-bs-toggle="modal"
+                                            data-bs-target="#forgotPassword" data-bs-dismiss="modal"
+                                            type="button">Forgot Password?</button>
+                                    </div>
+                                    <button class="login_btn">
+                                        Login
+                                    </button>
+                                    <p>Don't have an account? <button type="button" data-bs-target="#signupNow"
+                                            data-bs-toggle="modal" data-bs-dismiss="modal">Sign up!</button></p>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="orBorder"></div>
+                                    <div class="orContent">
+                                        Or
+                                    </div>
+                                    <div class="orBorder"></div>
+                                </div>
+                                <!-- guest -->
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <button class="guestbutton">
+                                        Continue as guest
+                                        <img loading="lazy" src="assets/images/arrow-green.svg" alt="Icon">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- sing up page -->
+        <div class="modal fade authenticationpopuparea" id="signupNow" aria-hidden="true"
+            aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+                        <div class="d-flex justify-content-between align-items-stretch">
+                            <div class="loginbanner_side d-none d-lg-block">
+                                <div class="login_page_slider_area">
+                                    <div class="login_slider">
+
+                                        <div class="slider_item">
+                                            <div class="slider_image_box">
+                                                <img loading="lazy"
+                                                    src="assets/images/authentication/slider/image_1.png"
+                                                    alt="Slider 1">
+                                            </div>
+
+                                        </div>
+                                        <div class="slider_item">
+                                            <div class="slider_image_box">
+                                                <img loading="lazy"
+                                                    src="assets/images/authentication/slider/image_2.png"
+                                                    alt="Slider 1">
+                                            </div>
+
+                                        </div>
+                                        <div class="slider_item">
+                                            <div class="slider_image_box">
+                                                <img loading="lazy"
+                                                    src="assets/images/authentication/slider/image_3.png"
+                                                    alt="Slider 1">
+                                            </div>
+
+                                        </div>
+                                        <div class="slider_item">
+                                            <div class="slider_image_box">
+                                                <img loading="lazy"
+                                                    src="assets/images/authentication/slider/image_4.png"
+                                                    alt="Slider 1">
+                                            </div>
+
+                                        </div>
+                                        <div class="slider_item">
+                                            <div class="slider_image_box">
+                                                <img loading="lazy"
+                                                    src="assets/images/authentication/slider/image_5.png"
+                                                    alt="Slider 1">
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="login_content_side signup_content_side">
+                                <div class="d-flex justify-content-end align-items-center"
+                                    style=" padding: 9px 12px 12px 0;">
+                                    <button class="login_area_close" data-bs-dismiss="modal" aria-label="Close">
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </button>
+                                </div>
+                                <div class="login_content_main_area">
+                                    <div class="login_and_create_new_button_area">
+                                        <button type="button" data-bs-target="#loginNow" data-bs-toggle="modal"
+                                            data-bs-dismiss="modal">Login Your Account</button>
+                                        <button class=" active">Create New Account</button>
+                                    </div>
+                                    <div class="row g-4" style="margin-top: 5px;">
+                                        <div class="col-sm-6 col-12 mt-0">
+                                            <div class="inputfeildArea ">
+                                                <label for="">
+                                                    First Name
+                                                </label>
+                                                <input type="text" placeholder="Enter First Name">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-12 mt-0">
+                                            <div class="inputfeildArea ">
+                                                <label for="">
+                                                    Last Name
+                                                </label>
+                                                <input type="text" placeholder="Enter Last Name">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-12 mt-0">
+                                            <div class="inputfeildArea ">
+                                                <label for="">
+                                                    Email Id
+                                                </label>
+                                                <input type="email" placeholder="Enter Your Email">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-12 mt-0">
+                                            <div class="inputfeildArea ">
+                                                <label for="">
+                                                    Contact No
+                                                </label>
+                                                <div class="d-flex justify-content-start align-items-center">
+                                                    <select>
+                                                        <option value="">+1</option>
+                                                        <option value="">+91</option>
+                                                        <option value="">+880</option>
+                                                    </select>
+                                                    <input type="text" placeholder="Enter Mobile number">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-12 mt-0">
+                                            <div class="inputfeildArea ">
+                                                <label for="">
+                                                    Password
+                                                </label>
+                                                <input class="passwordFeild" type="text" placeholder="Enter Password">
+                                                <button class="passwork_look">
+                                                    <i class="fa-regular fa-eye visible"></i>
+                                                    <i class="fa-regular fa-eye-slash hidden"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-12 mt-0">
+                                            <div class="inputfeildArea ">
+                                                <label for="">
+                                                    Confirm Password
+                                                </label>
+                                                <input class="confirmpasswordFeild" type="text"
+                                                    placeholder="Confirm Password">
+                                                <button class="passwork_look_confirm">
+                                                    <i class="fa-regular fa-eye convisible"></i>
+                                                    <i class="fa-regular fa-eye-slash conhidden"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="signup_btn" style="margin-top: 35px">
+                                        Sign Up
+                                    </button>
+                                    <p>Already have an account? <button type="button" data-bs-target="#loginNow"
+                                            data-bs-toggle="modal" data-bs-dismiss="modal">Login!</button></p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- forgot password page -->
+        <div class="modal fade authenticationpopuparea" id="forgotPassword" aria-hidden="true"
+            aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+                        <div class="d-flex justify-content-between align-items-stretch">
+                            <div class="loginbanner_side d-none d-lg-block">
+                                <div class="login_page_slider_area">
+                                    <div class="login_slider">
+
+                                        <div class="slider_item">
+                                            <div class="slider_image_box">
+                                                <img loading="lazy"
+                                                    src="assets/images/authentication/slider/image_1.png"
+                                                    alt="Slider 1">
+                                            </div>
+
+                                        </div>
+                                        <div class="slider_item">
+                                            <div class="slider_image_box">
+                                                <img loading="lazy"
+                                                    src="assets/images/authentication/slider/image_2.png"
+                                                    alt="Slider 1">
+                                            </div>
+
+                                        </div>
+                                        <div class="slider_item">
+                                            <div class="slider_image_box">
+                                                <img loading="lazy"
+                                                    src="assets/images/authentication/slider/image_3.png"
+                                                    alt="Slider 1">
+                                            </div>
+
+                                        </div>
+                                        <div class="slider_item">
+                                            <div class="slider_image_box">
+                                                <img loading="lazy"
+                                                    src="assets/images/authentication/slider/image_4.png"
+                                                    alt="Slider 1">
+                                            </div>
+
+                                        </div>
+                                        <div class="slider_item">
+                                            <div class="slider_image_box">
+                                                <img loading="lazy"
+                                                    src="assets/images/authentication/slider/image_5.png"
+                                                    alt="Slider 1">
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="login_content_side ">
+                                <div class="d-flex justify-content-end align-items-center"
+                                    style=" padding: 9px 12px 12px 0;">
+                                    <button class="login_area_close" data-bs-dismiss="modal" aria-label="Close">
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </button>
+                                </div>
+                                <div
+                                    class="forgotpassword_content_main_area  d-flex justify-content-center align-items-center flex-column">
+                                    <h2>forgot Password</h2>
+                                    <p>Enter your email for the verification process,we will send 4 digits <br> code to
+                                        your email.</p>
+                                    <div class="underlineborder "></div>
+                                    <div class="inputfeildArea ">
+                                        <label for="">
+                                            Email Id
+                                        </label>
+                                        <input type="email" placeholder="Enter Your Email">
+                                    </div>
+                                    <button class="continuebtn" data-bs-dismiss="modal" data-bs-target="#otpArea"
+                                        data-bs-toggle="modal" style="margin-top: 22px">
+                                        Continue
+                                    </button>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- otp  page -->
+        <div class="modal fade authenticationpopuparea" id="otpArea" aria-hidden="true"
+            aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+                        <div class="d-flex justify-content-between align-items-stretch">
+                            <div class="loginbanner_side d-none d-lg-block">
+                                <div class="login_page_slider_area">
+                                    <div class="login_slider">
+
+                                        <div class="slider_item">
+                                            <div class="slider_image_box">
+                                                <img loading="lazy"
+                                                    src="assets/images/authentication/slider/image_1.png"
+                                                    alt="Slider 1">
+                                            </div>
+
+                                        </div>
+                                        <div class="slider_item">
+                                            <div class="slider_image_box">
+                                                <img loading="lazy"
+                                                    src="assets/images/authentication/slider/image_2.png"
+                                                    alt="Slider 1">
+                                            </div>
+
+                                        </div>
+                                        <div class="slider_item">
+                                            <div class="slider_image_box">
+                                                <img loading="lazy"
+                                                    src="assets/images/authentication/slider/image_3.png"
+                                                    alt="Slider 1">
+                                            </div>
+
+                                        </div>
+                                        <div class="slider_item">
+                                            <div class="slider_image_box">
+                                                <img loading="lazy"
+                                                    src="assets/images/authentication/slider/image_4.png"
+                                                    alt="Slider 1">
+                                            </div>
+
+                                        </div>
+                                        <div class="slider_item">
+                                            <div class="slider_image_box">
+                                                <img loading="lazy"
+                                                    src="assets/images/authentication/slider/image_5.png"
+                                                    alt="Slider 1">
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="login_content_side ">
+                                <div class="d-flex justify-content-end align-items-center"
+                                    style=" padding: 9px 12px 12px 0;">
+                                    <button class="login_area_close" data-bs-dismiss="modal" aria-label="Close">
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </button>
+                                </div>
+                                <div
+                                    class="forgotpassword_content_main_area  d-flex justify-content-center align-items-center flex-column">
+                                    <h2>Enter OTP</h2>
+                                    <p>Your OTP has been sent to your registered email ID.</p>
+                                    <div class="underlineborder "></div>
+                                    <div class="otpbox_area">
+                                        <input type="text">
+                                        <input type="text">
+                                        <input type="text">
+                                        <input type="text">
+                                    </div>
+                                    <button class="continuebtn" data-bs-toggle="modal" data-bs-target="#newPassword"
+                                        data-bs-dismiss="modal" style="margin-top: 24px">
+                                        Continue
+                                    </button>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- new password set page -->
+        <div class="modal fade authenticationpopuparea" id="newPassword" aria-hidden="true"
+            aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+                        <div class="d-flex justify-content-between align-items-stretch">
+                            <div class="loginbanner_side d-none d-lg-block">
+                                <div class="login_page_slider_area">
+                                    <div class="login_slider">
+
+                                        <div class="slider_item">
+                                            <div class="slider_image_box">
+                                                <img loading="lazy"
+                                                    src="assets/images/authentication/slider/image_1.png"
+                                                    alt="Slider 1">
+                                            </div>
+
+                                        </div>
+                                        <div class="slider_item">
+                                            <div class="slider_image_box">
+                                                <img loading="lazy"
+                                                    src="assets/images/authentication/slider/image_2.png"
+                                                    alt="Slider 1">
+                                            </div>
+
+                                        </div>
+                                        <div class="slider_item">
+                                            <div class="slider_image_box">
+                                                <img loading="lazy"
+                                                    src="assets/images/authentication/slider/image_3.png"
+                                                    alt="Slider 1">
+                                            </div>
+
+                                        </div>
+                                        <div class="slider_item">
+                                            <div class="slider_image_box">
+                                                <img loading="lazy"
+                                                    src="assets/images/authentication/slider/image_4.png"
+                                                    alt="Slider 1">
+                                            </div>
+
+                                        </div>
+                                        <div class="slider_item">
+                                            <div class="slider_image_box">
+                                                <img loading="lazy"
+                                                    src="assets/images/authentication/slider/image_5.png"
+                                                    alt="Slider 1">
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="login_content_side ">
+                                <div class="d-flex justify-content-end align-items-center"
+                                    style=" padding: 9px 12px 12px 0;">
+                                    <button class="login_area_close" data-bs-dismiss="modal" aria-label="Close">
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </button>
+                                </div>
+                                <div
+                                    class="forgotpassword_content_main_area  d-flex justify-content-center align-items-center flex-column">
+                                    <h2>New Password</h2>
+                                    <p>Set new password!</p>
+                                    <div class="underlineborder "></div>
+                                    <div class="inputfeildArea ">
+                                        <label for="">
+                                            New Password
+                                        </label>
+                                        <input class="passwordFeild" type="text" placeholder="Enter New Password">
+                                        <button class="passwork_look">
+                                            <i class="fa-regular fa-eye visible"></i>
+                                            <i class="fa-regular fa-eye-slash hidden"></i>
+                                        </button>
+                                    </div>
+                                    <div class="inputfeildArea ">
+                                        <label for="">
+                                            Confirm Password
+                                        </label>
+                                        <input class="confirmpasswordFeild" type="text"
+                                            placeholder="Enter Confirm Password">
+                                        <button class="passwork_look_confirm">
+                                            <i class="fa-regular fa-eye convisible"></i>
+                                            <i class="fa-regular fa-eye-slash conhidden"></i>
+                                        </button>
+                                    </div>
+                                    <button class="continuebtn" data-bs-dismiss="modal" data-bs-toggle="modal"
+                                        style="margin-top: 22px">
+                                        Update
+                                    </button>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- =======================================---------============== -->
+        <!-- =======================Authentication page end================ -->
+        <!-- =======================================---------============== -->
+
+
+        <!-- ===================Exploration popup area start=================== -->
+        <div class="modal fade exploration_popup_area" id="explorationPopup" aria-hidden="true" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="explorarTitle">Somnath</h5>
+                        <button type="button" data-bs-dismiss="modal" aria-label="Close">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body ">
+                        <!-- tabwise content area start -->
+                        <div class="tabcontent_area explorarContent " id="somnathContent">
+                            <div class="videoPlayer">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/1DUYr90wxGQ"
+                                    title="All-In-One Solution for Tailoring Management" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                                </iframe>
+                                <!-- you need just change the vido id
+                        exmple  src="https://www.youtube.com/embed/YOUR VIDEO PEST HERE"  -->
+
+                            </div>
+                            <p>
+                                Somnath Temple is a Hindu temple, located in Prabhas Patan, Veraval in Gujarat, India.
+                                It is one of the most sacred pilgrimage sites the Tirtha Kshetra for Hindus and is the
+                                first among the twelve jyotirlinga shrines of Shiva. It is unclear when the first
+                                version of the Somnath temple was built, with estimates varying between the early
+                                centuries of the 1st millennium and about the 9th century CE.
+                            </p>
+                        </div>
+                        <div class="tabcontent_area explorarContent " id="mallikarjunaContent">
+                            <div class="videoPlayer">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/5RmpWj-cFgQ"
+                                    title="All-In-One Solution for Tailoring Management" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                                </iframe>
+                                <!-- you need just change the vido id
+                        exmple  src="https://www.youtube.com/embed/YOUR VIDEO PEST HERE"  -->
+
+                            </div>
+                            <p>
+                                Somnath Temple is a Hindu temple, located in Prabhas Patan, Veraval in Gujarat, India.
+                                It is one of the most sacred pilgrimage sites the Tirtha Kshetra for Hindus and is the
+                                first among the twelve jyotirlinga shrines of Shiva. It is unclear when the first
+                                version of the Somnath temple was built, with estimates varying between the early
+                                centuries of the 1st millennium and about the 9th century CE.
+                            </p>
+                        </div>
+                        <!-- tabwise content area end -->
+
+                        <ul class="placeTablist  ">
+                            <li>
+                                <button class="active jyotirlinga1btn">
+                                    12 Jyotirlinga
+                                </button>
+                            </li>
+                            <li>
+                                <button class="jyotirlinga2btn">
+                                    12 Jyotirlinga
+                                </button>
+                            </li>
+                            <li>
+                                <button class="shaktiPithbtn">
+                                    51 shakti pith
+                                </button>
+                            </li>
+                        </ul>
+                        <!-- tab area start -->
+                        <div class="subplaceList_area">
+                            <div class="marquee-container subplacelistitems subplacelistActive"
+                                id="jyotirlinga1subitem">
+                                <div class="expmarquee-content">
+                                    <div class="subplaceList ">
+                                        <button class="active somnathBtn">Somnath</button>
+                                        <span>|</span>
+                                        <button class="mallikarjunaBtn">Mallikarjuna</button>
+                                        <span>|</span>
+                                        <button class="mahakaleshwarBtn">Mahakaleshwar</button>
+                                        <span>|</span>
+                                        <button class="omkareshwarBtn">Omkareshwar</button>
+                                        <span>|</span>
+                                        <button class="kedarnathBtn">Kedarnath</button>
+                                        <span>|</span>
+                                        <button class="bhimashankarBtn">Bhimashankar</button>
+                                        <span>|</span>
+                                        <button class="bhimashankarBtn">Bhimashankar</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="marquee-container subplacelistitems " id="jyotirlinga2subitem">
+                                <div class="expmarquee-content">
+                                    <div class="subplaceList ">
+                                        <button class="active somnathBtn">Somnath</button>
+                                        <span>|</span>
+                                        <button class="mallikarjunaBtn">Mallikarjuna</button>
+                                        <span>|</span>
+                                        <button class="mahakaleshwarBtn">Mahakaleshwar</button>
+                                        <span>|</span>
+                                        <button class="omkareshwarBtn">Omkareshwar</button>
+                                        <span>|</span>
+                                        <button class="kedarnathBtn">Kedarnath</button>
+                                        <span>|</span>
+                                        <button class="bhimashankarBtn">Bhimashankar</button>
+                                        <span>|</span>
+                                        <button class="bhimashankarBtn">Bhimashankar</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="marquee-container subplacelistitems " id="shaktipitharea">
+                                <div class="expmarquee-content">
+                                    <div class="subplaceList ">
+                                        <button class="active somnathBtn">Somnath</button>
+                                        <span>|</span>
+                                        <button class="mallikarjunaBtn">Mallikarjuna</button>
+                                        <span>|</span>
+                                        <button class="mahakaleshwarBtn">Mahakaleshwar</button>
+                                        <span>|</span>
+                                        <button class="omkareshwarBtn">Omkareshwar</button>
+                                        <span>|</span>
+                                        <button class="kedarnathBtn">Kedarnath</button>
+                                        <span>|</span>
+                                        <button class="bhimashankarBtn">Bhimashankar</button>
+                                        <span>|</span>
+                                        <button class="bhimashankarBtn">Bhimashankar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <div class="d-flex justify-content-end align-items-center py-2">
+                            <button class="submitbtn">
+                                Send Enquiry
+                                <img src="assets/images/arrow-white.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- ===================Exploration popup area end=================== -->
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <!-- jquery js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- slick js -->
+    <script src="assets/slickSlider/slick.js"></script>
+    <script src="assets/slickSlider/slick.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+    <!-- swipperjs -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- main js -->
+    <script src="assets/js/main.js"></script>
+    <!-- exploration js -->
+    <script src="assets/js/exploration.js"></script>
+    <!-- group booking -->
+    <script src="assets/js/groupBooking.js"></script>
+    <!-- offer card and why choose -->
+    <script src="assets/js/offerCard.js"></script>
+    <!-- happy traveller js -->
+    <script src="assets/js/happytraveller.js"></script>
+
+    <script>
+        window.addEventListener("load", function () {
+            document.querySelector(".preloader").style.display = "none";
+            document.querySelector(".website-content").style.display = "block";
+        });
+    </script>
+
+</body>
+
+</html>
