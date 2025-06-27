@@ -200,31 +200,78 @@
 
 
         <!-- ==================main area start=================== -->
-        <div class="aiPlanner_area">
+        <div class="aiPlanner_area_step_first py-4">
             <div class="container">
-                <div class="row g-4">
-                    <div class="col-xl-6 col-lg-7">
-                        <h1 class="aiHeading">
-                            Plan Your Dream Trip <br> With AI ✨
-                        </h1>
-                        <p class="aiDescription">
-                            Let our smart assistant create the perfect itinerary for you.
-                            From hidden gems to must-see attractions, we’ll craft your ideal adventure.
-                        </p>
-                        <a href="aiplannStep_first.html" class="startPlanningBtn">
-                            <span>Start Planning</span> <i class="fa-solid fa-arrow-right ms-2"></i>
-                        </a>
-
-                        <label for="" class="freeToConfirmationCheckbox">
-                            ✅ Free to start
-                        </label>
-                    </div>
-                    <div class="col-xl-6 col-lg-5">
-                        <div
-                            class="d-flex justify-content-lg-end justify-content-center py-4 pt-lg-0 align-items-center h-100 w-100">
-                            <div class="ai_image_box">
-                                <img loading="lazy" src="assets/images/ai/robot.png" alt="">
+                <div class="d-flex justify-content-center align-items-start">
+                    <div class="aiplanner_main_content_area">
+                        <div class="stepProgress">
+                            <h1>1 of 2</h1>
+                            <div class="stepProgress_line">
+                                <div class="progress_fill" style="width: 50%;"></div>
                             </div>
+                        </div>
+                        <div class="aiplannerStepFirst_content_area">
+                            <div class="location_icon_box">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <h1>Where would you like to go?</h1>
+                            <p>Discover amazing pilgrims around the world</p>
+                            <div class="aiDataInputfeild ">
+                                <label for="">
+                                    Where to?
+                                </label>
+                                <select name="" id="" class="form-select">
+                                    <option value="Select Cities">Select Cities</option>
+                                    <option value="Varanasi">Varanasi</option>
+                                    <option value="Ayodhya">Ayodhya</option>
+                                    <option value="Kedarnath">Kedarnath</option>
+                                </select>
+                            </div>
+                            <!-- selected city name auto show here -->
+                            <div class="selectedCityList">
+                                <!-- <div class="cityName_items">
+                                    <span>Varanasi</span>
+                                    <button><i class="fa-solid fa-xmark"></i></button>
+                                </div> -->
+                            </div>
+                            <div class="row g-3 mt-3">
+                                <div class="col-6 col-cus-6">
+                                    <div class="aiDataInputfeild ">
+                                        <label for="">
+                                            Start Date
+                                        </label>
+                                        <input type="date" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-6 col-cus-6">
+                                    <div class="aiDataInputfeild ">
+                                        <label for="">
+                                            End Date
+                                        </label>
+                                        <input type="date" class="form-control">
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="mt-5">
+                                <a href="aiplannStep_second.html" class="startPlanningBtn w-100">
+                                    <span>Next</span> <i class="fa-solid fa-arrow-right ms-2"></i>
+                                </a>
+                            </div>
+                            <hr style="color: #E5E5EA; opacity: 1;">
+                            <p style="font-size: 13px;" class="mb-2">Popular Pilgrims</p>
+                            <!-- popular pilgrims area -->
+                             <div class="pilgrims_location_area">
+                                <button class="pilgrims_location_items">
+                                   <i class="fa-solid fa-location-dot me-2"></i> Varanasi
+                                </button>
+                                <button class="pilgrims_location_items">
+                                   <i class="fa-solid fa-location-dot me-2"></i> Varanasi
+                                </button>
+                                <button class="pilgrims_location_items">
+                                   <i class="fa-solid fa-location-dot me-2"></i> Varanasi
+                                </button>
+                             </div>
                         </div>
                     </div>
                 </div>
@@ -1016,6 +1063,8 @@
     <script src="assets/js/offerCard.js"></script>
     <!-- happy traveller js -->
     <script src="assets/js/happytraveller.js"></script>
+    <!-- ai planner -->
+    <script src="assets/js/aiplanner.js"></script>
 
     <script>
         window.addEventListener("load", function () {

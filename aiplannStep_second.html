@@ -200,33 +200,137 @@
 
 
         <!-- ==================main area start=================== -->
-        <div class="aiPlanner_area">
+        <div class="aiPlanner_area_step_second py-4">
             <div class="container">
-                <div class="row g-4">
-                    <div class="col-xl-6 col-lg-7">
-                        <h1 class="aiHeading">
-                            Plan Your Dream Trip <br> With AI ✨
-                        </h1>
-                        <p class="aiDescription">
-                            Let our smart assistant create the perfect itinerary for you.
-                            From hidden gems to must-see attractions, we’ll craft your ideal adventure.
-                        </p>
-                        <a href="aiplannStep_first.html" class="startPlanningBtn">
-                            <span>Start Planning</span> <i class="fa-solid fa-arrow-right ms-2"></i>
-                        </a>
-
-                        <label for="" class="freeToConfirmationCheckbox">
-                            ✅ Free to start
-                        </label>
+                <div class="aiplanner_main_content_area">
+                    <div class="stepProgress">
+                        <h1>2 of 2</h1>
+                        <div class="stepProgress_line">
+                            <div class="progress_fill" style="width: 100%;"></div>
+                        </div>
                     </div>
-                    <div class="col-xl-6 col-lg-5">
-                        <div
-                            class="d-flex justify-content-lg-end justify-content-center py-4 pt-lg-0 align-items-center h-100 w-100">
-                            <div class="ai_image_box">
-                                <img loading="lazy" src="assets/images/ai/robot.png" alt="">
+                </div>
+                <div class="aiplannerStepSecond_content_area">
+
+                    <h1>Who are you traveling with?</h1>
+                    <p>Choose your travel companion</p>
+                    <div class="who_are_you_traveling_with_area">
+                        <div class="partner_items active">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="pIcon">
+                                    🧍🏻
+                                </div>
+                                <div class="selectMark">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                            </div>
+                            <h2>Solo</h2>
+                        </div>
+                        <div class="partner_items ">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="pIcon">
+                                    👨‍👩‍👧‍👦
+                                </div>
+                                <div class="selectMark">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                            </div>
+                            <h2>Family</h2>
+                        </div>
+                        <div class="partner_items ">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="pIcon">
+                                    ❤️
+                                </div>
+                                <div class="selectMark">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                            </div>
+                            <h2>Partner</h2>
+                        </div>
+                        <div class="partner_items ">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="pIcon">
+                                    🧑‍🤝‍🧑
+                                </div>
+                                <div class="selectMark">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                            </div>
+                            <h2>Friends</h2>
+                        </div>
+                    </div>
+                    <!-- What you’re interested in area start-->
+                    <h1 class="mt-5">What you’re interested in</h1>
+                    <p>Select all that apply</p>
+                    <div class="interested_selected_items_area">
+                        <div class="selected_item active">
+                            Temples
+                        </div>
+                        <div class="selected_item">
+                            Festive Celebration
+                        </div>
+                        <div class="selected_item">
+                            Spiritual Retreat
+                        </div>
+                        <div class="selected_item">
+                            Hidden Gems
+                        </div>
+                        <div class="selected_item">
+                            Culture
+                        </div>
+                        <div class="selected_item">
+                            Adventure
+                        </div>
+                        <div class="selected_item">
+                            Sports
+                        </div>
+
+                    </div>
+                    <button data-bs-toggle="modal" data-bs-target="#addInterest" class="add_itemBtn">
+                        + Add Interest
+                    </button>
+
+
+                    <!-- =============Add Interest start============ -->
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="addInterest" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="ourSpecializationLabel">Add Interest</h5>
+                                    <button type="button" data-bs-dismiss="modal" aria-label="Close">
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="p-4">
+                                        <div class="aiDataInputfeild ">
+                                            <label for="">
+                                                Interests
+                                            </label>
+                                            <textarea name="" id="" class="form-control"
+                                                placeholder="Write here.."></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button data-bs-dismiss="modal" class="intaddBtn">Add</button>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <!-- =============Add Interest end============ -->
+                    <!-- What you’re interested in area end-->
+                    <div class="mt-5">
+                        <a href="aiplannStep_second.html" class="startPlanningBtn m-auto"
+                            style="max-width: 391px; width: 100%;">
+                            <span>Create Itinerary</span> <i class="fa-solid fa-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+
                 </div>
             </div>
 
@@ -1016,6 +1120,8 @@
     <script src="assets/js/offerCard.js"></script>
     <!-- happy traveller js -->
     <script src="assets/js/happytraveller.js"></script>
+    <!-- ai planner -->
+    <script src="assets/js/aiplanner.js"></script>
 
     <script>
         window.addEventListener("load", function () {
