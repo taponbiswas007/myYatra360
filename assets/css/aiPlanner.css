@@ -469,7 +469,42 @@
     border-radius: 6px;
     border: none;
 }
-
+.building_itinerary{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 7px;
+    height: calc(100vh - 180px);
+}
+.building_itinerary .loading_box{
+    height: 61px;
+    width: 61px;
+    border-radius: 50%;
+    position: relative;
+}
+.building_itinerary .loading_box .image_box{
+    background: #ffffff;
+    position: absolute;
+    inset: 6px;
+    border-radius: 50%;
+}
+.building_itinerary .loading_box .image_box img{
+    width: 100%;
+}
+.loadingtext{
+    font-family: Inter;
+font-weight: 400;
+font-size: 16px;
+line-height: 19.5px;
+letter-spacing: 0%;
+vertical-align: middle;
+text-transform: capitalize;
+color: #000000;
+}
+.loadingtext span:nth-child(1){
+    animation
+}
 @media (max-width: 1200px) {
     .aiHeading {
         font-size: 42px;
