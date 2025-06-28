@@ -469,7 +469,8 @@
     border-radius: 6px;
     border: none;
 }
-.building_itinerary{
+
+.building_itinerary {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -477,33 +478,702 @@
     row-gap: 7px;
     height: calc(100vh - 180px);
 }
-.building_itinerary .loading_box{
+
+.building_itinerary .loading_box {
     height: 61px;
     width: 61px;
     border-radius: 50%;
     position: relative;
 }
-.building_itinerary .loading_box .image_box{
+
+.building_itinerary .loading_box .image_box {
     background: #ffffff;
     position: absolute;
     inset: 6px;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.building_itinerary .loading_box .image_box img{
-    width: 100%;
+
+.building_itinerary .loading_box .image_box img {
+    height: 32px;
+    width: 32px;
 }
-.loadingtext{
+
+.loadingtext {
     font-family: Inter;
-font-weight: 400;
-font-size: 16px;
-line-height: 19.5px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.5px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    text-transform: capitalize;
+    color: #000000;
+}
+
+@keyframes textWave {
+
+    0%,
+    100% {
+        transform: translateY(0) scale(1);
+        opacity: 0.6;
+    }
+
+    50% {
+        transform: translateY(-8px) scale(1.05);
+        opacity: 1;
+        text-shadow: 0 2px 8px rgba(0, 115, 210, 0.3);
+    }
+}
+
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.loadingtext {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.5px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    text-transform: capitalize;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.loadingtext span {
+    display: inline-block;
+    animation: textWave 1.8s infinite ease-in-out;
+    transform-origin: bottom center;
+}
+
+.loadingtext span:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.loadingtext span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.loadingtext span:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.loadingtext span:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+/* Continue for each character as needed */
+
+.loading-dots span {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    /* background: linear-gradient(180deg, #71C1FF 0%, #0073D2 100%); */
+    background: #000000;
+    animation: dotPulse 1.5s infinite ease-in-out;
+}
+
+.loading-dots span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.loading-dots span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.loading-dots span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes dotPulse {
+
+    0%,
+    100% {
+        transform: scale(0.8);
+        opacity: 0.5;
+    }
+
+    50% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+}
+.ai_itinerary_hero{
+    background: url(../images/ai/ai_itinerary_hero.png) no-repeat 0 0 / 100% 100%;
+    padding: 160px 22px 22px 22px;
+}
+.ai_itinerary_hero h1{
+    font-family: Manrope;
+font-weight: 700;
+font-size: 24px;
+line-height: 30px;
 letter-spacing: 0%;
 vertical-align: middle;
-text-transform: capitalize;
-color: #000000;
+color: #ffffff;
 }
-.loadingtext span:nth-child(1){
-    animation
+.ai_itinerary_hero h2{
+    font-family: Manrope;
+font-weight: 700;
+font-size: 11.65px;
+line-height: 11.34px;
+letter-spacing: 0%;
+vertical-align: middle;
+color: #ffffff;
+}
+/* itinerary area */
+/* Itinerary and Summary Selector */
+.ai_itinerary_area .itinerary_and_summary_selector {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    column-gap: 30px;
+    row-gap: 30px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.ai_itinerary_area .itinerary_and_summary_selector li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    width: 143px;
+    height: 44px;
+    border: 1px solid #1CA8CB;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.ai_itinerary_area .itinerary_and_summary_selector li .unselect {
+    display: block;
+}
+
+.ai_itinerary_area .itinerary_and_summary_selector li .select {
+    display: none;
+}
+
+.ai_itinerary_area .itinerary_and_summary_selector .active .select {
+    display: block !important;
+}
+
+.ai_itinerary_area .itinerary_and_summary_selector .active .unselect {
+    display: none !important;
+}
+
+.ai_itinerary_area .summery_items_area {
+    display: none;
+}
+
+.ai_itinerary_area .itinerary_and_summary_selector .summarybtn img {
+    height: 20px;
+    width: 18px;
+}
+
+.ai_itinerary_area .itinerary_and_summary_selector .itinerarybtn img {
+    height: 18px;
+    width: 18px;
+}
+
+.ai_itinerary_area .itinerary_and_summary_selector li span {
+    font-family: Plus Jakarta Sans;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19.2px;
+    letter-spacing: -0.32px;
+    text-align: center;
+    vertical-align: middle;
+    color: #1CA8CB;
+}
+
+.ai_itinerary_area .itinerary_and_summary_selector .active span {
+    color: #ffffff;
+}
+
+.ai_itinerary_area .itinerary_and_summary_selector .active {
+    color: #ffffff !important;
+    background: #1CA8CB !important;
+}
+/* Main container */
+.ai_itinerary_area .itinerarylist {
+    padding-left: 0;
+}
+
+.ai_itinerary_area .itineryitem {
+    box-shadow: 0px 2px 16px 0px #00000014;
+    border-radius: 13px;
+    background: #ffffff;
+    padding: 10px 21px;
+    margin-bottom: 31px;
+}
+
+/* Header styles */
+.ai_itinerary_area .itineraryitem_header .locationIconbox {
+    background: #1CA8CB;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    padding: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #113D48;
+    flex-shrink: 0;
+}
+
+.ai_itinerary_area .itineraryheader_inner {
+    column-gap: 16px;
+}
+
+.ai_itinerary_area .itineraryitem_header {
+    cursor: pointer;
+}
+
+.ai_itinerary_area .itineraryitem_header h4 {
+    font-family: Manrope;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #113D48;
+    margin-bottom: 0;
+}
+
+.ai_itinerary_area .itineraryitem_header .dropdownIcon {
+    color: #1CA8CB;
+    font-size: 20px;
+    background: none;
+    border: none;
+}
+
+/* Content area */
+.ai_itinerary_area .itinerarylist .itineryitem .itinerary_content_area {
+    padding-left: 38px;
+    margin-left: 22px;
+    border-left: 2px dashed #0F1D231A;
+    display: none;
+}
+
+.ai_itinerary_area .itinerary_content_area .itineraryitem_content {
+    font-family: Plus Jakarta Sans;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 27px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #113D48;
+    margin-bottom: 23px;
+}
+
+/* Section header */
+.ai_itinerary_area .itinerary_section_header {
+    font-family: Manrope;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #113D48;
+    margin-bottom: 13px;
+    position: relative;
+}
+
+.ai_itinerary_area .itinerary_section_header::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -46px;
+    background: #ffffff;
+    border: 2px solid #1CA8CB;
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+}
+
+/* Pickup box */
+.ai_itinerary_area .howto_pickup_box {
+    border: 1px solid #E5E5EA;
+    border-radius: 12px;
+    padding: 10px 15px;
+    background: #ffffff;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    column-gap: 15px;
+    row-gap: 15px;
+    margin-bottom: 20px;
+}
+
+.ai_itinerary_area .howto_pickup_box .pickup_icon_box {
+    border-radius: 3;
+    height: 90px;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ai_itinerary_area .howto_pickup_box h6 {
+    font-family: Manrope;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #000000;
+    margin-bottom: 2px;
+}
+
+.ai_itinerary_area .howto_pickup_box p {
+    font-family: Manrope;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    margin-bottom: 13px;
+    color: #000000;
+}
+
+.ai_itinerary_area .howto_pickup_box button {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 7.62px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: capitalize;
+    border: 1px solid #1CA8CB;
+    border-radius: 30px;
+    background: #ffffff;
+    padding: 10px;
+    color: #1CA8CB;
+}
+
+/* Checkin box */
+.ai_itinerary_area .where_checkin_box {
+    border: 1px solid #E5E5EA;
+    border-radius: 12px;
+    padding: 10px 15px;
+    background: #ffffff;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    column-gap: 15px;
+    row-gap: 15px;
+    margin-bottom: 20px;
+}
+
+.ai_itinerary_area .where_checkin_box .checkin_icon_box {
+    border-radius: 3;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ai_itinerary_area .checkindetails_box {
+    width: calc(100% - 120px);
+}
+
+.ai_itinerary_area .where_checkin_box h6 {
+    font-family: Manrope;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #2E2224;
+    margin-bottom: 0px;
+}
+
+.ai_itinerary_area .startratingbox {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.ai_itinerary_area .startratingbox .staricon {
+    color: #D9D9D9;
+    font-size: 12px;
+}
+
+.ai_itinerary_area .startratingbox .givestar {
+    color: #FFD700;
+}
+
+.ai_itinerary_area .where_checkin_box p {
+    font-family: Manrope;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 22px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    margin-bottom: 0px;
+    color: #ADADAD;
+}
+
+.ai_itinerary_area .where_checkin_box p span {
+    color: #373737;
+}
+
+.ai_itinerary_area .where_checkin_box button {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 7.62px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: capitalize;
+    border: 1px solid #1CA8CB;
+    border-radius: 30px;
+    background: #ffffff;
+    padding: 10px;
+    color: #1CA8CB;
+    margin-top: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.ai_itinerary_area .where_checkin_box button:hover {
+    background: #1CA8CB;
+    color: #ffffff;
+}
+
+/* Add activities button */
+.ai_itinerary_area .addActivities {
+    background: #1CA8CB;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 14.49px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: capitalize;
+    border-radius: 30px;
+    width: 100%;
+    padding: 15px 0;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.ai_itinerary_area .addActivities img {
+    height: 13px;
+    width: 13px;
+}
+
+/* Temple visit box */
+.ai_itinerary_area .temple_visite_box {
+    border: 1px solid #E5E5EA;
+    border-radius: 12px;
+    padding: 10px 13px;
+    background: #ffffff;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.ai_itinerary_area .temple_visite_box .aarti_image_box {
+    position: relative;
+    height: 124px;
+    width: 124px;
+    border-radius: 3px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.ai_itinerary_area .temple_visite_box .aarti_image_box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.ai_itinerary_area .temple_visite_box .aarti_details_box p {
+    font-family: Manrope;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 21px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #113D48;
+    margin-bottom: 0;
+}
+
+.ai_itinerary_area .temple_visite_box .aarti_details_box p a {
+    font-family: Manrope;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 21px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #113D48;
+}
+
+/* Next button area */
+.ai_itinerary_area .next_btn_area {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.ai_itinerary_area .next_btn_area .nextbtn {
+    background: #1CA8CB;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 14.49px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: capitalize;
+    border-radius: 30px;
+    width: 130px;
+    height: 36px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    border: none;
+}
+
+.ai_itinerary_area .next_btn_area .nextbtn img {
+    height: 13px;
+    width: 13px;
+}
+
+/* Active states */
+.ai_itinerary_area .itinerarylist .active .dropdownIcon {
+    transform: translateZ(0) rotate(180deg);
+    transition: all 0.3s ease-in-out;
+}
+
+.ai_itinerary_area .itinerarylist .active .itinerary_content_area {
+    display: block;
+}
+.ai_itinerary_area .recommendedExperienceList {
+    font-family: Manrope;
+font-weight: 600;
+font-size: 14px;
+line-height: 27px;
+letter-spacing: 0%;
+vertical-align: middle;
+color: #113D48;
+list-style-type: disc;
+}
+/* Enquire Box Styles */
+.ai_itinerary_area .enquireBox {
+    background: linear-gradient(180deg, #E0F9FF 35.5%, #FFFFFF 100%);
+    border-radius: 12px;
+    padding: 24px 13px;
+    border: 0.79px solid #D1D1D6;
+    margin-bottom: 10px;
+}
+
+.ai_itinerary_area .enquireBox .icon_box {
+    width: 36px;
+    height: 35px;
+}
+
+.ai_itinerary_area .enquireBox .enquire_content_box h3 {
+    font-family: Manrope;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16.23px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #113D48;
+    margin-bottom: 5px;
+}
+
+.ai_itinerary_area .enquireBox .enquire_content_box h1 {
+    font-family: Manrope;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 17.39px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    text-transform: capitalize;
+    color: #113D48;
+    margin-bottom: 5px;
+}
+
+.ai_itinerary_area .enquireBox .enquire_content_box p {
+    font-family: Manrope;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 17.39px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    text-transform: capitalize;
+    color: #8E8E93;
+    margin-bottom: 0;
+}
+
+.ai_itinerary_area .enquireBox button {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 14.49px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    background: #1CA8CB;
+    height: 36px;
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    margin-top: 16px;
+}
+
+.ai_itinerary_area .enquireBox button img {
+    height: 13px;
+    width: 13px;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 540px) {
+    .ai_itinerary_area .enquireBox {
+        padding: 16px 10px;
+    }
+    
+    .ai_itinerary_area .enquireBox .enquire_content_box h1 {
+        font-size: 16px;
+        line-height: 15px;
+    }
+    
+    .ai_itinerary_area .enquireBox button {
+        font-size: 14px;
+        height: 32px;
+    }
 }
 @media (max-width: 1200px) {
     .aiHeading {
@@ -528,7 +1198,112 @@ color: #000000;
         padding-top: 0px !important;
     }
 }
+@media (max-width: 540px) {
+    .ai_itinerary_area .itineraryitem_header .locationIconbox {
+        background: #1CA8CB;
+        border-radius: 50%;
+        height: 26px;
+        width: 26px;
+        padding: 3px;
+        border: 2px solid #113D48;
+        flex-shrink: 0;
+    }
 
+    .ai_itinerary_area .itinerary_content_area {
+        padding-left: 21px;
+        margin-left: 12px;
+    }
+
+    .ai_itinerary_area .itineraryheader_inner {
+        column-gap: 7px;
+    }
+
+    .ai_itinerary_area .itineraryitem_header h4 {
+        font-size: 14px;
+    }
+
+    .ai_itinerary_area .itinerary_content_area .itineraryitem_content {
+        font-size: 12px;
+        line-height: 22px;
+    }
+
+    .ai_itinerary_area .itinerary_section_header {
+        font-size: 13px;
+    }
+
+    .ai_itinerary_area .itinerary_section_header::after {
+        left: -30px;
+    }
+
+    .ai_itinerary_area .howto_pickup_box {
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+    }
+
+    .ai_itinerary_area .where_checkin_box {
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+    }
+
+    .ai_itinerary_area .checkindetails_box {
+        width: 100%;
+    }
+
+    .ai_itinerary_area .howto_pickup_box h6 {
+        font-size: 12px;
+    }
+
+    .ai_itinerary_area .where_checkin_box h6 {
+        font-size: 12px;
+    }
+
+    .ai_itinerary_area .startratingbox .staricon {
+        font-size: 9px;
+    }
+
+    .ai_itinerary_area .howto_pickup_box p {
+        font-size: 11px;
+    }
+
+    .ai_itinerary_area .where_checkin_box p {
+        font-size: 11px;
+    }
+
+    .ai_itinerary_area .itinerarylist .itineryitem {
+        padding: 10px 10px;
+    }
+
+    .ai_itinerary_area .itinerarylist .itineryitem .itinerary_content_area {
+        margin-left: 12px;
+    }
+
+    /* Mobile-specific adjustments for selector tabs */
+    .ai_itinerary_area .itinerary_and_summary_selector {
+        column-gap: 15px;
+        row-gap: 15px;
+    }
+
+    .ai_itinerary_area .itinerary_and_summary_selector li {
+        width: 120px;
+        height: 38px;
+    }
+
+    .ai_itinerary_area .itinerary_and_summary_selector li span {
+        font-size: 14px;
+    }
+
+    .ai_itinerary_area .itinerary_and_summary_selector .summarybtn img,
+    .ai_itinerary_area .itinerary_and_summary_selector .itinerarybtn img {
+        height: 16px;
+        width: 16px;
+    }
+    .ai_itinerary_area .recommendedExperienceList{
+        font-size: 12px;
+        line-height: 22px;
+    }
+}
 @media (max-width: 480px) {
     .aiHeading {
         font-size: 35px;

@@ -200,54 +200,359 @@
 
 
         <!-- ==================main area start=================== -->
-        <div class="building_itinerary">
-            <div class="loading_box">
-                <div class="image_box">
-                    <img src="assets/images/ai/travel-luggage.svg" alt="">
-                </div>
-                <svg width="61" height="61" viewBox="0 0 61 61" xmlns="http://www.w3.org/2000/svg">
-                    <defs>
-                        <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                            <stop offset="0%" stop-color="#71C1FF" />
-                            <stop offset="100%" stop-color="#0073D2" />
-                        </linearGradient>
-                    </defs>
-                    <circle cx="30.5" cy="30.5" r="26" fill="none" stroke="url(#gradient)" stroke-width="7"
-                        stroke-dasharray="163.4" <!-- 2πr ≈ 163.4 -->
-                        stroke-dashoffset="163.4"
-                        stroke-linecap="round">
-                        <animate attributeName="stroke-dashoffset" from="163.4" to="0" dur="2.5s"
-                            repeatCount="indefinite" />
-                    </circle>
-                </svg>
-            </div>
-            <div class="loading-container">
-                <h1 class="loadingtext">
-                    <span>B</span>
-                    <span>u</span>
-                    <span>i</span>
-                    <span>l</span>
-                    <span>d</span>
-                    <span>i</span>
-                    <span>n</span>
-                    <span>g</span>
-                    <span>&nbsp;</span>
-                    <span>I</span>
-                    <span>t</span>
-                    <span>i</span>
-                    <span>n</span>
-                    <span>e</span>
-                    <span>r</span>
-                    <span>a</span>
-                    <span>r</span>
-                    <span>y</span>
-                    <span>&nbsp;</span>
-                    <div class="loading-dots">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+        <div class=" ai_itinerary_area">
+            <div class="container-fluid px-0 overflow-hidden">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="ai_itinerary_hero">
+                            <h1>7 days trip in Varanasi, Uttar Pradesh, India</h1>
+                            <h2>📅 25 Jun, 2025 - 01 Jul, 2025</h2>
+                        </div>
+                        <ul class="itinerary_and_summary_selector mt-4 p-3">
+                            <li class="active itinerarybtn">
+                                <img loading="lazy" src="assets/images/packageDetailsImages/travelicon.svg"
+                                    class="select" alt="Travel">
+                                <img loading="lazy" src="assets/images/packageDetailsImages/travelIconunselect.svg"
+                                    class="unselect" alt="Travel">
+                                <span>Itinerary</span>
+                            </li>
+                        </ul>
+                        <!-- itinerary items area start  -->
+                        <div class="itinerary_list_area ">
+                            <ul class="itinerarylist">
+
+                                <!-- =====================itinerary items=================== -->
+                                <li class="itineryitem active ">
+                                    <div class="itineraryitem_header d-flex justify-content-between align-items-center">
+                                        <div
+                                            class="d-flex itineraryheader_inner justify-content-start align-items-center">
+                                            <div class="locationIconbox">
+                                                <img loading="lazy"
+                                                    src="assets/images/packageDetailsImages/locationIcon.svg"
+                                                    alt="Location">
+                                            </div>
+                                            <h4>Day 01 : Includes: Hotel + Transfer + 1 Activity</h4>
+                                        </div>
+                                        <button class="dropdownIcon">
+                                            <i class="fa-solid fa-angle-up"></i>
+                                        </button>
+                                    </div>
+                                    <!-- itinerary item content -->
+                                    <div class="itinerary_content_area pt-3">
+                                        <!-- how to pickup -->
+                                        <h5 class="itinerary_section_header">
+                                            Pickup from Airport/Hotel
+                                        </h5>
+                                        <div class="howto_pickup_box">
+                                            <div class="pickup_icon_box">
+                                                <img loading="lazy" src="assets/images/packageDetailsImages/car.png"
+                                                    alt="Car">
+                                            </div>
+                                            <div class="cardetails_box">
+                                                <h6>Innova Crysta</h6>
+                                                <p>SUV | 6 Seater | 4 Luggage</p>
+                                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                    data-bs-target="#vahicleDetails">
+                                                    View Details
+                                                    <i class="fa-solid fa-arrow-right ms-2"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <!-- check in hotel -->
+                                        <h5 class="itinerary_section_header">
+                                            Check-in to Hotel | Hotel Park Inn by Radisson or Similar
+                                        </h5>
+                                        <div class="where_checkin_box">
+                                            <div class="checkin_icon_box">
+                                                <img loading="lazy" src="assets/images/packageDetailsImages/hotel.png"
+                                                    alt="Hotel">
+                                            </div>
+                                            <div class="checkindetails_box">
+                                                <div class="d-flex justify-content-between w-100 align-items-center">
+                                                    <h6>Hotel Varanasi</h6>
+                                                    <div class="startratingbox">
+                                                        <span class="staricon givestar"><i
+                                                                class="fa-solid fa-star"></i></span>
+                                                        <span class="staricon givestar"><i
+                                                                class="fa-solid fa-star"></i></span>
+                                                        <span class="staricon givestar"><i
+                                                                class="fa-solid fa-star"></i></span>
+                                                        <span class="staricon givestar"><i
+                                                                class="fa-solid fa-star"></i></span>
+                                                        <span class="staricon "><i class="fa-solid fa-star"></i></span>
+                                                    </div>
+                                                </div>
+                                                <p><span>Location:</span> RH Tower, Varanasi..</p>
+                                                <p>Thu, 8 - 12, Aug 2024</p>
+                                                <p><span>Check-in:</span> 9 Aug <span>Check-out:</span> 12 Aug
+                                                </p>
+                                                <button id="hotelDetailsshow">View Details <i
+                                                        class="fa-solid fa-arrow-right ms-2"></i></button>
+                                            </div>
+                                        </div>
+                                        <!-- temple visites -->
+                                        <h5 class="itinerary_section_header">
+                                            Recommended Experience
+                                        </h5>
+                                        <ul class="recommendedExperienceList">
+                                            <li>Visit Dashashwamedh Ghat</li>
+                                            <li>Witness the grand Ganga Aarti Ceremony on the banks of River Ganges</li>
+                                            <li>Optional: Boat ride during Aarti</li>
+                                            <li>Explore nearby market streets for local souvenirs</li>
+                                            <li>Return to hotel</li>
+                                            <li>Overnight stay in Varanasi</li>
+                                        </ul>
+
+
+                                    </div>
+
+
+                                </li>
+
+
+
+                                <!-- =====================itinerary items=================== -->
+                                <li class="itineryitem ">
+                                    <div class="itineraryitem_header d-flex justify-content-between align-items-center">
+                                        <div
+                                            class="d-flex itineraryheader_inner justify-content-start align-items-center">
+                                            <div class="locationIconbox">
+                                                <img loading="lazy"
+                                                    src="assets/images/packageDetailsImages/locationIcon.svg"
+                                                    alt="Location">
+                                            </div>
+                                            <h4>Day 02 : Includes: Hotel + Transfer + 1 Activity</h4>
+                                        </div>
+                                        <button class="dropdownIcon">
+                                            <i class="fa-solid fa-angle-up"></i>
+                                        </button>
+                                    </div>
+                                    <!-- itinerary item content -->
+                                    <div class="itinerary_content_area">
+                                        <p class="itineraryitem_content">
+                                            Discover the divine essence of Varanasi, one of the oldest living
+                                            cities
+                                            in the world and the spiritual heart of India. Nestled along the
+                                            banks
+                                            of the sacred River Ganga, Varanasi is renowned for its ancient
+                                            temples,
+                                        </p>
+                                        <!-- how to pickup -->
+                                        <h5 class="itinerary_section_header">
+                                            Pickup from Airport/Hotel
+                                        </h5>
+                                        <div class="howto_pickup_box">
+                                            <div class="pickup_icon_box">
+                                                <img loading="lazy" src="assets/images/packageDetailsImages/car.png"
+                                                    alt="Car">
+                                            </div>
+                                            <div class="cardetails_box">
+                                                <h6>Innova Crysta</h6>
+                                                <p>SUV | 6 Seater | 4 Luggage</p>
+                                                <button>View Details <i
+                                                        class="fa-solid fa-arrow-right ms-2"></i></button>
+                                            </div>
+                                        </div>
+                                        <!-- check in hotel -->
+                                        <h5 class="itinerary_section_header">
+                                            Check-in to Hotel | Hotel Park Inn by Radisson or Similar
+                                        </h5>
+                                        <div class="where_checkin_box">
+                                            <div class="checkin_icon_box">
+                                                <img loading="lazy" src="assets/images/packageDetailsImages/hotel.png"
+                                                    alt="Hotel">
+                                            </div>
+                                            <div class="checkindetails_box">
+                                                <div class="d-flex justify-content-between w-100 align-items-center">
+                                                    <h6>Hotel Varanasi</h6>
+                                                    <div class="startratingbox">
+                                                        <span class="staricon givestar"><i
+                                                                class="fa-solid fa-star"></i></span>
+                                                        <span class="staricon givestar"><i
+                                                                class="fa-solid fa-star"></i></span>
+                                                        <span class="staricon givestar"><i
+                                                                class="fa-solid fa-star"></i></span>
+                                                        <span class="staricon givestar"><i
+                                                                class="fa-solid fa-star"></i></span>
+                                                        <span class="staricon "><i class="fa-solid fa-star"></i></span>
+                                                    </div>
+                                                </div>
+                                                <p><span>Location:</span> RH Tower, Varanasi..</p>
+                                                <p>Thu, 8 - 12, Aug 2024</p>
+                                                <p><span>Check-in:</span> 9 Aug <span>Check-out:</span> 12 Aug
+                                                </p>
+                                                <button>View Details <i
+                                                        class="fa-solid fa-arrow-right ms-2"></i></button>
+                                            </div>
+                                        </div>
+                                        <!-- add activities button -->
+                                        <button class="addActivities">
+                                            <span>Add Activity</span>
+                                            <img loading="lazy" src="assets/images/packageDetailsImages/arrow-white.svg"
+                                                alt="Add Activities">
+
+                                        </button>
+
+                                        <!-- temple visites -->
+                                        <h5 class="itinerary_section_header">
+                                            Ganga Aarti Varanasi
+                                        </h5>
+                                        <div class="temple_visite_box">
+                                            <div class="aarti_image_box">
+                                                <img loading="lazy"
+                                                    src="assets/images/packageDetailsImages/aarti_img.png"
+                                                    alt="Aarti Image">
+                                            </div>
+                                            <div class="aarti_details_box">
+                                                <p>This Aarti will be performed by the young priests who are
+                                                    pursuing their Vedas and Upanishads. This group will be led
+                                                    by
+                                                    Head Priest from Gangotri Seva Samit..
+                                                    <a href="#">View Full</a>
+                                                </p>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+
+                                </li>
+                                <!-- =====================itinerary items=================== -->
+                                <li class="itineryitem ">
+                                    <div class="itineraryitem_header d-flex justify-content-between align-items-center">
+                                        <div
+                                            class="d-flex itineraryheader_inner justify-content-start align-items-center">
+                                            <div class="locationIconbox">
+                                                <img loading="lazy"
+                                                    src="assets/images/packageDetailsImages/locationIcon.svg"
+                                                    alt="Location">
+                                            </div>
+                                            <h4>Day 03 : Includes: Hotel + Transfer + 1 Activity</h4>
+                                        </div>
+                                        <button class="dropdownIcon">
+                                            <i class="fa-solid fa-angle-up"></i>
+                                        </button>
+                                    </div>
+                                    <!-- itinerary item content -->
+                                    <div class="itinerary_content_area">
+                                        <p class="itineraryitem_content">
+                                            Discover the divine essence of Varanasi, one of the oldest living
+                                            cities
+                                            in the world and the spiritual heart of India. Nestled along the
+                                            banks
+                                            of the sacred River Ganga, Varanasi is renowned for its ancient
+                                            temples,
+                                        </p>
+                                        <!-- how to pickup -->
+                                        <h5 class="itinerary_section_header">
+                                            Pickup from Airport/Hotel
+                                        </h5>
+                                        <div class="howto_pickup_box">
+                                            <div class="pickup_icon_box">
+                                                <img loading="lazy" src="assets/images/packageDetailsImages/car.png"
+                                                    alt="Car">
+                                            </div>
+                                            <div class="cardetails_box">
+                                                <h6>Innova Crysta</h6>
+                                                <p>SUV | 6 Seater | 4 Luggage</p>
+                                                <button>View Details <i
+                                                        class="fa-solid fa-arrow-right ms-2"></i></button>
+                                            </div>
+                                        </div>
+                                        <!-- check in hotel -->
+                                        <h5 class="itinerary_section_header">
+                                            Check-in to Hotel | Hotel Park Inn by Radisson or Similar
+                                        </h5>
+                                        <div class="where_checkin_box">
+                                            <div class="checkin_icon_box">
+                                                <img loading="lazy" src="assets/images/packageDetailsImages/hotel.png"
+                                                    alt="Hotel">
+                                            </div>
+                                            <div class="checkindetails_box">
+                                                <div class="d-flex justify-content-between w-100 align-items-center">
+                                                    <h6>Hotel Varanasi</h6>
+                                                    <div class="startratingbox">
+                                                        <span class="staricon givestar"><i
+                                                                class="fa-solid fa-star"></i></span>
+                                                        <span class="staricon givestar"><i
+                                                                class="fa-solid fa-star"></i></span>
+                                                        <span class="staricon givestar"><i
+                                                                class="fa-solid fa-star"></i></span>
+                                                        <span class="staricon givestar"><i
+                                                                class="fa-solid fa-star"></i></span>
+                                                        <span class="staricon "><i class="fa-solid fa-star"></i></span>
+                                                    </div>
+                                                </div>
+                                                <p><span>Location:</span> RH Tower, Varanasi..</p>
+                                                <p>Thu, 8 - 12, Aug 2024</p>
+                                                <p><span>Check-in:</span> 9 Aug <span>Check-out:</span> 12 Aug
+                                                </p>
+                                                <button>View Details <i
+                                                        class="fa-solid fa-arrow-right ms-2"></i></button>
+                                            </div>
+                                        </div>
+                                        <!-- add activities button -->
+                                        <button class="addActivities">
+                                            <span>Add Activity</span>
+                                            <img loading="lazy" src="assets/images/packageDetailsImages/arrow-white.svg"
+                                                alt="Add Activities">
+
+                                        </button>
+
+                                        <!-- temple visites -->
+                                        <h5 class="itinerary_section_header">
+                                            Ganga Aarti Varanasi
+                                        </h5>
+                                        <div class="temple_visite_box">
+                                            <div class="aarti_image_box">
+                                                <img loading="lazy"
+                                                    src="assets/images/packageDetailsImages/aarti_img.png"
+                                                    alt="Aarti Image">
+                                            </div>
+                                            <div class="aarti_details_box">
+                                                <p>This Aarti will be performed by the young priests who are
+                                                    pursuing their Vedas and Upanishads. This group will be led
+                                                    by
+                                                    Head Priest from Gangotri Seva Samit..
+                                                    <a href="#">View Full</a>
+                                                </p>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- itinerary items area end  -->
                     </div>
-                </h1>
+                    <div class="col-lg-5">
+                        <div class="map_area">
+                            <img src="assets/images/ai/map.png" alt="Map">
+                        </div>
+                        <div class="enquireBox">
+
+                            <div class="d-flex justify-content-start align-items-center gap-3">
+                                <div class="icon_box">
+                                    <img loading="lazy" src="assets/images/packageDetailsImages/grupper_icon.png"
+                                        alt="Icon">
+                                </div>
+                                <div class="enquire_content_box">
+                                    <h1> 6 Travelers</h1>
+                                    <p>(Includes Taxes & Fees)</p>
+                                </div>
+                            </div>
+                            <button class="enquire_btn" data-bs-toggle="modal" data-bs-target="#enquireNow">
+                                enquire Now
+                                <img loading="lazy" src="assets/images/packageDetailsImages/arrow-white.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- ==================main area end=================== -->

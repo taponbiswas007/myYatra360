@@ -39,5 +39,12 @@ $(document).ready(function() {
     $(".interested_selected_items_area .selected_item").click(function(){
         $(".interested_selected_items_area .selected_item").removeClass('active');
         $(this).addClass('active');
-    })
+    });
+
+
+      // Itinerary content details viewer
+    $('.itinerarylist .itineryitem .itineraryitem_header').click(function () {
+        $('.itinerarylist .itineryitem').removeClass('active');
+        $(this).closest('.itineryitem').addClass('active');
+    });
 });
